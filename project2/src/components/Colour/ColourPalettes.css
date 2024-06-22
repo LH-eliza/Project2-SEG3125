@@ -1,0 +1,73 @@
+.colour-palettes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #000; /* Assuming the background color is black */
+  color: #fff; /* Assuming the text color is white */
+}
+
+.colour-palettes-image-container {
+  position: relative;
+  width: 8rem; /* Adjust width as needed */
+  height: 12rem; /* Adjust height as needed */
+  margin-right: 2rem; /* Add some space between images and text */
+}
+
+.colour-palette-image {
+  position: absolute;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.colour-palette-image:nth-child(1) {
+  transform: rotate(-155deg) translateX(-1rem) translateY(2rem);
+  z-index: 1;
+}
+
+.colour-palette-image:nth-child(2) {
+  transform: rotate(0deg) translateX(rem) translateY(0.5rem);
+  z-index: 2;
+}
+
+.colour-palette-image:nth-child(3) {
+  transform: rotate(-7deg) translateX(0rem) translateY(0rem);
+  z-index: 3;
+}
+
+.colour-palettes-text-container {
+  max-width: 20rem;
+  text-align: left; /* Align text to the left */
+}
+
+.colour-palettes-title {
+  font-size: 2rem; /* Adjust as needed */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #ff5722; /* Gradient color or specific color as needed */
+}
+
+.colour-palettes-description {
+  font-size: 1rem; /* Adjust as needed */
+  margin-bottom: 1.5rem;
+  color: #d1d1d1;
+}
+
+.colour-palettes-link {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.2rem;
+}
+
+.colour-palettes-link:hover {
+  color: #ff5722; /* Hover color */
+  border-bottom-color: #ff5722;
+}

@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Sansation";
+  src: url("../../assets/Sansation_Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url("../../assets/Sansation_Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  display: flex;
+  font-family: "Sansation", Arial, sans-serif;
+}
+
+.navbar-logo-part1 {
+  color: white;
+}
+
+.navbar-logo-part2 {
+  background: linear-gradient(90deg, #5a87b0, #ab4e30, #eec982, #67cf36);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+  margin: 0;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.navbar-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-item {
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  padding: 1.05rem;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-item a.main-item:hover {
+  background: linear-gradient(90deg, #5a87b0, #ab4e30, #eec982, #67cf36);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.navbar-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown li a {
+  padding: 0.5rem 1rem;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown li a:hover {
+  background-color: #666; /* Different hover color for dropdown items */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-item {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-item a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .dropdown {
+    position: relative;
+    background-color: #222;
+  }
+
+  .dropdown li a {
+    padding: 0.75rem 1rem;
+  }
+}
