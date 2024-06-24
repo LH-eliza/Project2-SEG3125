@@ -1,0 +1,130 @@
+.newsletter-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.newsletter-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  background-color: #db6e6e;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Additional Circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.circle1 {
+  width: 350px;
+  height: 350px;
+  background-color: #ffeb3b;
+  top: 20%;
+  left: 30%;
+}
+
+.circle2 {
+  width: 150px;
+  height: 150px;
+  background-color: #03a9f4;
+  top: 65%;
+  left: 10%;
+}
+
+.circle3 {
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  background-color: transparent;
+  top: 70%;
+  left: 25%;
+}
+
+.circle4 {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  top: 10%;
+  left: 75%;
+}
+
+.circle5 {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  top: 50%;
+  left: 85%;
+}
+
+.newsletter-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.newsletter-content h2 {
+  font-size: 3.5rem;
+  font-family: "Gotham", sans-serif;
+  margin-bottom: 0.5rem; /* Reduce the margin-bottom for closer spacing */
+}
+
+.newsletter-content p {
+  font-size: 1.5rem;
+  margin-top: 0; /* Remove the top margin for closer spacing */
+}
+
+.newsletter-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-content input {
+  padding: 0.75rem 1rem;
+  border-radius: 20px;
+  border: none;
+  margin-top: 1rem;
+  width: 250px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #f5b7b1; /* Light pink background for input */
+}
+
+.newsletter-content button {
+  display: block;
+  margin: 1rem auto 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff;
+  color: rgb(190, 14, 14);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+}
+
+.newsletter-content button:hover {
+  background-color: #e67e22;
+}

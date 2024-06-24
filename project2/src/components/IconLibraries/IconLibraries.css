@@ -1,0 +1,54 @@
+.icon-libraries-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.icon-libraries-text-container {
+  max-width: 34rem;
+  padding: 10px;
+  text-align: left;
+}
+
+.icon-libraries-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Gotham", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.icon-libraries-description {
+  font-size: 1.3rem;
+  max-width: 25rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.icon-libraries-link {
+  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.2rem;
+}
+
+.icon-libraries-link:hover {
+  color: #ff5722;
+  border-bottom-color: #ff5722;
+}
+
+.icon-libraries-image-container {
+  width: 18rem;
+  height: 26rem;
+  padding-top: 4rem;
+  margin-left: 8rem;
+  height: auto;
+}
+
+.icon-libraries-image {
+  width: 100%;
+  height: auto;
+}
