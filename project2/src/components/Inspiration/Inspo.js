@@ -15,13 +15,14 @@ import WImage from "./Images/W.png";
 
 const Inspo = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    arrows: false,
   };
 
   const images = [
@@ -29,61 +30,72 @@ const Inspo = () => {
       src: WImage,
       alt: "Design W",
       caption: "Colour Palettes",
+      artist: "Artist Name W",
       link: "/design-w",
     },
     {
       src: ActionImage,
       alt: "Action Design",
       caption: "3D Modelling & Animation",
+      artist: "Artist Name Action",
       link: "/action-design",
     },
     {
       src: BearImage,
       alt: "Bear Design",
       caption: "3D Modelling",
+      artist: "Artist Name Bear",
       link: "/bear-design",
     },
     {
       src: BreadImage,
       alt: "Bread Design",
       caption: "Packaging Illustration",
+      artist: "Artist Name Bread",
       link: "/bread-design",
     },
     {
       src: BrewImage,
       alt: "Typography",
       caption: "Typography",
+      artist: "Artist Name Brew",
       link: "/brew-design",
     },
     {
       src: CuteImage,
       alt: "3D Modeling",
       caption: "3D Modeling",
+      artist: "Artist Name Cute",
       link: "/cute-design",
     },
     {
       src: EitaImage,
       alt: "Eita Design",
       caption: "Colour Palettes",
+      artist: "Artist Name Eita",
       link: "/eita-design",
     },
     {
       src: JuiceImage,
       alt: "Ilustration",
       caption: "Ilustration",
+      artist: "Artist Name Juice",
       link: "/juice-design",
     },
   ];
 
   return (
     <div className="inspiring-designs-container">
-      <h2 className="inspiring-designs-title">Explore Inspiring Designs</h2>
+      <h2 className="inspiring-designs-title">Explore Community Designs</h2>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="carousel-image-container">
             <a href={image.link}>
               <img className="carousel-image" src={image.src} alt={image.alt} />
-              <div className="image-caption">{image.caption}</div>
+              <div className="image-overlay">
+                <h3>{image.caption}</h3>
+                <p>{image.artist}</p>
+              </div>
             </a>
           </div>
         ))}
