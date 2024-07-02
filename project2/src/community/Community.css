@@ -1,0 +1,220 @@
+.community-page-container {
+  display: flex;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  margin-left: 200px; /* Adjust this value if necessary */
+  transition: margin-left 0.3s;
+}
+
+.content.collapsed {
+  margin-left: 50px;
+}
+
+.community-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.community-header {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  position: relative;
+  margin: 20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.community-header p {
+  padding: 0px 20px;
+  z-index: 1;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.upload-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 0px;
+}
+
+.upload-section p {
+  font-size: 1rem;
+}
+
+.upload-box {
+  width: 600px;
+  height: 200px;
+  border: 2px #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 5em;
+  color: #302222;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  position: relative;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.upload-box:hover {
+  color: white;
+  background-color: #333;
+}
+
+.upload-caption {
+  font-size: 1em;
+  color: #ccc;
+  position: absolute;
+  bottom: 10px;
+}
+
+.uploaded-image {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.uploaded-image img {
+  max-width: 600px;
+  max-height: 200px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.preview-label {
+  font-size: 1em;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 600px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+.select-field {
+  width: 620px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+.input-field.error,
+.select-field.error {
+  border: 2px solid red;
+}
+
+.submit-button {
+  width: 200px;
+  margin-top: 20px;
+  padding: 15px 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  font-family: "Gotham", sans-serif;
+}
+
+.submit-button:hover {
+  background-color: #e951ee;
+  color: white;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 600px;
+}
+
+.community-board {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.community-card {
+  background-color: #333;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.community-card:hover .delete-button {
+  display: flex;
+}
+
+.see-more-button {
+  padding: 20px 20px;
+  background-color: #636363;
+  border: none;
+  margin: 20px 20px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Gotham", sans-serif;
+  cursor: pointer;
+}
+
+.see-more-button:hover {
+  background-color: #333;
+}

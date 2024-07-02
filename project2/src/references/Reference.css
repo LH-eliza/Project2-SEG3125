@@ -1,0 +1,163 @@
+/* Reference.css */
+body {
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  color: #fff;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #0d122b;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.Roadmap-header {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  position: relative;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.Roadmap-header p {
+  margin: 10px 20px;
+  font-family: "Inter";
+  color: #fff;
+}
+
+.home {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: "Gotham";
+}
+
+.home p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  font-family: "Inter";
+  color: #fff;
+}
+
+.roadmap-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
+
+.card img {
+  width: 500px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  padding: 3px;
+  margin: 0 0 20px 0;
+}
+
+.card p {
+  font-size: 1em;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+  font-family: "Inter";
+  cursor: pointer;
+  border-radius: 15px;
+  text-decoration: underline;
+}
+
+.card button:hover {
+  background-color: #4739c9;
+}
+
+.roadmap {
+  max-width: 800px;
+  margin: auto;
+}
+
+.roadmap h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
+  .card-content {
+    align-items: center;
+  }
+
+  .card button {
+    align-self: center;
+  }
+}

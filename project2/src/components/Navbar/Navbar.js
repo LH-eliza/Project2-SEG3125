@@ -11,12 +11,12 @@ const Navbar = () => {
         </div>
         <ul className="navbar-menu">
           <li className="navbar-item">
-            <a className="main-item" href="#">
-              About Us
+            <a className="main-item" href="/community">
+              Community
             </a>
           </li>
           <li className="navbar-item">
-            <a className="main-item" href="#">
+            <a className="main-item" href="/reference">
               References
             </a>
             <ul className="dropdown">
@@ -47,7 +47,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="navbar-item">
-            <a className="main-item" href="#">
+            <a className="main-item" href="/resources">
               Resources
             </a>
             <ul className="dropdown">

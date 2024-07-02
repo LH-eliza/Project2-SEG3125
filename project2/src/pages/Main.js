@@ -11,7 +11,6 @@ import NewsletterSignup from "../components/Newsletter/Newsletter";
 function Main() {
   return (
     <div className="App">
-      <Navbar />
       <Hero />
       <ToolSection />
       <DesignTypes />
@@ -19,7 +18,6 @@ function Main() {
       <IconLibraries />
       <InspiringDesignsCarousel />
       <NewsletterSignup />
-      <Footer />
     </div>
   );
 }
