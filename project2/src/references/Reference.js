@@ -1,8 +1,6 @@
-// Reference.js
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Routes, Link } from "react-router-dom";
 import "./Reference.css";
-
 import TypographyImg from "./Images/Typography.png";
 import IllustrationImg from "./Images/Illustration.png";
 import Design3DImg from "./Images/3D.png";
@@ -61,6 +59,7 @@ function Reference() {
           </Routes>
         </div>
       </div>
+      <ScrollToTopButton />
     </div>
   );
 }
@@ -144,8 +143,40 @@ const Home = () => (
 const Roadmap = ({ title }) => (
   <div className="roadmap">
     <h1>{title}</h1>
-    {/* Content for the specific roadmap */}
   </div>
 );
+
+const ScrollToTopButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+  return (
+    <div
+      className={`scroll-to-top ${isVisible ? "show" : ""}`}
+      onClick={scrollToTop}
+    >
+      ↑
+    </div>
+  );
+};
 
 export default Reference;

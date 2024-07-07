@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Main from "./pages/Main";
-import Community from "./community/Community"; // Ensure this is the correct path
-import Reference from "./references/Reference"; // Ensure this is the correct path
-import Resources from "./resources/Resources"; // Ensure this is the correct path
+import Community from "./community/Community";
+import Reference from "./references/Reference";
+import Resources from "./resources/Resources";
+import Guides from "./guides/Guide";
+import Inspiration from "./inspiration/Inspiration";
 function App() {
   return (
     <div className="App">
@@ -15,7 +17,9 @@ function App() {
         <Route path="/community" element={<Community />} />
         <Route path="/reference" element={<Reference />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="*" element={<h1>Not Found</h1>} />
+        <Route path="/guides" element={<Guides />} />
+        <Route path="/inspiration" element={<Inspiration />} />
+        <Route path="*" element={<h1>Page is still in development</h1>} />
       </Routes>
       <Footer />
     </div>

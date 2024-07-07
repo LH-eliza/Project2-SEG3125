@@ -1,45 +1,72 @@
-/* styles.css */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
+.guide-search-bar select {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #8a86aa;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  outline: none;
+  margin-left: 10px;
+  cursor: pointer;
+  padding-right: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%23FFFFFF' d='M5 6l-3.5-3.5h7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.guide-search-bar select option {
+  background-color: #333;
   color: #fff;
 }
 
-.app {
+.guide-app {
   display: flex;
+  color: #fff;
 }
 
-.sidebar {
+.guide-sidebar {
   width: 250px;
-  background-color: #1f1f1f;
+  background-color: #0d122b;
   padding: 20px;
 }
 
-.sidebar h2 {
+.guide-sidebar h2 {
   font-size: 1.5em;
   margin-bottom: 20px;
 }
 
-.sidebar nav ul {
+.guide-sidebar nav ul {
   list-style: none;
   padding: 0;
 }
 
-.sidebar nav ul li {
-  margin: 10px 0;
+.guide-sidebar nav ul li {
+  margin: 20px 0;
 }
 
-.sidebar nav ul li a {
+.guide-sidebar nav ul li a {
   color: #fff;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
 }
 
-.content {
-  margin-left: -500px;
+.guide-sidebar nav ul li a:hover {
+  background-color: #c939bb;
+  padding: 10px;
+  border-radius: 30px;
 }
 
-.Roadmap-header {
+.guide-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.guide-header {
   width: 100%;
   display: flex;
   justify-content: left;
@@ -48,77 +75,161 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
-.Roadmap-header p {
-  margin: 10px;
+.guide-header p {
+  margin: 10px 20px;
+  font-family: "Inter";
+  color: #fff;
 }
 
-.home {
-  max-width: 900px;
+.guide-home {
+  max-width: 1200px;
+  padding: 20px;
   margin: auto;
 }
 
-.home h1 {
+.guide-home h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  font-family: "Gotham";
 }
 
-.home p {
+.guide-home p {
   font-size: 1rem;
   margin-bottom: 40px;
+  font-family: "Inter";
+  color: #fff;
 }
 
-.roadmap-cards {
+.guide-card-header {
+  justify-content: space-between;
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
-.card {
-  background-color: #2c2c2c;
-  padding: 20px;
+.guide-card {
+  padding-top: 40px;
   border-radius: 8px;
-  text-align: center;
-  flex: 1;
-  min-width: 300px;
+  text-align: left;
   text-decoration: none;
   color: #fff;
 }
 
-.card img {
-  width: 100%;
-  border-radius: 8px;
+.guide-top {
+  color: #fff;
 }
 
-.card h3 {
-  font-size: 1.5em;
-  margin: 20px 0;
-}
-
-.card p {
-  font-size: 1em;
+.guide-search-bar {
+  display: flex;
+  justify-content: left;
   margin-bottom: 20px;
 }
 
-.card button {
-  background-color: #ff5722;
+.guide-search-bar input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+}
+
+.guide-search-bar input[type="text"]::placeholder {
+  color: #fff;
+}
+
+.guide-search-bar input[type="text"]:focus {
+  border-color: #bbb;
+}
+
+.guide-card h3 {
+  font-size: 1.5em;
+  padding: 3px;
+  margin: 0 0 20px 0;
+}
+
+.guide-card p {
+  font-size: 1em;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.guide-card button {
+  background-color: transparent;
   border: none;
-  padding: 10px 20px;
   color: #fff;
   font-size: 1em;
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+  font-family: "Inter";
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 15px;
+  text-decoration: underline;
 }
 
-.card button:hover {
-  background-color: #e64a19;
+.guide-card button p:hover {
+  background-color: #4739c9;
 }
 
-.roadmap {
+.guide-detail {
   max-width: 800px;
   margin: auto;
 }
 
-.roadmap h1 {
+.guide-detail h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
+}
+.guide-card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Scroll-to-Top Button */
+.guide-scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f723da;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.guide-scroll-to-top.show {
+  opacity: 1;
+}
+
+.guide-scroll-to-top:hover {
+  background-color: #ff5500;
+}
+
+@media (max-width: 768px) {
+  .guide-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .guide-card img {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
+  .guide-card-content {
+    align-items: center;
+  }
+
+  .guide-card button {
+    align-self: center;
+  }
 }

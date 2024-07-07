@@ -79,6 +79,24 @@
   display: block;
 }
 
+.navbar-logo-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.navbar-logo-part1,
+.navbar-logo-part2 {
+  display: inline-block;
+}
+
+.navbar-logo-part2 {
+  background: linear-gradient(90deg, #5a87b0, #ab4e30, #eec982, #67cf36);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+
 .dropdown {
   display: none;
   position: absolute;
