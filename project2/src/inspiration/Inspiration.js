@@ -13,7 +13,9 @@ import cyberpunk from "./images/cyberpunk.png";
 import interfaceDesign from "./images/interface-design.png";
 import interfaces from "./images/interface.png";
 import minimalistFonts from "./images/minimalist-font.png";
-import robot from "./images/Robot.mp4";
+import robot from "./images/robot.png";
+import lemon from "./images/lemon.png";
+import quasar from "./images/quasar.png";
 import rollSafeCoin from "./images/roll-safe-coin.png";
 import thePainter from "./images/the-painter.png";
 import ui from "./images/ui.jpg";
@@ -78,7 +80,7 @@ const inspirationItemsData = [
   },
   {
     title: "Star Wars Badges",
-    video: robot, // Example video URL
+    image: robot,
     author: "Aleksandar Savic",
     likes: 87,
     views: 12200,
@@ -87,7 +89,7 @@ const inspirationItemsData = [
   },
   {
     title: "Vintage Train",
-    video: robot, // Example video URL
+    image: lemon,
     author: "Ann-Sophie De Steur",
     likes: 33,
     views: 5000,
@@ -96,7 +98,7 @@ const inspirationItemsData = [
   },
   {
     title: "The Painter",
-    video: robot, // Example video URL
+    image: quasar,
     author: "John Doe",
     likes: 202,
     views: 65100,
@@ -295,22 +297,11 @@ function Inspiration() {
         {filteredItems.map((item, index) => (
           <div key={index} className="inspiration-card">
             <div className="image-container">
-              {item.category === "Animation" ? (
-                <video
-                  src={item.video}
-                  className="inspiration-video"
-                  onMouseEnter={(e) => e.target.play()}
-                  onMouseLeave={(e) => e.target.pause()}
-                  loop
-                  muted
-                />
-              ) : (
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="inspiration-image"
-                />
-              )}
+              <img
+                src={item.image}
+                alt={item.title}
+                className="inspiration-image"
+              />
               <div className="hover-info">
                 <h3>{item.title}</h3>
                 <p>{item.category}</p>

@@ -63,9 +63,10 @@
 
 .navbar-item a {
   color: white;
+  font-family: "Helvetica";
   text-decoration: none;
   padding: 1.05rem;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   transition: background-color 0.3s ease;
 }
 
@@ -95,7 +96,6 @@
   color: transparent;
   font-weight: bold;
 }
-
 
 .dropdown {
   display: none;

@@ -8,6 +8,7 @@ import Reference from "./references/Reference";
 import Resources from "./resources/Resources";
 import Guides from "./guides/Guide";
 import Inspiration from "./inspiration/Inspiration";
+
 function App() {
   return (
     <div className="App">
@@ -15,9 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/community" element={<Community />} />
-        <Route path="/reference" element={<Reference />} />
+        <Route path="/reference/*" element={<Reference />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/guides" element={<Guides />} />
+        <Route path="/guides/*" element={<Guides />} />
         <Route path="/inspiration" element={<Inspiration />} />
         <Route path="*" element={<h1>Page is still in development</h1>} />
       </Routes>

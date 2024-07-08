@@ -120,7 +120,9 @@ const Community = () => {
           </div>
         ))}
       </div>
-      <button className="see-more-button">See Our Community Art Boards</button>
+      <button className="see-more-button" onClick={() => window.location.href = "/inspiration"}>
+        See Our Community Art Boards
+      </button>
     </div>
   );
 };

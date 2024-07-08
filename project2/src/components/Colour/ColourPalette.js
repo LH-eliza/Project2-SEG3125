@@ -34,7 +34,7 @@ const ColourPalettes = () => {
           Can’t decide on a colour palette? Generate one or select one to suit
           your needs!
         </p>
-        <a href="#" className="colour-palettes-link">
+        <a href="/resources" className="colour-palettes-link">
           View All Colour Palettes →
         </a>
       </div>

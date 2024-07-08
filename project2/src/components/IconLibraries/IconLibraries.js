@@ -14,7 +14,7 @@ const IconLibraries = () => {
         <p className="icon-libraries-description">
           Have access to various icons to use within your projects!
         </p>
-        <a href="#" className="icon-libraries-link">
+        <a href="/resources" className="icon-libraries-link">
           View All Icons →
         </a>
       </div>

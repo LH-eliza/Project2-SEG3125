@@ -1,63 +1,74 @@
 import React, { useState, useEffect } from "react";
-import { Route, Routes, Link } from "react-router-dom";
+import { Routes, Route, Link, useParams } from "react-router-dom";
 import "./Guide.css";
+import GuideDetail from "./GuideDetail";
 
 const guides = [
   {
+    route: "adobe-illustrator",
     title: "Adobe Illustrator Guide",
     style: "Illustration",
     description:
       "Begin your journey with typography. Learn the essentials, from understanding typefaces and fonts to advanced techniques like kerning and typography hierarchy. Apply your skills with practical projects.",
   },
   {
+    route: "adobe-photoshop",
     title: "Adobe Photoshop Guide",
     style: "Editing",
     description:
       "Unlock your creativity with our Illustration Roadmap. Learn basic sketching to digital illustration, explore various styles, and work on projects to develop your unique artistic voice.",
   },
   {
+    route: "adobe-animate",
     title: "Adobe Animate Guide",
     style: "Animation",
     description:
       "Step into 3D design. Learn principles of 3D modeling, texturing, and rendering using industry-standard software. Tackle projects that simulate real-world design challenges.",
   },
   {
+    route: "after-effects",
     title: "Adobe After Effects Guide",
     style: "Editing",
     description:
       "Bring your ideas to life with animation. Whether 2D, 3D, or stop-motion, learn animation principles and techniques through tutorials and hands-on projects.",
   },
   {
+    route: "adobe-xd",
     title: "Adobe XD Guide",
     style: "UX/UI",
     description:
       "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
   },
   {
+    route: "canva",
     title: "Canva Guide",
     style: "Editing",
     description:
       "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
   },
   {
+    route: "spline",
     title: "Spline Guide",
     style: "3D Design",
     description:
       "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
   },
   {
+    route: "procreate",
     title: "Procreate Guide",
     style: "Illustration",
     description:
       "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
   },
   {
+    route: "procreate-dreams",
     title: "Procreate Dreams Guide",
     style: "Animation",
     description:
       "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
   },
   {
+    route: "figma",
     title: "Figma Guide",
     style: "UX/UI",
     description:
@@ -65,7 +76,7 @@ const guides = [
   },
 ];
 
-function Guide() {
+function Guides() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedStyle, setSelectedStyle] = useState("All Styles");
 
@@ -88,99 +99,16 @@ function Guide() {
           <h2>Tool Guide</h2>
           <nav>
             <ul>
-              <li>
-                <Link to="/guide/adobe-illustrator">Adobe Illustrator</Link>
-              </li>
-              <li>
-                <Link to="/guide/adobe-photoshop">Adobe Photoshop</Link>
-              </li>
-              <li>
-                <Link to="/guide/adobe-animate">Adobe Animate</Link>
-              </li>
-              <li>
-                <Link to="/guide/adobe-after-effects">Adobe After Effects</Link>
-              </li>
-              <li>
-                <Link to="/guide/adobe-xd">Adobe XD</Link>
-              </li>
-              <li>
-                <Link to="/guide/canva">Canva</Link>
-              </li>
-              <li>
-                <Link to="/guide/spline">Spline</Link>
-              </li>
-              <li>
-                <Link to="/guide/procreate">Procreate</Link>
-              </li>
-              <li>
-                <Link to="/guide/procreate-dreams">Procreate Dreams</Link>
-              </li>
-              <li>
-                <Link to="/guide/figma">Figma</Link>
-              </li>
+              {guides.map((guide, index) => (
+                <li key={index}>
+                  <Link to={guide.route}>{guide.title}</Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
         <div className="guide-content">
           <Routes>
-            <Route
-              path="adobe-illustrator"
-              element={
-                <GuideDetail
-                  title="Adobe Illustrator Guide"
-                  style="Illustration"
-                />
-              }
-            />
-            <Route
-              path="adobe-photoshop"
-              element={
-                <GuideDetail title="Adobe Photoshop Guide" style="Editing" />
-              }
-            />
-            <Route
-              path="adobe-animate"
-              element={
-                <GuideDetail title="Adobe Animate Guide" style="Animation" />
-              }
-            />
-            <Route
-              path="adobe-after-effects"
-              element={
-                <GuideDetail
-                  title="Adobe After Effects Guide"
-                  style="Editing"
-                />
-              }
-            />
-            <Route
-              path="adobe-xd"
-              element={<GuideDetail title="Adobe XD Guide" style="UX/UI" />}
-            />
-            <Route
-              path="canva"
-              element={<GuideDetail title="Canva Guide" style="Editing" />}
-            />
-            <Route
-              path="spline"
-              element={<GuideDetail title="Spline Guide" style="3D Design" />}
-            />
-            <Route
-              path="procreate"
-              element={
-                <GuideDetail title="Procreate Guide" style="Illustration" />
-              }
-            />
-            <Route
-              path="procreate-dreams"
-              element={
-                <GuideDetail title="Procreate Dreams Guide" style="Animation" />
-              }
-            />
-            <Route
-              path="figma"
-              element={<GuideDetail title="Figma Guide" style="UX/UI" />}
-            />
             <Route
               path="/"
               element={
@@ -193,6 +121,8 @@ function Guide() {
                 />
               }
             />
+            <Route path=":guideId" element={<GuideDetailWrapper />} />
+            <Route path="*" element={<h1>Page is still in development</h1>} />
           </Routes>
         </div>
       </div>
@@ -246,23 +176,12 @@ const GuideHome = ({
           <div className="guide-card-content">
             <p>{guide.description}</p>
           </div>
-          <button>Get Started with {guide.title.split(" ")[1]} →</button>
+          <Link to={guide.route}>
+            <button>Get Started with {guide.title.split(" ")[1]} →</button>
+          </Link>
         </div>
       ))}
     </div>
-  </div>
-);
-
-const GuideDetail = ({ title, style }) => (
-  <div className="guide-detail">
-    <h1>{title}</h1>
-    <h3>Style: {style}</h3>
-    <p>
-      Begin your journey with our {title}. Learn the essentials, from basic
-      techniques to advanced methods. Apply your skills with practical projects
-      and enhance your expertise in {style.toLowerCase()}.
-    </p>
-    <button>Get Started with {title.split(" ")[1]} →</button>
   </div>
 );
 
@@ -298,5 +217,9 @@ const ScrollToTopButton = () => {
     </div>
   );
 };
+const GuideDetailWrapper = () => {
+  const { guideId } = useParams();
+  return <GuideDetail guideId={guideId} />;
+};
 
-export default Guide;
+export default Guides;
