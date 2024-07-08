@@ -230,6 +230,11 @@ function Inspiration() {
   const [searchTerm, setSearchTerm] = useState("");
   const [inspirationItems, setInspirationItems] =
     useState(inspirationItemsData);
+  const [showPopup, setShowPopup] = useState(false);
+  const [currentItem, setCurrentItem] = useState(null);
+  const [comment, setComment] = useState("");
+  const [alias, setAlias] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const filteredItems = inspirationItems.filter((item) => {
     const matchesCategory =
@@ -250,6 +255,35 @@ function Inspiration() {
       newItems[index].liked = true;
     }
     setInspirationItems(newItems);
+  };
+
+  const handleFeedback = (index) => {
+    setCurrentItem(index);
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+    setAlias("");
+    setComment("");
+    setErrorMessage("");
+  };
+
+  const submitComment = () => {
+    if (!alias.trim() || !comment.trim()) {
+      setErrorMessage("Alias and comment are required.");
+      return;
+    }
+
+    const newItems = [...inspirationItems];
+    if (!newItems[currentItem].comments) {
+      newItems[currentItem].comments = [];
+    }
+    newItems[currentItem].comments.push({ alias, comment });
+    setInspirationItems(newItems);
+    setAlias("");
+    setComment("");
+    setShowPopup(false);
   };
 
   return (
@@ -318,10 +352,50 @@ function Inspiration() {
               <div className="inspiration-stats">
                 <span>👀 {item.views}</span>
               </div>
+              <button
+                className="feedback-button"
+                onClick={() => handleFeedback(index)}
+              >
+                Feedback
+              </button>
+              {item.comments && item.comments.length > 0 && (
+                <div className="comments-section">
+                  <h4>Comments:</h4>
+                  <ul>
+                    {item.comments.map((comment, commentIndex) => (
+                      <li key={commentIndex}>
+                        <strong>{comment.alias}:</strong> {comment.comment}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         ))}
       </div>
+      {showPopup && (
+        <div className="popup-overlay" onClick={closePopup}>
+          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+            <h2>Leave a Comment</h2>
+            <input
+              type="text"
+              value={alias}
+              onChange={(e) => setAlias(e.target.value)}
+              placeholder="Your alias"
+            />
+            <textarea
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
+              placeholder="Write your comment here..."
+              rows="4"
+            />
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
+            <button onClick={submitComment}>Submit</button>
+            <button onClick={closePopup}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

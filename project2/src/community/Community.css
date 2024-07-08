@@ -221,3 +221,45 @@
 .see-more-button:hover {
   background-color: #ff01f2;
 }
+
+.export-button {
+  padding: 20px 20px;
+  background-color: #636363;
+  border: none;
+  margin: 20px 20px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Gotham", sans-serif;
+  cursor: pointer;
+}
+
+.export-button:hover {
+  background-color: #ff01f2;
+}
+
+.comments-section {
+  width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+.comments-section h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  font-family: "Gotham", sans-serif;
+}
+
+.comments-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments-section ul li {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}

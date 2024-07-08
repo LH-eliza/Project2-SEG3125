@@ -2,6 +2,11 @@ import React from "react";
 import "./Hero.css";
 
 const Hero = () => {
+  const handleScroll = () => {
+    const element = document.getElementById("ToolSection");
+    element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="hero">
       <div className="hero-badge">Over 300+ Guides and Resources</div>
@@ -17,6 +22,9 @@ const Hero = () => {
           your skills and knowledge, tailored to meet your learning need.
         </span>
       </p>
+      <button className="hero-button" onClick={handleScroll}>
+        Get Started
+      </button>
     </div>
   );
 };

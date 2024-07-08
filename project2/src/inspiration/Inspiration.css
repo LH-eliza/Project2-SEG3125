@@ -172,3 +172,105 @@
   font-size: 0.9rem;
   color: #999;
 }
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  color: #120fd3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.feedback-button {
+  background: #ac0fd3;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+.feedback-button:hover {
+  background: #120fd3;
+  color: #ffffff;
+}
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content textarea {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 22px;
+  font-family: "Inter";
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.popup-content input {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.popup-content button {
+  background: #3910f1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 5px;
+}
+
+.popup-content button:hover {
+  background: #e20aa1;
+}
+
+.comments-section {
+  margin-top: 10px;
+}
+
+.comments-section h4 {
+  margin-bottom: 5px;
+  color: #120fd3;
+}
+
+.comments-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments-section ul li {
+  color: #120fd3;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}

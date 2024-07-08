@@ -9,6 +9,9 @@ const Community = () => {
   const [category, setCategory] = useState("");
   const [submissions, setSubmissions] = useState([]);
   const [error, setError] = useState("");
+  const [selectedSubmission, setSelectedSubmission] = useState(null);
+
+  const fakeComments = ["Great work!", "Love this piece!", "Very creative!"];
 
   const onDrop = (acceptedFiles) => {
     const file = acceptedFiles[0];
@@ -32,6 +35,7 @@ const Community = () => {
       title,
       description,
       category,
+      comments: fakeComments,
     };
     setSubmissions([...submissions, newSubmission]);
     setUploadedImage(null);
@@ -43,6 +47,19 @@ const Community = () => {
 
   const handleDelete = (index) => {
     setSubmissions(submissions.filter((_, i) => i !== index));
+  };
+
+  const handleExport = () => {
+    const dataStr = JSON.stringify(submissions, null, 2);
+    const dataUri =
+      "data:application/json;charset=utf-8," + encodeURIComponent(dataStr);
+
+    const exportFileDefaultName = "submissions.json";
+
+    const linkElement = document.createElement("a");
+    linkElement.setAttribute("href", dataUri);
+    linkElement.setAttribute("download", exportFileDefaultName);
+    linkElement.click();
   };
 
   const { getRootProps, getInputProps } = useDropzone({ onDrop });
@@ -97,10 +114,14 @@ const Community = () => {
         </button>
         {error && <p className="error-message">{error}</p>}
       </div>
-      <h2>View what your art board</h2>
+      <h2>View your Art Board</h2>
       <div className="community-board">
         {submissions.map((submission, index) => (
-          <div className="community-card" key={index}>
+          <div
+            className="community-card"
+            key={index}
+            onClick={() => setSelectedSubmission(submission)}
+          >
             <img
               src={submission.image}
               alt={submission.title}
@@ -112,7 +133,10 @@ const Community = () => {
               <p>{submission.description}</p>
               <button
                 className="delete-button"
-                onClick={() => handleDelete(index)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleDelete(index);
+                }}
               >
                 &times;
               </button>
@@ -120,7 +144,23 @@ const Community = () => {
           </div>
         ))}
       </div>
-      <button className="see-more-button" onClick={() => window.location.href = "/inspiration"}>
+      {selectedSubmission && (
+        <div className="comments-section">
+          <h3>Comments for {selectedSubmission.title}</h3>
+          <ul>
+            {selectedSubmission.comments.map((comment, index) => (
+              <li key={index}>{comment}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <button className="export-button" onClick={handleExport}>
+        Export All Art
+      </button>
+      <button
+        className="see-more-button"
+        onClick={() => (window.location.href = "/inspiration")}
+      >
         See Our Community Art Boards
       </button>
     </div>
