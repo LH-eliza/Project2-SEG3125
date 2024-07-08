@@ -17,7 +17,6 @@ const Hero = () => {
           your skills and knowledge, tailored to meet your learning need.
         </span>
       </p>
-      <button className="hero-button">Get Started</button>
     </div>
   );
 };
