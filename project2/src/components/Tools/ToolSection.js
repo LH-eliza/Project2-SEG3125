@@ -62,22 +62,22 @@ const ToolSection = () => {
       {
         title: "Getting Started with Illustrator",
         description: "Learning about the basics of your workspace.",
-        link: "/guides/illustrator",
+        link: "/guides/adobe-illustrator",
       },
       {
         title: "Pen Tool in Illustrator",
         description: "How to use them, how to make them.",
-        link: "/guides/illustrator",
+        link: "/guides/adobe-illustrator",
       },
       {
         title: "Shapes in Illustrator",
         description: "How to use them, how to make them.",
-        link: "/guides/illustrator",
+        link: "/guides/aobe-illustrator",
       },
       {
         title: "Pathfinder in Illustrator",
         description: "How to use them, how to make them.",
-        link: "/guides/illustrator",
+        link: "/guides/adobe-illustrator",
       },
     ],
     canva: [
@@ -106,22 +106,22 @@ const ToolSection = () => {
       {
         title: "Getting Started with Photoshop",
         description: "Learning about the basics of your workspace.",
-        link: "/guides/photoshop",
+        link: "/guides/adobe-photoshop",
       },
       {
         title: "Layers in Photoshop",
         description: "How to use them, how to make them.",
-        link: "/guides/photoshop",
+        link: "/guides/adobe-photoshop",
       },
       {
         title: "Masks in Photoshop",
         description: "How to use them, how to make them.",
-        link: "/guides/photoshop",
+        link: "/guides/adobe-photoshop",
       },
       {
         title: "Filters in Photoshop",
         description: "How to use them, how to make them.",
-        link: "/guides/photoshop",
+        link: "/guides/adobe-photoshop",
       },
     ],
     spline: [
