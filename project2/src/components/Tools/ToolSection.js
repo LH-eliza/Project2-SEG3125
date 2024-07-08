@@ -21,19 +21,19 @@ const ToolSection = () => {
       {
         title: "Wireframing in Figma",
         description: "What goes into them, how can they help you communicate.",
-        link: "/guides/figma/wireframing",
+        link: "/guides/figma",
       },
       {
         title: "Figma Shortcuts",
         description:
           "A quick cheat sheet to speed up your process and to learn about each tool.",
-        link: "/guides/figma/shortcuts",
+        link: "/guides/figma",
       },
       {
         title: "Gradient Cheat Sheet",
         description:
           "Want a nice pop of color in your designs? Here's a little tool for you.",
-        link: "/guides/figma/gradients",
+        link: "/guides/figma",
       },
     ],
     procreate: [
@@ -45,17 +45,17 @@ const ToolSection = () => {
       {
         title: "Brushes in Procreate",
         description: "How to use them, how to make them.",
-        link: "/guides/procreate/brushes",
+        link: "/guides/procreate",
       },
       {
         title: "Layers in Procreate",
         description: "How to use them, how to make them.",
-        link: "/guides/procreate/layers",
+        link: "/guides/procreate",
       },
       {
         title: "Color Theory in Procreate",
         description: "How to use them, how to make them.",
-        link: "/guides/procreate/color-theory",
+        link: "/guides/procreate",
       },
     ],
     illustrator: [
@@ -67,17 +67,17 @@ const ToolSection = () => {
       {
         title: "Pen Tool in Illustrator",
         description: "How to use them, how to make them.",
-        link: "/guides/illustrator/pen-tool",
+        link: "/guides/illustrator",
       },
       {
         title: "Shapes in Illustrator",
         description: "How to use them, how to make them.",
-        link: "/guides/illustrator/shapes",
+        link: "/guides/illustrator",
       },
       {
         title: "Pathfinder in Illustrator",
         description: "How to use them, how to make them.",
-        link: "/guides/illustrator/pathfinder",
+        link: "/guides/illustrator",
       },
     ],
     canva: [
@@ -89,17 +89,17 @@ const ToolSection = () => {
       {
         title: "Templates in Canva",
         description: "How to use them, how to make them.",
-        link: "/guides/canva/templates",
+        link: "/guides/canva",
       },
       {
         title: "Text in Canva",
         description: "How to use them, how to make them.",
-        link: "/guides/canva/text",
+        link: "/guides/canva",
       },
       {
         title: "Images in Canva",
         description: "How to use them, how to make them.",
-        link: "/guides/canva/images",
+        link: "/guides/canva",
       },
     ],
     photoshop: [
@@ -111,17 +111,17 @@ const ToolSection = () => {
       {
         title: "Layers in Photoshop",
         description: "How to use them, how to make them.",
-        link: "/guides/photoshop/layers",
+        link: "/guides/photoshop",
       },
       {
         title: "Masks in Photoshop",
         description: "How to use them, how to make them.",
-        link: "/guides/photoshop/masks",
+        link: "/guides/photoshop",
       },
       {
         title: "Filters in Photoshop",
         description: "How to use them, how to make them.",
-        link: "/guides/photoshop/filters",
+        link: "/guides/photoshop",
       },
     ],
     spline: [
@@ -133,17 +133,17 @@ const ToolSection = () => {
       {
         title: "3D Objects in Spline",
         description: "How to use them, how to make them.",
-        link: "/guides/spline/3d-objects",
+        link: "/guides/spline",
       },
       {
         title: "Materials in Spline",
         description: "How to use them, how to make them.",
-        link: "/guides/spline/materials",
+        link: "/guides/spline",
       },
       {
         title: "Lighting in Spline",
         description: "How to use them, how to make them.",
-        link: "/guides/spline/lighting",
+        link: "/guides/spline",
       },
     ],
   };
