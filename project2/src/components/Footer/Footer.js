@@ -46,8 +46,8 @@ const Footer = () => {
         <div className="footer-bottom">
           <span>© 2024 InnovArt</span>
           <div className="footer-tags">
-            <a href="#">Tags</a>
-            <a href="#">Design-Types</a>
+            <a href="/inspiration">Tags</a>
+            <a href="/reference">Design-Types</a>
             <a href="/contact-us">Get Help</a>
           </div>
         </div>
