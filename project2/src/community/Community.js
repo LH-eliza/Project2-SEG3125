@@ -157,6 +157,8 @@ const Community = () => {
       <button className="export-button" onClick={handleExport}>
         Export All Art
       </button>
+      <div className="horizontal-line"></div>
+      <h2>See More Art</h2>
       <button
         className="see-more-button"
         onClick={() => (window.location.href = "/inspiration")}
