@@ -3,7 +3,7 @@ import "./Hero.css";
 
 const Hero = () => {
   const handleScroll = () => {
-    const element = document.getElementById("ToolSection");
+    const element = document.getElementById("tools-section");
     element.scrollIntoView({ behavior: "smooth" });
   };
 

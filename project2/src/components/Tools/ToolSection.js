@@ -149,7 +149,7 @@ const ToolSection = () => {
   };
 
   return (
-    <div className="tools-section">
+    <div id="tools-section" className="tools-section">
       <h2 className="tools-title">
         Explore Various Industry Standard Tools And Get Started
       </h2>
