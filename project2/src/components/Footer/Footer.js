@@ -17,19 +17,19 @@ const Footer = () => {
         </div>
         <ul className="footer-menu">
           <li className="footer-item">
-            <a href="#">References</a>
+            <a href="/reference">References</a>
           </li>
           <li className="footer-item">
-            <a href="#">Guides</a>
+            <a href="/guides">Guides</a>
           </li>
           <li className="footer-item">
-            <a href="#">Inspiration</a>
+            <a href="/inspiration">Inspiration</a>
           </li>
           <li className="footer-item">
-            <a href="#">Resources</a>
+            <a href="/resources">Resources</a>
           </li>
           <li className="footer-item">
-            <a href="#">About</a>
+            <a href="/community">Upload Art</a>
           </li>
         </ul>
         <div className="footer-social">
