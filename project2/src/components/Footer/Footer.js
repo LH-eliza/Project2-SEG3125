@@ -48,7 +48,7 @@ const Footer = () => {
           <div className="footer-tags">
             <a href="#">Tags</a>
             <a href="#">Design-Types</a>
-            <a href="#">Get Help</a>
+            <a href="/contact-us">Get Help</a>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import Reference from "./references/Reference";
 import Resources from "./resources/Resources";
 import Guides from "./guides/Guide";
 import Inspiration from "./inspiration/Inspiration";
+import ContactUs from "./help/ContactUs";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/guides/*" element={<Guides />} />
         <Route path="/inspiration" element={<Inspiration />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="*" element={<h1>Page is still in development</h1>} />
       </Routes>
       <Footer />
