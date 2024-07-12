@@ -1,5 +1,6 @@
 import React from "react";
 import "./Resources.css";
+import { useTranslation } from "react-i18next";
 
 const colorPalettes = [
   ["#D4A373", "#ECE4DB", "#DDD5C7", "#CBC5B0", "#A68A6D"],
@@ -135,21 +136,23 @@ const getTextColor = (hexColor) => {
 };
 
 function Resources() {
+  const { t } = useTranslation();
+
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text).then(() => {
-      alert(`Copied ${text} to clipboard!`);
+      alert(t("resources.copy_alert", { text }));
     });
   };
 
   return (
     <div className="resources">
       <div className="guide-header">
-        <p>Resources</p>
+        <p>{t("resources.title")}</p>
       </div>
       <div className="resources-content">
-        <h1>Color Palettes</h1>
-        <h2>Grab some inspiration from these color schemes</h2>
-        <p>Click on a color to copy it to the clipboard.</p>
+        <h1>{t("resources.color_palettes.title")}</h1>
+        <h2>{t("resources.color_palettes.description")}</h2>
+        <p>{t("resources.color_palettes.instruction")}</p>
         <div className="palette-grid">
           {colorPalettes.map((palette, index) => (
             <div key={index} className="palette">
@@ -171,9 +174,9 @@ function Resources() {
           ))}
         </div>
 
-        <h1>Icons</h1>
-        <h2>Have access to SVGs of the most used icons</h2>
-        <p>Click on an icon to copy its SVG code to the clipboard.</p>
+        <h1>{t("resources.icons.title")}</h1>
+        <h2>{t("resources.icons.description")}</h2>
+        <p>{t("resources.icons.instruction")}</p>
         <div className="icon-grid">
           {icons.map((icon, index) => (
             <div key={index} className="icon-container">

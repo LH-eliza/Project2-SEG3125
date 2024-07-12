@@ -121,7 +121,11 @@
 }
 
 .dropdown li a:hover {
-  background-color: #666; /* Different hover color for dropdown items */
+  background-color: #666;
+}
+
+.navbar-slider {
+  margin-left: auto;
 }
 
 /* Mobile Responsive Styles */
@@ -155,5 +159,12 @@
 
   .dropdown li a {
     padding: 0.75rem 1rem;
+  }
+
+  .navbar-slider {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }

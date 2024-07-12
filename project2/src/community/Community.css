@@ -27,7 +27,6 @@
   position: relative;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  font-family: "Inter", sans-serif;
 }
 
 .community-header p {
@@ -44,7 +43,7 @@
   margin-bottom: 40px;
 }
 
-.upload-section h1 {
+.upload-section h2 {
   font-size: 2.5em;
   font-family: "Gotham", sans-serif;
   margin-bottom: 0px;
@@ -262,4 +261,16 @@
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.horizontal-line {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+}
+
+.see-more {
+  text-align: center;
 }

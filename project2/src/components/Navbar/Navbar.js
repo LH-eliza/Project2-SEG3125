@@ -1,7 +1,11 @@
 import React from "react";
 import "./Navbar.css";
+import SliderButton from "../Slider/SliderButton";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
   return (
     <nav className="navbar">
       <div className="navbar-content">
@@ -14,46 +18,38 @@ const Navbar = () => {
         <ul className="navbar-menu">
           <li className="navbar-item">
             <a className="main-item" href="/community">
-              Upload Art
+              {t("navbar.upload_art")}
             </a>
           </li>
           <li className="navbar-item">
             <a className="main-item" href="/reference">
-              References
+              {t("navbar.references")}
             </a>
-            {/*             <ul className="dropdown">
-              <li>
-                <a href="#">Reference 1</a>
-              </li>
-              <li>
-                <a href="#">Reference 2</a>
-              </li>
-            </ul> */}
           </li>
           <li className="navbar-item">
             <a className="main-item" href="/guides">
-              Guides
+              {t("navbar.guides")}
             </a>
           </li>
           <li className="navbar-item">
             <a className="main-item" href="/inspiration">
-              Inspiration
+              {t("navbar.inspiration")}
             </a>
           </li>
           <li className="navbar-item">
             <a className="main-item" href="/resources">
-              Resources
+              {t("navbar.resources")}
             </a>
-            {/*            <ul className="dropdown">
-              <li>
-                <a href="#">Resource 1</a>
-              </li>
-              <li>
-                <a href="#">Resource 2</a>
-              </li>
-            </ul> */}
+          </li>
+          <li className="navbar-item">
+            <a className="main-item" href="/contact-us">
+              {t("navbar.get_help")}
+            </a>
           </li>
         </ul>
+        <div className="navbar-slider">
+          <SliderButton />
+        </div>
       </div>
     </nav>
   );

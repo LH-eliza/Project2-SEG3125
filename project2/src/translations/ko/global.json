@@ -1,0 +1,1274 @@
+{
+  "guides": {
+    "title": "가이드",
+    "header": "도구 가이드",
+    "search_placeholder": "가이드를 검색하세요...",
+    "styles": {
+      "all": "모든 스타일",
+      "illustration": "일러스트레이션",
+      "editing": "편집",
+      "animation": "애니메이션",
+      "ux_ui": "UX/UI",
+      "3d_design": "3D 디자인"
+    },
+    "style-type": {
+      "all": "유형"
+    },
+    "welcome": "디자인 도구 마스터를 위한 InnovArt 가이드 페이지",
+    "description": "InnovArt의 가이드에 오신 것을 환영합니다. 다양한 디자인 도구를 마스터하기 위한 종합 가이드를 제공합니다. 우리의 가이드는 단계별 안내와 실습 프로젝트를 제공하여 학습 경험을 향상시킵니다. 초보자이든 전문가이든, 우리의 가이드는 필요한 지식과 자원을 제공합니다.",
+    "get_started": "시작하기"
+  },
+  "guideDetail": {
+    "adobe_illustrator": {
+      "title": "어도비 일러스트레이터 가이드",
+      "description": "타이포그래피로 여정을 시작하세요. 서체와 글꼴 이해에서부터 자간 조정 및 타이포그래피 계층과 같은 고급 기술까지 필수 사항을 배우세요. 실습 프로젝트로 기술을 적용하세요."
+    },
+    "adobe_photoshop": {
+      "title": "어도비 포토샵 가이드",
+      "description": "일러스트레이션 로드맵으로 창의력을 발휘하세요. 기본 스케치에서 디지털 일러스트레이션까지 배우고, 다양한 스타일을 탐구하며, 독창적인 예술적 목소리를 개발하기 위한 프로젝트에 참여하세요."
+    },
+    "adobe_animate": {
+      "title": "어도비 애니메이트 가이드",
+      "description": "3D 디자인의 원리를 배우세요. 업계 표준 소프트웨어를 사용하여 3D 모델링, 텍스처링 및 렌더링의 원칙을 배우세요. 실제 디자인 도전과제를 다루는 프로젝트에 참여하세요."
+    },
+    "adobe_after_effects": {
+      "title": "어도비 애프터 이펙트 가이드",
+      "description": "애니메이션으로 아이디어를 실현하세요. 2D, 3D 또는 스톱 모션 애니메이션의 원리와 기술을 튜토리얼과 실습 프로젝트를 통해 배우세요."
+    },
+    "adobe_xd": {
+      "title": "어도비 XD 가이드",
+      "description": "편집 기술을 향상시키세요. Adobe Premiere Pro 및 Photoshop과 같은 소프트웨어를 사용하여 비디오 및 사진 편집 도구와 기술을 배우세요. 능력을 향상시키기 위한 프로젝트에 참여하세요."
+    },
+    "canva": {
+      "title": "캔바 가이드",
+      "description": "편집 기술을 향상시키세요. Adobe Premiere Pro 및 Photoshop과 같은 소프트웨어를 사용하여 비디오 및 사진 편집 도구와 기술을 배우세요. 능력을 향상시키기 위한 프로젝트에 참여하세요."
+    },
+    "spline": {
+      "title": "스플라인 가이드",
+      "description": "편집 기술을 향상시키세요. Adobe Premiere Pro 및 Photoshop과 같은 소프트웨어를 사용하여 비디오 및 사진 편집 도구와 기술을 배우세요. 능력을 향상시키기 위한 프로젝트에 참여하세요."
+    },
+    "procreate": {
+      "title": "프로크리에이트 가이드",
+      "description": "편집 기술을 향상시키세요. Adobe Premiere Pro 및 Photoshop과 같은 소프트웨어를 사용하여 비디오 및 사진 편집 도구와 기술을 배우세요."
+    },
+    "procreate_dreams": {
+      "title": "프로크리에이트 드림스 가이드",
+      "description": "편집 기술을 향상시키세요. Adobe Premiere Pro 및 Photoshop과 같은 소프트웨어를 사용하여 비디오 및 사진 편집 도구와 기술을 배우세요."
+    },
+    "figma": {
+      "title": "피그마 가이드",
+      "description": "편집 기술을 향상시키세요. Adobe Premiere Pro 및 Photoshop과 같은 소프트웨어를 사용하여 비디오 및 사진 편집 도구와 기술을 배우세요."
+    }
+  },
+  "guideContent": {
+    "adobe-animate": {
+      "title": "어도비 애니메이트 가이드",
+      "description": "3D 디자인의 원리를 배우세요. 업계 표준 소프트웨어를 사용하여 3D 모델링, 텍스처링 및 렌더링의 원칙을 배우세요. 실제 디자인 도전과제를 다루는 프로젝트에 참여하세요.",
+      "sections": [
+        {
+          "title": "1. 어도비 애니메이트 시작하기",
+          "content": [
+            {
+              "title": "어도비 애니메이트 소개",
+              "description": "어도비 애니메이트는 웹, 게임 및 TV 쇼용 상호 작용형 애니메이션을 만들 수 있는 다재다능한 도구입니다. 2D 애니메이션과 상호 작용형 콘텐츠를 만드는 데 이상적입니다."
+            },
+            {
+              "title": "새 프로젝트 만들기",
+              "description": "어도비 애니메이트를 열고 '파일 > 새로 만들기'를 선택하세요. 프로젝트에 적합한 캔버스 크기와 프레임 속도를 선택하세요. '만들기'를 클릭하여 새 프로젝트를 엽니다."
+            }
+          ]
+        },
+        {
+          "title": "2. 기본 그리기 및 애니메이션 도구",
+          "content": [
+            {
+              "title": "그리기 도구",
+              "description": "선택 도구를 사용하여 객체를 선택하고 조작하세요. 브러시 도구로 그리기를 하고, 사각형 도구로 도형을 만드세요."
+            },
+            {
+              "title": "간단한 애니메이션 만들기",
+              "description": "프레임별 애니메이션을 만드는 기본 사항과 타임라인을 사용하여 객체를 애니메이션화하는 방법을 배우세요."
+            },
+            {
+              "title": "실습해 보세요",
+              "description": "다음 단계를 따라 간단한 공 애니메이션을 만들어 보세요: 브러시 도구를 사용하여 원을 그리고, 타임라인에 키프레임을 추가하고, 원을 이동시키고, 모션 트윈을 만드세요."
+            }
+          ]
+        }
+      ]
+    },
+    "figma": {
+      "title": "피그마 가이드",
+      "description": "편집 기술을 향상시키세요. Adobe Premiere Pro 및 Photoshop과 같은 소프트웨어를 사용하여 비디오 및 사진 편집 도구와 기술을 배우세요. 능력을 향상시키기 위한 프로젝트에 참여하세요.",
+      "sections": [
+        {
+          "title": "1. 피그마 시작하기",
+          "content": [
+            {
+              "title": "피그마 소개",
+              "description": "피그마는 웹 및 모바일 애플리케이션의 사용자 경험을 디자인하고 프로토타입을 만들 수 있는 다재다능한 도구입니다. 와이어프레임, 모형 및 상호 작용 프로토타입을 만드는 데 이상적입니다."
+            },
+            {
+              "title": "새 프로젝트 만들기",
+              "description": "피그마를 열고 '파일 > 새로 만들기'를 선택하세요. 프로젝트에 적합한 장치 크기와 방향을 선택하세요. '만들기'를 클릭하여 새 프로젝트를 엽니다."
+            }
+          ]
+        },
+        {
+          "title": "2. 기본 디자인 및 프로토타이핑 도구",
+          "content": [
+            {
+              "title": "디자인 도구",
+              "description": "사각형, 타원 및 다각형 도구를 사용하여 도형을 만드세요. 텍스트 도구를 사용하여 텍스트를 추가하고 스타일을 지정하세요."
+            },
+            {
+              "title": "프로토타입 만들기",
+              "description": "프레임을 연결하고 전환을 추가하여 상호 작용 프로토타입을 만드는 방법을 배우세요. 미리보기 패널을 사용하여 프로토타입을 테스트하세요."
+            },
+            {
+              "title": "실습해 보세요",
+              "description": "간단한 상호 작용 프로토타입을 만들기 위해 다음 단계를 따라하세요: 여러 프레임을 만들고 각 프레임에 요소를 추가하고 프레임을 연결하여 탐색을 만드세요."
+            }
+          ]
+        }
+      ]
+    },
+    "adobe-photoshop": {
+      "title": "어도비 포토샵 가이드",
+      "description": "어도비 포토샵 가이드에 오신 것을 환영합니다! 이 가이드는 사진 편집 및 디지털 아트워크 작성을 위한 강력한 도구인 어도비 포토샵을 시작하는 데 도움을 드립니다. 초보자이든 기술을 다듬고자 하는 경우에도 기본 사항을 다루어 올바른 방향으로 안내합니다.",
+      "sections": [
+        {
+          "title": "1. 어도비 포토샵 시작하기",
+          "content": [
+            {
+              "title": "어도비 포토샵 소개",
+              "description": "어도비 포토샵은 이미지를 편집하고 조작할 수 있는 다재다능한 소프트웨어입니다. 사진을 향상시키고 멋진 시각 효과를 만들기 위한 다양한 도구와 기능을 제공합니다."
+            },
+            {
+              "title": "이미지 열기",
+              "description": "어도비 포토샵에서 이미지를 편집하기 위해 '파일 > 열기'로 이동하고 작업하려는 이미지 파일을 선택하세요. 이미지가 포토샵 작업 공간에 열립니다."
+            }
+          ]
+        },
+        {
+          "title": "2. 기본 편집 도구",
+          "content": [
+            {
+              "title": "선택 도구",
+              "description": "선택 도구를 사용하여 이미지의 특정 영역을 선택하여 편집할 수 있습니다. 마퀴 도구, 라쏘 도구 및 마법봉 도구는 일반적으로 사용되는 선택 도구입니다."
+            },
+            {
+              "title": "조정 도구",
+              "description": "조정 도구를 사용하여 이미지의 색상, 톤 및 기타 속성을 수정할 수 있습니다. 레벨, 커브 및 색조/채도 도구는 일반적으로 사용되는 조정 도구입니다."
+            },
+            {
+              "title": "실습해 보세요",
+              "description": "다음 단계를 따라 이미지를 향상시켜 보세요: 라쏘 도구를 사용하여 객체를 선택하고, 레벨 조정을 적용하여 밝기와 대비를 조정하고, 브러시 도구를 사용하여 결점을 제거하세요."
+            }
+          ]
+        }
+      ]
+    },
+    "adobe-illustrator": {
+      "title": "어도비 일러스트레이터 가이드",
+      "description": "타이포그래피로 여정을 시작하세요. 서체와 글꼴 이해에서부터 자간 조정 및 타이포그래피 계층과 같은 고급 기술까지 필수 사항을 배우세요. 실습 프로젝트로 기술을 적용하세요.",
+      "sections": [
+        {
+          "title": "1. 어도비 일러스트레이터 시작하기",
+          "content": [
+            {
+              "title": "어도비 일러스트레이터 소개",
+              "description": "어도비 일러스트레이터는 디지털 일러스트레이션을 만들고 조작할 수 있는 강력한 벡터 그래픽 편집기입니다. 아트워크, 로고, 아이콘 등을 만들기 위한 다양한 도구와 기능을 제공합니다."
+            },
+            {
+              "title": "새 문서 만들기",
+              "description": "어도비 일러스트레이터에서 새 프로젝트를 시작하려면 '파일 > 새로 만들기'로 이동하세요. 프로젝트에 적합한 문서 크기와 설정을 선택하세요. '만들기'를 클릭하여 새 문서를 엽니다."
+            }
+          ]
+        },
+        {
+          "title": "2. 도형 및 경로 작업",
+          "content": [
+            {
+              "title": "그리기 도구",
+              "description": "어도비 일러스트레이터에서 도형 및 경로를 만들고 수정하기 위해 펜 도구, 도형 도구 및 선 도구를 사용하세요."
+            },
+            {
+              "title": "앵커 포인트 작업",
+              "description": "앵커 포인트와 핸들을 조작하여 경로의 모양과 곡률을 제어하는 방법을 배우세요."
+            },
+            {
+              "title": "실습해 보세요",
+              "description": "다음 단계를 따라 간단한 로고를 만들어 보세요: 펜 도구를 사용하여 도형을 그리고, 앵커 포인트를 조정하여 도형을 다듬고, 색상과 효과를 적용하여 디자인을 향상시키세요."
+            }
+          ]
+        }
+      ]
+    },
+    "after-effects": {
+      "title": "어도비 애프터 이펙트 가이드",
+      "description": "애니메이션으로 아이디어를 실현하세요. 2D, 3D 또는 스톱 모션 애니메이션의 원리와 기술을 튜토리얼과 실습 프로젝트를 통해 배우세요.",
+      "sections": [
+        {
+          "title": "1. 어도비 애프터 이펙트 시작하기",
+          "content": [
+            {
+              "title": "어도비 애프터 이펙트 소개",
+              "description": "어도비 애프터 이펙트는 모션 그래픽과 시각 효과를 만들기 위한 강력한 소프트웨어입니다. 비디오, 이미지 및 애니메이션을 결합하여 멋진 시각적 구성물을 만들 수 있습니다."
+            },
+            {
+              "title": "새 합성물 만들기",
+              "description": "어도비 애프터 이펙트에서 새 프로젝트를 시작하려면 '파일 > 새로 만들기 > 합성물'로 이동하세요. 프로젝트에 적합한 합성물 설정을 선택하세요. '만들기'를 클릭하여 새 합성물을 만드세요."
+            }
+          ]
+        },
+        {
+          "title": "2. 레이어 및 키프레임 작업",
+          "content": [
+            {
+              "title": "애프터 이펙트에서의 레이어",
+              "description": "어도비 애프터 이펙트에서 레이어 작업하는 방법을 배우세요. 레이어는 구성물의 구성 요소로 비디오, 이미지, 텍스트 및 효과를 포함할 수 있습니다."
+            },
+            {
+              "title": "키프레임으로 애니메이션 생성하기",
+              "description": "애프터 이펙트에서 애니메이션을 만들기 위해 키프레임을 사용합니다. 키프레임을 설정하고 속성을 시간에 따라 조작하여 동적인 애니메이션을 만드는 방법을 배우세요."
+            },
+            {
+              "title": "실습해 보세요",
+              "description": "다음 단계를 따라 간단한 애니메이션을 만들어 보세요: 이미지나 비디오를 가져오고, 위치나 크기를 애니메이션화하기 위해 키프레임을 생성하고, 애니메이션을 미리보세요."
+            }
+          ]
+        }
+      ]
+    },
+    "adobe-xd": {
+      "title": "어도비 XD 가이드",
+      "description": "디자인 도구를 향상시키세요. Adobe Premiere Pro 및 Photoshop과 같은 소프트웨어를 사용하여 비디오 및 사진 편집 도구와 기술을 배우세요. 능력을 향상시키기 위한 프로젝트에 참여하세요.",
+      "sections": [
+        {
+          "title": "1. 어도비 XD 시작하기",
+          "content": [
+            {
+              "title": "어도비 XD 소개",
+              "description": "어도비 XD는 사용자 경험 디자인을 위한 강력한 도구입니다. 웹 및 모바일 애플리케이션의 프로토타입을 만들고 디자인을 공유할 수 있습니다."
+            },
+            {
+              "title": "새 프로젝트 만들기",
+              "description": "어도비 XD를 열고 '파일 > 새로 만들기'를 선택하세요. 프로젝트에 적합한 장치 크기와 방향을 선택하세요. '만들기'를 클릭하여 새 프로젝트를 엽니다."
+            }
+          ]
+        },
+        {
+          "title": "2. 디자인 및 프로토타이핑 도구",
+          "content": [
+            {
+              "title": "디자인 도구",
+              "description": "사각형, 타원 및 다각형 도구를 사용하여 도형을 만드세요. 텍스트 도구를 사용하여 텍스트를 추가하고 스타일을 지정하세요."
+            },
+            {
+              "title": "프로토타입 만들기",
+              "description": "프레임을 연결하고 전환을 추가하여 상호 작용 프로토타입을 만드는 방법을 배우세요. 미리보기 패널을 사용하여 프로토타입을 테스트하세요."
+            },
+            {
+              "title": "실습해 보세요",
+              "description": "간단한 상호 작용 프로토타입을 만들기 위해 다음 단계를 따라하세요: 여러 프레임을 만들고 각 프레임에 요소를 추가하고 프레임을 연결하여 탐색을 만드세요."
+            }
+          ]
+        }
+      ]
+    },
+    "canva": {
+      "title": "Canva 가이드",
+      "description": "Canva 가이드에 오신 것을 환영합니다! 이 가이드는 Canva를 시작하는 데 도움을 드립니다. Canva는 멋진 그래픽, 프레젠테이션 등을 만들 수 있는 강력한 온라인 디자인 도구입니다. 초보자이든 경험이 있는 디자이너이든 창의력을 발휘할 수 있도록 기본 사항을 다룹니다.",
+      "sections": [
+        {
+          "title": "1. Canva 시작하기",
+          "content": [
+            {
+              "title": "Canva 소개",
+              "description": "Canva는 사용자 친화적인 디자인 플랫폼으로 다양한 템플릿, 이미지 및 도구를 제공하여 전문적인 디자인을 만들 수 있습니다. 소셜 미디어 그래픽, 프레젠테이션, 포스터 등을 만드는 데 이상적입니다."
+            },
+            {
+              "title": "새 디자인 만들기",
+              "description": "Canva에서 새 디자인을 시작하려면 계정에 로그인하고 '디자인 만들기'를 클릭하세요. 템플릿을 선택하거나 디자인의 사용자 정의 크기를 선택하세요. '만들기'를 클릭하여 새 디자인을 엽니다."
+            }
+          ]
+        },
+        {
+          "title": "2. Canva로 디자인하기",
+          "content": [
+            {
+              "title": "템플릿 사용하기",
+              "description": "Canva는 다양한 디자인 카테고리에 대한 다양한 템플릿을 제공합니다. 템플릿 라이브러리를 통해 템플릿을 찾고 내용, 색상 및 글꼴을 사용자 정의하세요."
+            },
+            {
+              "title": "요소 추가하기",
+              "description": "텍스트, 도형, 아이콘, 이미지 등의 요소를 추가하여 디자인을 개선하세요. Canva는 다양한 요소 컬렉션을 제공하며 쉽게 드래그하여 디자인에 추가할 수 있습니다."
+            },
+            {
+              "title": "다른 사람과 협업하기",
+              "description": "팀 멤버나 클라이언트를 Canva 디자인에 초대하여 협업하세요. 디자인을 다른 사람과 공유하고 편집할 수 있도록하고 의견을 남길 수 있도록하세요."
+            }
+          ]
+        }
+      ]
+    },
+    "procreate-dreams": {
+      "title": "Procreate Dreams 가이드",
+      "description": "Procreate Dreams로 창의력을 발휘하세요. Procreate Dreams의 강력한 기능과 도구를 사용하여 황홀한 애니메이션, 모션 그래픽 및 시각 효과를 만드는 방법을 배우세요. 프레임별 애니메이션부터 고급 효과까지, 이 가이드를 통해 디지털 애니메이션의 기술을 숙달할 수 있습니다.",
+      "sections": [
+        {
+          "title": "1. Procreate Dreams 시작하기",
+          "content": [
+            {
+              "title": "Procreate Dreams 소개",
+              "description": "Procreate Dreams는 상상력을 현실로 만들어주는 최첨단 애니메이션 소프트웨어입니다. 직관적인 인터페이스와 다양한 애니메이션 도구를 통해 멋진 애니메이션과 시각 효과를 손쉽게 만들 수 있습니다."
+            },
+            {
+              "title": "새 애니메이션 만들기",
+              "description": "Procreate Dreams에서 새 애니메이션 프로젝트를 시작하려면 앱을 열고 '+' 버튼을 탭하세요. 프로젝트에 적합한 캔버스 크기, 프레임 속도 및 기타 설정을 선택하세요. '만들기'를 탭하여 새 애니메이션 캔버스를 엽니다."
+            }
+          ]
+        },
+        {
+          "title": "2. 애니메이션 기법 탐색",
+          "content": [
+            {
+              "title": "프레임별 애니메이션",
+              "description": "Procreate Dreams에서 프레임별 애니메이션을 만드는 방법을 배우세요. 그리기 도구와 어닝 스킨 기능을 사용하여 각 프레임을 애니메이션화하고 캐릭터와 객체를 생동감 있게 만들어보세요."
+            },
+            {
+              "title": "키프레임으로 애니메이션 생성하기",
+              "description": "Procreate Dreams에서 원활하고 동적인 애니메이션을 만들기 위해 키프레임은 필수입니다. 키프레임을 설정하고 타이밍과 이징을 조정하며 애니메이션 요소에 대한 복잡한 모션 경로를 생성하는 방법을 알아보세요."
+            },
+            {
+              "title": "시각 효과 추가하기",
+              "description": "Procreate Dreams에서 멋진 시각 효과로 애니메이션을 향상시키세요. 다양한 효과와 필터를 탐색하고 애니메이션에 적용하여 매혹적이고 눈길을 사로잡는 시각적 효과를 만드는 방법을 배우세요."
+            }
+          ]
+        }
+      ]
+    },
+    "spline": {
+      "title": "스플라인 가이드",
+      "description": "스플라인을 사용하여 부드럽고 곡선이 있는 선을 만드는 방법을 배워보세요. 스플라인 보간과 조작 기술을 숙달하여 디자인에서 시각적으로 매력적이고 현실적인 곡선을 만들어보세요.",
+      "sections": [
+        {
+          "title": "1. 스플라인 소개",
+          "content": [
+            {
+              "title": "스플라인이란 무엇인가요?",
+              "description": "스플라인은 부드럽고 연속적인 모양을 나타내는 수학적인 곡선입니다. 그들은 컴퓨터 그래픽, 애니메이션 및 디자인에서 사용되어 모양과 매끄러움에 대한 정확한 제어를 통해 곡선을 만드는 데 널리 사용됩니다."
+            },
+            {
+              "title": "스플라인의 종류",
+              "description": "B-스플라인, NURBS(비율이 다른 비-스플라인) 및 베지에 곡선과 같은 다양한 종류의 스플라인이 있습니다. 각 유형은 고유한 특성을 가지며 다른 응용 프로그램에 적합합니다."
+            }
+          ]
+        },
+        {
+          "title": "2. 스플라인 생성 및 편집",
+          "content": [
+            {
+              "title": "스플라인 생성",
+              "description": "다양한 도구와 기술을 사용하여 스플라인을 생성하는 방법을 배워보세요. 벡터 그래픽 소프트웨어나 프로그래밍 라이브러리를 사용하든, 정밀하고 제어 가능한 스플라인을 만드는 방법을 발견하세요."
+            },
+            {
+              "title": "스플라인 편집",
+              "description": "원하는 모양과 곡률을 얻기 위해 스플라인을 조작하는 기술을 숙달하세요. 제어점 추가 및 제거, 핸들 조정, 매끄러움 수정기 적용 등의 기술을 탐색해보세요."
+            },
+            {
+              "title": "스플라인 보간",
+              "description": "주어진 점들 사이에 부드럽고 연속적인 곡선을 만들기 위한 스플라인 보간 과정을 알아보세요. Catmull-Rom 스플라인과 Hermite 스플라인과 같은 보간 방법에 대해 알아보세요."
+            }
+          ]
+        },
+        {
+          "title": "3. 고급 스플라인 기술",
+          "content": [
+            {
+              "title": "스플라인 애니메이션",
+              "description": "스플라인을 애니메이션화하여 더욱 흥미로운 결과물을 만들어보세요. 디자인과 애니메이션에서 동적이고 순조로운 움직임을 만들기 위해 스플라인을 애니메이션화하는 방법을 배워보세요."
+            },
+            {
+              "title": "스플라인 익스트루전",
+              "description": "스플라인을 익스트루전하여 깊이와 볼륨을 부여하는 기술을 탐색해보세요. 스플라인을 경로로 따라 익스트루전하여 3D 모양과 객체를 만드는 방법을 발견하세요."
+            },
+            {
+              "title": "스플라인 렌더링",
+              "description": "스플라인에 대한 다양한 렌더링 기술에 대해 알아보세요. 실시간 렌더링이나 오프라인 렌더링을 위해 스플라인을 렌더링하는 방법을 발견하여 고품질이고 현실적인 결과물을 얻을 수 있는 방법을 알아보세요."
+            }
+          ]
+        }
+      ]
+    },
+    "procreate": {
+      "title": "Procreate 가이드",
+      "description": "Procreate 가이드에 오신 것을 환영합니다! 이 가이드는 iPad용 강력한 디지털 그림 및 일러스트레이션 앱인 Procreate를 사용하여 창의력을 발휘하는 데 도움을 드립니다. 초보자이든 경험이 있는 예술가이든 Procreate의 다양한 기능과 도구를 활용하여 멋진 작품을 만드는 데 필요한 모든 내용을 다룹니다.",
+      "sections": [
+        {
+          "title": "1. Procreate 시작하기",
+          "content": [
+            {
+              "title": "Procreate 소개",
+              "description": "Procreate는 다양한 기능과 직관적인 인터페이스를 제공하여 디지털 작품을 쉽게 만들 수 있는 다재다능한 앱입니다. Procreate의 주요 기능과 도구에 대해 알아보고 예술적인 여정을 시작하기 위해 인터페이스에 익숙해지세요."
+            },
+            {
+              "title": "새 캔버스 만들기",
+              "description": "Procreate에서 새 작품을 시작하려면 앱을 열고 '+' 버튼을 탭하세요. 프로젝트에 적합한 캔버스 크기, 해상도 및 방향을 선택하세요. '만들기'를 탭하여 새 캔버스를 엽니다."
+            }
+          ]
+        },
+        {
+          "title": "2. Procreate의 도구와 기능 탐색",
+          "content": [
+            {
+              "title": "브러시와 그림 그리기",
+              "description": "Procreate의 다양한 브러시 컬렉션을 탐색하고 이를 사용하여 아름다운 디지털 그림을 만드는 방법을 배워보세요. 다양한 브러시 설정, 질감 및 블렌딩 모드를 실험하여 작품에 원하는 효과를 적용하세요."
+            },
+            {
+              "title": "레이어와 블렌딩 모드",
+              "description": "Procreate에서 레이어를 사용하여 작품을 구성하고 다양한 효과를 적용하는 방법을 배워보세요. 다양한 블렌딩 모드를 실험하여 흥미로운 구성을 만들고 작품에 깊이를 더하세요."
+            },
+            {
+              "title": "선택과 변형",
+              "description": "Procreate에서 선택과 변형을 수행하는 기술을 숙달하세요. 선택 도구를 사용하여 작품의 일부를 분리하고 크기 조정, 회전, 왜곡과 같은 변형을 적용하여 동적인 구성을 만들어보세요."
+            }
+          ]
+        },
+        {
+          "title": "3. Procreate의 고급 기술",
+          "content": [
+            {
+              "title": "디지털 일러스트레이션",
+              "description": "Procreate에서 디지털 일러스트레이션의 고급 기술을 탐색해보세요. 세밀한 선 그리기, 음영과 하이라이트 추가, 대칭 및 원근감과 같은 고급 기능을 사용하여 일러스트레이션을 향상시키세요."
+            },
+            {
+              "title": "텍스트와 타이포그래피",
+              "description": "Procreate에서 텍스트와 타이포그래피를 작품에 통합하는 방법을 알아보세요. 다양한 텍스트 도구, 서식 옵션 및 텍스트를 일러스트레이션과 통합하는 창의적인 방법에 대해 배워보세요."
+            },
+            {
+              "title": "애니메이션과 타임랩스",
+              "description": "Procreate에서 애니메이션을 추가하고 타임랩스 비디오를 만들어 작품을 더욱 흥미롭게 만들어보세요. 일러스트레이션을 애니메이션화하고 부드러운 전환을 만들며 애니메이션을 공유하기 위해 내보내는 방법을 배워보세요."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "navbar": {
+    "upload_art": "작품 업로드",
+    "references": "참고 자료",
+    "guides": "가이드",
+    "inspiration": "영감",
+    "resources": "자료",
+    "get_help": "도움 받기"
+  },
+  "resources": {
+    "title": "자료",
+    "color_palettes": {
+      "title": "색 팔레트",
+      "description": "이 색 조합에서 영감을 얻으세요",
+      "instruction": "색을 클릭하여 클립보드에 복사하세요."
+    },
+    "icons": {
+      "title": "아이콘",
+      "description": "가장 많이 사용되는 아이콘의 SVG에 액세스할 수 있습니다",
+      "instruction": "아이콘을 클릭하여 SVG 코드를 클립보드에 복사하세요."
+    },
+    "copy_alert": "{{text}}을(를) 클립보드에 복사했습니다!"
+  },
+
+  "inspiration": {
+    "title": "영감",
+    "header": {
+      "title": "커뮤니티의 작품 탐색",
+      "description": "InnovArt는 창의적인 작품을 찾고 공유하는 곳으로, 최고의 디자인 가이드를 제공합니다.",
+      "search_placeholder": "커뮤니티에서 검색"
+    },
+    "categories": {
+      "Illustration": "일러스트레이션",
+      "Web": "웹",
+      "Animation": "애니메이션",
+      "3D Design": "3D 디자인",
+      "Typography": "타이포그래피",
+      "UI/UX": "UI/UX",
+      "Branding": "브랜딩",
+      "all": "전체"
+    },
+    "feedback": {
+      "leave_comment": "댓글 남기기",
+      "alias_placeholder": "별명",
+      "comment_placeholder": "댓글을 작성하세요...",
+      "submit_button": "제출",
+      "close_button": "닫기",
+      "comments_section": "댓글:",
+      "error_message": "별명과 댓글은 필수입니다."
+    }
+  },
+  "inspiration_items": {
+    "the_archers": {
+      "title": "The Archers",
+      "author": "John Doe",
+      "category": "일러스트레이션"
+    },
+    "debit_card_design": {
+      "title": "Debit Card Design",
+      "author": "Jane Smith",
+      "category": "UI/UX"
+    },
+    "santorini": {
+      "title": "Santorini",
+      "author": "Maria Johnson",
+      "category": "3D 디자인"
+    },
+    "build_together": {
+      "title": "Build Together",
+      "author": "Chris Lee",
+      "category": "웹"
+    },
+    "odi": {
+      "title": "ODI",
+      "author": "Alex Brown",
+      "category": "인터페이스 디자인"
+    },
+    "vande": {
+      "title": "Vande",
+      "author": "Patricia Green",
+      "category": "UX"
+    },
+    "star_wars_badges": {
+      "title": "Star Wars Badges",
+      "author": "Michael White",
+      "category": "일러스트레이션"
+    },
+    "vintage_train": {
+      "title": "Vintage Train",
+      "author": "Nancy Harris",
+      "category": "3D 디자인"
+    },
+    "the_painter": {
+      "title": "The Painter",
+      "author": "Linda Clark",
+      "category": "일러스트레이션"
+    },
+    "cityscape": {
+      "title": "Cityscape",
+      "author": "Barbara Rodriguez",
+      "category": "3D 디자인"
+    },
+    "robot": {
+      "title": "Robot",
+      "author": "Paul Martinez",
+      "category": "애니메이션"
+    },
+    "blender_base_keyboard": {
+      "title": "Blender Base Keyboard",
+      "author": "Kevin Lewis",
+      "category": "3D 디자인"
+    },
+    "creative_typography": {
+      "title": "Creative Typography",
+      "author": "Sandra Walker",
+      "category": "타이포그래피"
+    },
+    "minimalist_fonts": {
+      "title": "Minimalist Fonts",
+      "author": "Laura Hall",
+      "category": "타이포그래피"
+    },
+    "bold_letters": {
+      "title": "Bold Letters",
+      "author": "David Allen",
+      "category": "타이포그래피"
+    },
+    "ui_design_concept": {
+      "title": "UI Design Concept",
+      "author": "Jennifer Young",
+      "category": "UI/UX"
+    },
+    "ux_journey": {
+      "title": "UX Journey",
+      "author": "George King",
+      "category": "UI/UX"
+    },
+    "interface_design": {
+      "title": "Interface Design",
+      "author": "Carol Wright",
+      "category": "인터페이스 디자인"
+    },
+    "brand_identity": {
+      "title": "Brand Identity",
+      "author": "Kenneth Scott",
+      "category": "브랜딩"
+    },
+    "logo_design": {
+      "title": "Logo Design",
+      "author": "Helen Adams",
+      "category": "브랜딩"
+    },
+    "marketing_materials": {
+      "title": "Marketing Materials",
+      "author": "Edward Baker",
+      "category": "브랜딩"
+    }
+  },
+  "categories": {
+    "Illustration": "일러스트레이션",
+    "Web": "웹",
+    "Animation": "애니메이션",
+    "3D Design": "3D 디자인",
+    "Typography": "타이포그래피",
+    "UI/UX": "UI/UX",
+    "Branding": "브랜딩"
+  },
+  "contactUs": {
+    "header": "도움 받기",
+    "title": "문의하기",
+    "description": "질문이 있으시면 언제든지 문의하세요!",
+    "emailPlaceholder": "이메일",
+    "namePlaceholder": "이름",
+    "messagePlaceholder": "메시지를 여기에 작성하세요...",
+    "sendButton": "보내기",
+    "thankYou": "메시지를 보내주셔서 감사합니다.",
+    "getBack": "빠른 시일 내에 연락드리겠습니다!",
+    "closeButton": "닫기",
+    "error": "모든 필드는 필수입니다!"
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "description": "찾고 있는 답변을 찾지 못하셨나요? 디자인 팀에 문의하세요!",
+    "uploadQuestion": "내 작품을 어떻게 업로드하나요?",
+    "uploadAnswer": "자신의 작품을 업로드하려면 '업로드' 섹션으로 이동하여 '파일 선택' 버튼을 클릭하고 작품을 선택한 후 '제출'을 클릭하세요. 파일은 .jpg, .png 또는 .svg와 같은 허용되는 형식이어야 합니다.",
+    "checkReviewsQuestion": "작품의 리뷰를 어떻게 확인하나요?",
+    "checkReviewsAnswer": "프로필 페이지로 이동하여 '리뷰' 탭을 클릭하여 리뷰를 확인할 수 있습니다. 여기에서 다른 사용자가 업로드한 작품에 대한 피드백을 모두 찾을 수 있습니다.",
+    "giveReviewQuestion": "리뷰를 어떻게 작성하나요?",
+    "giveReviewAnswer": "리뷰를 작성하려면 리뷰를 작성하려는 작품으로 이동한 후 '리뷰 추가'를 클릭하세요. 생각을 작성한 후 '제출'을 클릭하세요.",
+    "roadmapsLevelQuestion": "모든 로드맵은 동일한 수준인가요?",
+    "roadmapsLevelAnswer": "아니요, 로드맵은 초보자부터 고급 사용자까지 다양한 수준에 맞춰 제공됩니다. 각 로드맵은 필요한 기술 수준을 명확하게 나타냅니다.",
+    "roadmapDurationQuestion": "로드맵은 얼마나 걸리나요?",
+    "roadmapDurationAnswer": "로드맵의 소요 시간은 복잡성과 개인의 진도에 따라 다릅니다. 평균적으로 로드맵은 몇 주에서 몇 개월까지 소요될 수 있습니다.",
+    "designPortfolioQuestion": "포트폴리오를 디자인할 수 있는 방법이 있나요?",
+    "designPortfolioAnswer": "네, 저희 플랫폼에는 작품을 전문적으로 구성하고 쇼케이스할 수 있는 '포트폴리오 빌더' 기능이 제공됩니다. 쉽게 작품을 추가, 제거 및 재정렬할 수 있습니다.",
+    "moreTipsQuestion": "작품에 대한 더 많은 팁이 있나요?",
+    "moreTipsAnswer": "네, 각 가이드와 튜토리얼에는 기술을 향상시키기 위한 추가적인 팁과 트릭이 포함되어 있습니다. 각 가이드의 '팁' 섹션을 확인해보세요.",
+    "newGuidesQuestion": "새로운 가이드는 언제 제공되나요?",
+    "newGuidesAnswer": "새로운 가이드는 매월 발표됩니다. '업데이트' 섹션을 확인하거나 뉴스레터를 구독하여 새로운 발표에 대한 알림을 받으세요."
+  },
+  "references": {
+    "header": "참고 자료",
+    "sidebar": {
+      "title": "로드맵",
+      "typography": "타이포그래피 로드맵",
+      "illustration": "일러스트레이션 로드맵",
+      "design": "3D 디자인 로드맵",
+      "animation": "애니메이션 로드맵",
+      "web": "웹 로드맵"
+    },
+    "underDevelopment": "페이지는 아직 개발 중입니다."
+  },
+  "home": {
+    "title": "InnovArt Roadmaps에 오신 것을 환영합니다",
+    "description": "InnovArt의 로드맵에 오신 것을 환영합니다. 다양한 디자인 분야를 숙달하기 위한 포괄적인 가이드입니다. 로드맵은 단계별 안내와 실용적인 프로젝트를 제공하여 학습 경험을 향상시킵니다. 초보자이든 전문성을 향상시키려는 분이든, 로드맵은 필요한 지식과 자원을 제공합니다.",
+    "typography": {
+      "alt": "타이포그래피 로드맵",
+      "title": "타이포그래피 로드맵",
+      "description": "타이포그래피로 여정을 시작하세요. 서체와 글꼴 이해부터 캐닝과 타이포그래피 계층 구조와 같은 고급 기술까지 학습하세요. 실용적인 프로젝트를 통해 기술을 적용해보세요.",
+      "button": "타이포그래피로 시작하기 →"
+    },
+    "illustration": {
+      "alt": "일러스트레이션 로드맵",
+      "title": "일러스트레이션 로드맵",
+      "description": "일러스트레이션 로드맵으로 창의력을 발휘하세요. 기본 스케치부터 디지털 일러스트레이션까지 학습하고 다양한 스타일을 탐색하며 독특한 예술적 표현력을 개발하는 프로젝트에 참여하세요.",
+      "button": "일러스트레이션으로 시작하기 →"
+    },
+    "design": {
+      "alt": "3D 디자인 로드맵",
+      "title": "3D 디자인 로드맵",
+      "description": "3D 디자인으로 진입하세요. 3D 모델링, 텍스처링, 렌더링의 원리를 배우고 업계 표준 소프트웨어를 사용하여 실제 디자인 과제를 해결하세요.",
+      "button": "3D 디자인으로 시작하기 →"
+    },
+    "animation": {
+      "alt": "애니메이션 로드맵",
+      "title": "애니메이션 로드맵",
+      "description": "애니메이션으로 아이디어를 생동감 있게 만들어보세요. 2D, 3D 또는 스톱 모션에 관계없이 튜토리얼과 실습 프로젝트를 통해 애니메이션 원리와 기술을 배우세요.",
+      "button": "애니메이션으로 시작하기 →"
+    },
+    "web": {
+      "alt": "웹 로드맵",
+      "title": "웹 로드맵",
+      "description": "웹 개발 기술을 개선하세요. 프론트엔드 및 백엔드 개발, UX/UI 디자인 등을 위한 도구와 기술을 배우세요. 프로젝트를 통해 능력을 향상시켜보세요.",
+      "button": "웹으로 시작하기 →"
+    }
+  },
+  "roadmap": {
+    "animation": {
+      "title": "2D 애니메이션 로드맵",
+      "description": "애니메이션 로드맵에 오신 것을 환영합니다! 이 가이드는 기본 원리부터 고급 기술까지 애니메이션의 핵심을 안내합니다. 2D, 3D 또는 스톱 모션에 관심이 있든 상관없이 매력적인 애니메이션을 만들 수 있게 될 것입니다. 각 섹션에는 권장 도구와 영감의 원천이 포함되어 있어 여러분의 여정을 돕습니다.",
+      "sections": [
+        {
+          "title": "1. 애니메이션 기초",
+          "content": [
+            {
+              "title": "애니메이션 원리",
+              "description": "스쿼시 및 스트레치, 예측, 스테이징 등 12가지 애니메이션 원리를 배워보세요. 이러한 원리는 더 동적이고 신뢰할 수 있는 애니메이션을 만드는 데 도움이 됩니다."
+            },
+            {
+              "title": "프레임 속도와 타이밍",
+              "description": "프레임 속도가 애니메이션의 부드러움에 어떤 영향을 미치는지 이해하고, 타이밍이 움직임의 인식에 어떤 영향을 미칠 수 있는지 알아보세요."
+            },
+            {
+              "title": "스토리보드",
+              "description": "애니메이션을 계획할 때 스토리보드의 중요성을 발견하고, 일관되고 매력적인 이야기를 보장하세요."
+            }
+          ],
+          "image": "PrinciplesImg"
+        },
+        {
+          "title": "2. 도구",
+          "content": [
+            {
+              "title": "Adobe Creative Cloud",
+              "description": "Adobe Animate 또는 After Effects - 비용: 월 $19"
+            },
+            {
+              "title": "Procreate Dream",
+              "description": "(iOS 전용) - 비용: $22 (일회성 구매)"
+            },
+            {
+              "title": "Pencil2D",
+              "description": "비용: 무료"
+            }
+          ],
+          "image": "ToolsImg"
+        },
+        {
+          "title": "3. 애니메이션 기술",
+          "content": [
+            {
+              "title": "캐릭터 디자인과 리깅",
+              "description": "매력적인 캐릭터 디자인을 만들고 부드러운 애니메이션을 위해 리깅하는 방법을 배워보세요."
+            },
+            {
+              "title": "키프레임과 인between",
+              "description": "모션을 정의하는 데 키프레임의 중요성을 이해하고, 유동적인 전환을 위해 인between 프레임을 만드는 방법을 배워보세요."
+            },
+            {
+              "title": "립 싱크와 표정",
+              "description": "대화에 맞춰 입 움직임을 동기화하고 표현적인 얼굴 특징을 애니메이션화하는 기술을 숙달하세요."
+            }
+          ],
+          "image": "TechniquesImg"
+        }
+      ]
+    },
+    "typography": {
+      "title": "타이포그래피 로드맵",
+      "description": "타이포그래피 로드맵에 오신 것을 환영합니다! 이 가이드는 기본 원리부터 고급 기술까지 타이포그래피의 핵심을 안내합니다. 인쇄물이나 디지털 미디어에 관심이 있든 상관없이 매력적인 타이포그래피를 만들 수 있게 될 것입니다. 각 섹션에는 권장 도구와 영감의 원천이 포함되어 있어 여러분의 여정을 돕습니다.",
+      "sections": [
+        {
+          "title": "1. 타이포그래피 기초",
+          "content": [
+            {
+              "title": "타이포그래피 원리",
+              "description": "정렬, 계층 구조, 간격 등과 같은 타이포그래피의 주요 원리를 배워보세요. 이러한 원리는 더 가독성이 높고 미적으로 매력적인 텍스트를 만드는 데 도움이 됩니다."
+            },
+            {
+              "title": "서체와 글꼴",
+              "description": "서체와 글꼴의 차이를 이해하고, 프로젝트에 적합한 서체와 글꼴을 선택하는 방법을 알아보세요."
+            },
+            {
+              "title": "텍스트 구성",
+              "description": "시각적으로 매력적이고 일관된 디자인을 만들기 위한 텍스트 구성의 중요성을 발견하세요."
+            }
+          ],
+          "image": "TypographyPrinciplesImg"
+        },
+        {
+          "title": "2. 도구",
+          "content": [
+            {
+              "title": "Adobe Creative Cloud",
+              "description": "Adobe Illustrator 또는 InDesign - 비용: 월 $19"
+            },
+            {
+              "title": "Google Fonts",
+              "description": "무료 글꼴 라이브러리"
+            },
+            {
+              "title": "FontSquirrel",
+              "description": "상업용으로 사용할 수 있는 무료 글꼴"
+            }
+          ],
+          "image": "TypographyToolsImg"
+        },
+        {
+          "title": "3. 타이포그래피 기술",
+          "content": [
+            {
+              "title": "커닝과 리딩",
+              "description": "문자 간격과 줄 간격을 조정하여 가독성과 시각적 매력을 향상시키는 방법을 배워보세요."
+            },
+            {
+              "title": "반응형 타이포그래피",
+              "description": "모바일부터 데스크탑까지 모든 기기에서 훌륭하게 보이는 타이포그래피를 만드는 방법을 이해하세요."
+            },
+            {
+              "title": "고급 텍스트 효과",
+              "description": "그림자, 그라디언트, 질감 등의 눈길을 끄는 텍스트 효과를 만드는 기술을 숙달하세요."
+            }
+          ],
+          "image": "TypographyTechniquesImg"
+        }
+      ]
+    },
+    "illustration": {
+      "title": "일러스트레이션 로드맵",
+      "description": "일러스트레이션 로드맵에 오신 것을 환영합니다! 이 가이드는 기본 원리부터 고급 기술까지 일러스트레이션의 핵심을 안내합니다. 전통적인 미디어나 디지털 미디어에 관심이 있든 상관없이 매력적인 일러스트레이션을 만들 수 있게 될 것입니다. 각 섹션에는 권장 도구와 영감의 원천이 포함되어 있어 여러분의 여정을 돕습니다.",
+      "sections": [
+        {
+          "title": "1. 일러스트레이션 기초",
+          "content": [
+            {
+              "title": "일러스트레이션 원리",
+              "description": "구성, 원근법, 색상 이론 등과 같은 일러스트레이션의 주요 원리를 배워보세요. 이러한 원리는 더 매력적이고 시각적으로 매료되는 일러스트레이션을 만드는 데 도움이 됩니다."
+            },
+            {
+              "title": "스케치 기법",
+              "description": "다양한 스케치 기법을 이해하고 작업에 적용하는 방법을 알아보세요."
+            },
+            {
+              "title": "캐릭터 디자인",
+              "description": "캐릭터 디자인의 중요성을 발견하고 기억에 남는 동적인 캐릭터를 만드는 방법을 배워보세요."
+            }
+          ],
+          "image": "IllustrationPrinciplesImg"
+        },
+        {
+          "title": "2. 도구",
+          "content": [
+            {
+              "title": "Adobe Creative Cloud",
+              "description": "Adobe Photoshop 또는 Illustrator - 비용: 월 $19"
+            },
+            {
+              "title": "Procreate",
+              "description": "(iOS 전용) - 비용: $9.99 (일회성 구매)"
+            },
+            {
+              "title": "Krita",
+              "description": "비용: 무료"
+            }
+          ],
+          "image": "IllustrationToolsImg"
+        },
+        {
+          "title": "3. 일러스트레이션 기술",
+          "content": [
+            {
+              "title": "디지털 페인팅",
+              "description": "디지털 페인팅 기술을 사용하여 멋진 일러스트레이션을 만드는 방법을 배워보세요."
+            },
+            {
+              "title": "잉크 및 색칠",
+              "description": "일러스트레이션에 잉크와 색칠 과정을 이해하여 그들에 생명을 불어넣어보세요."
+            },
+            {
+              "title": "스토리텔링",
+              "description": "시각적인 스토리텔링 기술을 숙달하여 이야기를 담은 일러스트레이션을 만들고 관객을 매료시키세요."
+            }
+          ],
+          "image": "IllustrationTechniquesImg"
+        }
+      ]
+    },
+    "web": {
+      "title": "웹 개발 로드맵",
+      "description": "웹 개발 로드맵에 오신 것을 환영합니다! 이 가이드는 기본 원리부터 고급 기술까지 웹 개발의 핵심을 안내합니다. 프론트엔드 또는 백엔드 개발에 관심이 있든 상관없이 반응형이고 동적인 웹 사이트를 만들 수 있게 될 것입니다. 각 섹션에는 권장 도구와 영감의 원천이 포함되어 있어 여러분의 여정을 돕습니다.",
+      "sections": [
+        {
+          "title": "1. 웹 개발 기초",
+          "content": [
+            {
+              "title": "HTML & CSS",
+              "description": "정적인 웹 페이지를 만들기 위한 HTML과 CSS의 기본을 배워보세요."
+            },
+            {
+              "title": "JavaScript",
+              "description": "웹 페이지에 상호작용성을 추가하기 위한 JavaScript의 기본을 이해하세요."
+            },
+            {
+              "title": "반응형 디자인",
+              "description": "모든 기기에서 훌륭하게 보이는 웹 페이지를 만들기 위한 반응형 디자인의 원리를 발견하세요."
+            }
+          ],
+          "image": "WebPrinciplesImg"
+        },
+        {
+          "title": "2. 도구",
+          "content": [
+            {
+              "title": "코드 편집기",
+              "description": "VS Code, Sublime Text, Atom과 같은 인기있는 코드 편집기"
+            },
+            {
+              "title": "버전 관리",
+              "description": "버전 관리와 협업을 위한 Git 배우기"
+            },
+            {
+              "title": "CSS 프레임워크",
+              "description": "Bootstrap, Tailwind CSS와 같은 CSS 프레임워크 탐색하기"
+            }
+          ],
+          "image": "WebToolsImg"
+        },
+        {
+          "title": "3. 고급 기술",
+          "content": [
+            {
+              "title": "JavaScript 프레임워크",
+              "description": "React, Angular, Vue와 같은 인기있는 JavaScript 프레임워크 배우기"
+            },
+            {
+              "title": "백엔드 개발",
+              "description": "Node.js, Express, 데이터베이스를 사용한 백엔드 개발 이해하기"
+            },
+            {
+              "title": "배포",
+              "description": "Netlify, Vercel, Heroku와 같은 플랫폼을 사용한 웹 애플리케이션 배포 과정 숙달하기"
+            }
+          ],
+          "image": "WebTechniquesImg"
+        }
+      ]
+    },
+    "design": {
+      "title": "3D 디자인 로드맵",
+      "description": "3D 디자인 로드맵에 오신 것을 환영합니다! 이 가이드는 기본 원리부터 고급 기술까지 3D 디자인의 핵심을 안내합니다. 애니메이션, 게임 디자인 또는 제품 시각화에 관심이 있든 상관없이 멋진 3D 모델을 만들 수 있게 될 것입니다. 각 섹션에는 권장 도구와 영감의 원천이 포함되어 있어 여러분의 여정을 돕습니다.",
+      "sections": [
+        {
+          "title": "1. 3D 디자인 기초",
+          "content": [
+            {
+              "title": "3D 모델링",
+              "description": "간단한 3D 객체를 만들기 위한 3D 모델링의 기본을 배워보세요."
+            },
+            {
+              "title": "텍스처링",
+              "description": "3D 모델에 텍스처를 추가하는 과정을 이해하세요."
+            },
+            {
+              "title": "렌더링",
+              "description": "렌더링의 원리를 발견하여 3D 모델의 사실적인 이미지를 만들어보세요."
+            }
+          ],
+          "image": "Design3DPrinciplesImg"
+        },
+        {
+          "title": "2. 도구",
+          "content": [
+            {
+              "title": "Blender",
+              "description": "강력하고 무료인 3D 모델링 소프트웨어"
+            },
+            {
+              "title": "ZBrush",
+              "description": "고해상도 3D 모델링을 위한 고급 도구"
+            },
+            {
+              "title": "Substance Painter",
+              "description": "3D 모델에 직접 텍스처를 그리는 도구"
+            }
+          ],
+          "image": "Design3DToolsImg"
+        },
+        {
+          "title": "3. 고급 기술",
+          "content": [
+            {
+              "title": "캐릭터 모델링",
+              "description": "인체와 얼굴을 모델링하는 방법을 배우고 캐릭터를 만들어보세요."
+            },
+            {
+              "title": "애니메이션",
+              "description": "모델을 생동감 있게 만들기 위한 3D 애니메이션의 기본을 이해하세요."
+            },
+            {
+              "title": "게임 디자인",
+              "description": "게임용 3D 에셋을 만들기 위한 기술을 숙달하세요."
+            }
+          ],
+          "image": "Design3DTechniquesImg"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "badge": "300개 이상의 가이드와 자료",
+    "title": {
+      "resources": "자료",
+      "for": "를 위한",
+      "designers": "디자이너",
+      "by": "작성",
+      "highlight_designers": "디자이너",
+      "highlight_gradient": "디자이너"
+    },
+    "subtitle": "기술과 지식을 향상시키기 위해 설계된 가장 효과적인 자료와 도구를 발견하고, 학습 요구에 맞게 맞춤화된 자료입니다.",
+    "button": "시작하기"
+  },
+  "community": {
+    "header": "커뮤니티",
+    "upload_section": {
+      "title": "작품 업로드",
+      "subtitle": "작품을 여기로 드래그하거나 업로드하세요",
+      "rights":"JPEG, PNG 또는 SVG를 업로드하십시오",
+      "preview_label": "이미지 미리보기:",
+      "title_placeholder": "제목",
+      "description_placeholder": "설명",
+      "category_placeholder": "카테고리",
+      "categories": {
+        "illustration": "일러스트레이션",
+        "typography": "타이포그래피",
+        "photography": "사진",
+        "uiux": "UI/UX",
+        "web_design": "웹 디자인",
+        "graphic_design": "그래픽 디자인"
+      },
+      "submit_button": "제출",
+      "error_message": "모든 필드는 필수이며 이미지를 업로드해야 합니다."
+    },
+    "view_art_board": "작품 보기",
+    "comments_section": {
+      "title": "댓글",
+      "fake_comments": [
+        "멋진 작품입니다!",
+        "이 작품을 사랑합니다!",
+        "매우 창의적입니다!"
+      ]
+    },
+    "export_button": "모든 작품 내보내기",
+    "see_more_art": "더 많은 작품 보기",
+    "see_more_button": "커뮤니티 작품 보기"
+  },
+  "icon_libraries": {
+    "title": "UI UX 아이콘의 라이브러리 검색",
+    "highlight": "UI UX 아이콘",
+    "description": "프로젝트 내에서 사용할 다양한 아이콘에 액세스할 수 있습니다!",
+    "link": "모든 아이콘 보기 →"
+  },
+  "colour_palettes": {
+    "title": "컬러 팔레트에 액세스하기",
+    "highlight": "컬러 팔레트",
+    "description": "컬러 팔레트를 결정할 수 없나요? 필요에 맞게 하나를 생성하거나 선택하세요!",
+    "link": "모든 컬러 팔레트 보기 →"
+  },
+
+  "tool_section": {
+    "title": "다양한 산업 표준 도구 탐색 및 시작하기",
+    "tools": {
+      "figma": {
+        "title": "피그마 기본",
+        "guides": [
+          {
+            "title": "피그마 시작하기",
+            "description": "작업 공간의 기본 사항을 배우기."
+          },
+          {
+            "title": "피그마에서 와이어프레임 작성",
+            "description": "무엇이 들어가고, 어떻게 의사소통에 도움을 줄 수 있는지."
+          },
+          {
+            "title": "피그마 단축키",
+            "description": "프로세스를 빠르게 하기 위한 빠른 치트 시트 및 각 도구에 대해 배우기."
+          },
+          {
+            "title": "그라디언트 치트 시트",
+            "description": "디자인에 색감을 더하고 싶으신가요? 여기 작은 도구가 있습니다."
+          }
+        ]
+      },
+      "procreate": {
+        "title": "프로크리에이트 기본",
+        "guides": [
+          {
+            "title": "프로크리에이트 시작하기",
+            "description": "작업 공간의 기본 사항을 배우기."
+          },
+          {
+            "title": "프로크리에이트에서 브러쉬 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          },
+          {
+            "title": "프로크리에이트에서 레이어 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          },
+          {
+            "title": "프로크리에이트에서 색상 이론",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          }
+        ]
+      },
+      "illustrator": {
+        "title": "일러스트레이터 기본",
+        "guides": [
+          {
+            "title": "일러스트레이터 시작하기",
+            "description": "작업 공간의 기본 사항을 배우기."
+          },
+          {
+            "title": "일러스트레이터에서 펜 도구 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          },
+          {
+            "title": "일러스트레이터에서 도형 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          },
+          {
+            "title": "일러스트레이터에서 패스파인더 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          }
+        ]
+      },
+      "canva": {
+        "title": "캔바 기본",
+        "guides": [
+          {
+            "title": "캔바 시작하기",
+            "description": "작업 공간의 기본 사항을 배우기."
+          },
+          {
+            "title": "캔바에서 템플릿 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          },
+          {
+            "title": "캔바에서 텍스트 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          },
+          {
+            "title": "캔바에서 이미지 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          }
+        ]
+      },
+      "photoshop": {
+        "title": "포토샵 기본",
+        "guides": [
+          {
+            "title": "포토샵 시작하기",
+            "description": "작업 공간의 기본 사항을 배우기."
+          },
+          {
+            "title": "포토샵에서 레이어 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          },
+          {
+            "title": "포토샵에서 마스크 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          },
+          {
+            "title": "포토샵에서 필터 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          }
+        ]
+      },
+      "spline": {
+        "title": "스플라인 기본",
+        "guides": [
+          {
+            "title": "스플라인 시작하기",
+            "description": "작업 공간의 기본 사항을 배우기."
+          },
+          {
+            "title": "스플라인에서 3D 오브젝트 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          },
+          {
+            "title": "스플라인에서 재료 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          },
+          {
+            "title": "스플라인에서 조명 사용",
+            "description": "어떻게 사용하고, 어떻게 만들 수 있는지."
+          }
+        ]
+      }
+    }
+  },
+  "svg_component": {
+    "heading": "최신 업데이트를 받고 싶으신가요?",
+    "subheading": "오늘 뉴스레터에 가입하세요.",
+    "placeholder": "이메일을 입력하세요",
+    "warning": "**잘못된 이메일 주소 (예: hello@innovart.ca)",
+    "subscribe_button": "구독",
+    "success_message": "구독 완료",
+    "error_message": "유효한 이메일 주소를 입력하세요"
+  },
+  "design_types": {
+    "title": "막막하신가요? 이 디자인 유형들을 배워보세요.",
+    "types": {
+      "typography": "타이포그래피",
+      "animation": "애니메이션",
+      "illustration": "일러스트레이션",
+      "web": "웹"
+    }
+  },
+  "inspo": {
+    "title": "커뮤니티 디자인 탐색",
+    "images": {
+      "w": {
+        "alt": "디자인 W",
+        "caption": "색상 팔레트",
+        "artist": "아티스트 W"
+      },
+      "action": {
+        "alt": "액션 디자인",
+        "caption": "3D 모델링 및 애니메이션",
+        "artist": "아티스트 액션"
+      },
+      "bear": {
+        "alt": "곰 디자인",
+        "caption": "3D 모델링",
+        "artist": "아티스트 곰"
+      },
+      "bread": {
+        "alt": "빵 디자인",
+        "caption": "포장 일러스트레이션",
+        "artist": "아티스트 빵"
+      },
+      "brew": {
+        "alt": "타이포그래피",
+        "caption": "타이포그래피",
+        "artist": "아티스트 브루"
+      },
+      "cute": {
+        "alt": "3D 모델링",
+        "caption": "3D 모델링",
+        "artist": "아티스트 큐트"
+      },
+      "eita": {
+        "alt": "에이타 디자인",
+        "caption": "색상 팔레트",
+        "artist": "아티스트 에이타"
+      },
+      "juice": {
+        "alt": "일러스트레이션",
+        "caption": "일러스트레이션",
+        "artist": "아티스트 주스"
+      }
+    }
+  },
+  "footer": {
+    "references": "참고 자료",
+    "guides": "가이드",
+    "inspiration": "영감",
+    "resources": "자원",
+    "uploadArt": "아트 업로드",
+    "language": "언어",
+    "english": "English",
+    "korean": "한국어 (한국어)",
+    "tags": "태그",
+    "designTypes": "디자인 유형",
+    "getHelp": "도움 받기",
+    "copyright": "© 2024 InnovArt"
+  }
+}

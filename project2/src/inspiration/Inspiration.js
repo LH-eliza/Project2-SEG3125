@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Inspiration.css";
-
+import { useTranslation } from "react-i18next";
 import architect from "./images/architect.jpg";
 import threed from "./images/3d.png";
 import threeed from "./images/3d-ish.png";
@@ -23,213 +23,215 @@ import ux from "./images/ux.png";
 import webDesign from "./images/web-design.png";
 import web from "./images/web.png";
 
-const inspirationItemsData = [
-  {
-    title: "The Archers",
-    image: rollSafeCoin,
-    author: "Steve Wolf",
-    likes: 512,
-    views: 99300,
-    category: "Illustration",
-    liked: false,
-  },
-  {
-    title: "Debit Card Design",
-    image: thePainter,
-    author: "Ben Didier",
-    likes: 168,
-    views: 32400,
-    category: "Illustration",
-    liked: false,
-  },
-  {
-    title: "Santorini",
-    image: cyberpunk,
-    author: "Guillaume Kurkdjian",
-    likes: 418,
-    views: 84100,
-    category: "Illustration",
-    liked: false,
-  },
-  {
-    title: "Build Together",
-    image: webDesign,
-    author: "Awsmd",
-    likes: 233,
-    views: 28600,
-    category: "Web",
-    liked: false,
-  },
-  {
-    title: "ODI",
-    image: interfaceDesign,
-    author: "Angie Mathot",
-    likes: 119,
-    views: 25300,
-    category: "Web",
-    liked: false,
-  },
-  {
-    title: "Vande",
-    image: ux,
-    author: "Marina Zakharova",
-    likes: 78,
-    views: 11700,
-    category: "Web",
-    liked: false,
-  },
-  {
-    title: "Star Wars Badges",
-    image: robot,
-    author: "Aleksandar Savic",
-    likes: 87,
-    views: 12200,
-    category: "Animation",
-    liked: false,
-  },
-  {
-    title: "Vintage Train",
-    image: lemon,
-    author: "Ann-Sophie De Steur",
-    likes: 33,
-    views: 5000,
-    category: "Animation",
-    liked: false,
-  },
-  {
-    title: "The Painter",
-    image: quasar,
-    author: "John Doe",
-    likes: 202,
-    views: 65100,
-    category: "Animation",
-    liked: false,
-  },
-  {
-    title: "Cityscape",
-    image: threeed,
-    author: "Jane Doe",
-    likes: 150,
-    views: 45000,
-    category: "3D Design",
-    liked: false,
-  },
-  {
-    title: "Robot?",
-    image: threed,
-    author: "Michael Smith",
-    likes: 340,
-    views: 78000,
-    category: "3D Design",
-    liked: false,
-  },
-  {
-    title: "Blender base keyboard",
-    image: threeeed,
-    author: "Emily Johnson",
-    likes: 290,
-    views: 62000,
-    category: "3D Design",
-    liked: false,
-  },
-  {
-    title: "Creative Typography",
-    image: types,
-    author: "Alice Brown",
-    likes: 95,
-    views: 21400,
-    category: "Typography",
-    liked: false,
-  },
-  {
-    title: "Minimalist Fonts",
-    image: minimalistFonts,
-    author: "David Green",
-    likes: 111,
-    views: 31000,
-    category: "Typography",
-    liked: false,
-  },
-  {
-    title: "Bold Letters",
-    image: typography,
-    author: "Sophia Lee",
-    likes: 130,
-    views: 27000,
-    category: "Typography",
-    liked: false,
-  },
-  {
-    title: "UI Design Concept",
-    image: interfaces,
-    author: "Chris White",
-    likes: 220,
-    views: 50000,
-    category: "UI/UX",
-    liked: false,
-  },
-  {
-    title: "UX Journey",
-    image: ui,
-    author: "Lisa Black",
-    likes: 310,
-    views: 68000,
-    category: "UI/UX",
-    liked: false,
-  },
-  {
-    title: "Interface Design",
-    image: web,
-    author: "Tom Hanks",
-    likes: 270,
-    views: 60000,
-    category: "UI/UX",
-    liked: false,
-  },
-  {
-    title: "Brand Identity",
-    image: architect,
-    author: "Angela Adams",
-    likes: 320,
-    views: 74000,
-    category: "Branding",
-    liked: false,
-  },
-  {
-    title: "Logo Design",
-    image: branding,
-    author: "Paul Walker",
-    likes: 410,
-    views: 86000,
-    category: "Branding",
-    liked: false,
-  },
-  {
-    title: "Marketing Materials",
-    image: brand,
-    author: "Nancy Drew",
-    likes: 390,
-    views: 83000,
-    category: "Branding",
-    liked: false,
-  },
-];
+const Inspiration = () => {
+  const { t } = useTranslation();
 
-const categories = [
-  "Illustration",
-  "Web",
-  "Animation",
-  "3D Design",
-  "Typography",
-  "UI/UX",
-  "Branding",
-];
+  const inspirationItemsData = [
+    {
+      title: t("inspiration_items.the_archers.title"),
+      image: rollSafeCoin,
+      author: t("inspiration_items.the_archers.author"),
+      likes: 512,
+      views: 99300,
+      category: t("inspiration_items.the_archers.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.debit_card_design.title"),
+      image: thePainter,
+      author: t("inspiration_items.debit_card_design.author"),
+      likes: 168,
+      views: 32400,
+      category: t("inspiration_items.debit_card_design.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.santorini.title"),
+      image: cyberpunk,
+      author: t("inspiration_items.santorini.author"),
+      likes: 418,
+      views: 84100,
+      category: t("inspiration_items.santorini.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.build_together.title"),
+      image: webDesign,
+      author: t("inspiration_items.build_together.author"),
+      likes: 233,
+      views: 28600,
+      category: t("inspiration_items.build_together.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.odi.title"),
+      image: interfaceDesign,
+      author: t("inspiration_items.odi.author"),
+      likes: 119,
+      views: 25300,
+      category: t("inspiration_items.odi.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.vande.title"),
+      image: ux,
+      author: t("inspiration_items.vande.author"),
+      likes: 78,
+      views: 11700,
+      category: t("inspiration_items.vande.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.star_wars_badges.title"),
+      image: robot,
+      author: t("inspiration_items.star_wars_badges.author"),
+      likes: 87,
+      views: 12200,
+      category: t("inspiration_items.star_wars_badges.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.vintage_train.title"),
+      image: lemon,
+      author: t("inspiration_items.vintage_train.author"),
+      likes: 33,
+      views: 5000,
+      category: t("inspiration_items.vintage_train.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.the_painter.title"),
+      image: quasar,
+      author: t("inspiration_items.the_painter.author"),
+      likes: 202,
+      views: 65100,
+      category: t("inspiration_items.the_painter.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.cityscape.title"),
+      image: threeed,
+      author: t("inspiration_items.cityscape.author"),
+      likes: 150,
+      views: 45000,
+      category: t("inspiration_items.cityscape.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.robot.title"),
+      image: threed,
+      author: t("inspiration_items.robot.author"),
+      likes: 340,
+      views: 78000,
+      category: t("inspiration_items.robot.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.blender_base_keyboard.title"),
+      image: threeeed,
+      author: t("inspiration_items.blender_base_keyboard.author"),
+      likes: 290,
+      views: 62000,
+      category: t("inspiration_items.blender_base_keyboard.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.creative_typography.title"),
+      image: types,
+      author: t("inspiration_items.creative_typography.author"),
+      likes: 95,
+      views: 21400,
+      category: t("inspiration_items.creative_typography.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.minimalist_fonts.title"),
+      image: minimalistFonts,
+      author: t("inspiration_items.minimalist_fonts.author"),
+      likes: 111,
+      views: 31000,
+      category: t("inspiration_items.minimalist_fonts.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.bold_letters.title"),
+      image: typography,
+      author: t("inspiration_items.bold_letters.author"),
+      likes: 130,
+      views: 27000,
+      category: t("inspiration_items.bold_letters.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.ui_design_concept.title"),
+      image: interfaces,
+      author: t("inspiration_items.ui_design_concept.author"),
+      likes: 220,
+      views: 50000,
+      category: t("inspiration_items.ui_design_concept.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.ux_journey.title"),
+      image: ui,
+      author: t("inspiration_items.ux_journey.author"),
+      likes: 310,
+      views: 68000,
+      category: t("inspiration_items.ux_journey.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.interface_design.title"),
+      image: web,
+      author: t("inspiration_items.interface_design.author"),
+      likes: 270,
+      views: 60000,
+      category: t("inspiration_items.interface_design.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.brand_identity.title"),
+      image: architect,
+      author: t("inspiration_items.brand_identity.author"),
+      likes: 320,
+      views: 74000,
+      category: t("inspiration_items.brand_identity.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.logo_design.title"),
+      image: branding,
+      author: t("inspiration_items.logo_design.author"),
+      likes: 410,
+      views: 86000,
+      category: t("inspiration_items.logo_design.category"),
+      liked: false,
+    },
+    {
+      title: t("inspiration_items.marketing_materials.title"),
+      image: brand,
+      author: t("inspiration_items.marketing_materials.author"),
+      likes: 390,
+      views: 83000,
+      category: t("inspiration_items.marketing_materials.category"),
+      liked: false,
+    },
+  ];
 
-function Inspiration() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const [searchTerm, setSearchTerm] = useState("");
+  const categories = [
+    "Illustration",
+    "Web",
+    "Animation",
+    "3D Design",
+    "Typography",
+    "UI/UX",
+    "Branding",
+  ];
+
   const [inspirationItems, setInspirationItems] =
     useState(inspirationItemsData);
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [searchTerm, setSearchTerm] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
   const [comment, setComment] = useState("");
@@ -238,7 +240,8 @@ function Inspiration() {
 
   const filteredItems = inspirationItems.filter((item) => {
     const matchesCategory =
-      selectedCategory === "All" || item.category === selectedCategory;
+      selectedCategory === "all" ||
+      item.category.toLowerCase() === selectedCategory;
     const matchesSearchTerm =
       item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       item.author.toLowerCase().includes(searchTerm.toLowerCase());
@@ -271,7 +274,7 @@ function Inspiration() {
 
   const submitComment = () => {
     if (!alias.trim() || !comment.trim()) {
-      setErrorMessage("Alias and comment are required.");
+      setErrorMessage(t("inspiration.feedback.error_message"));
       return;
     }
 
@@ -289,18 +292,15 @@ function Inspiration() {
   return (
     <div className="inspiration">
       <div className="guide-header">
-        <p>Inspiration</p>
+        <p>{t("inspiration.title")}</p>
       </div>
       <header className="inspiration-header">
-        <h1>Discover our Community's Work</h1>
-        <p>
-          InnovArt is the place destination to find & showcase creative work and
-          home to the best design guides.
-        </p>
+        <h1>{t("inspiration.header.title")}</h1>
+        <p>{t("inspiration.header.description")}</p>
         <div className="search-bar">
           <input
             type="text"
-            placeholder="Search through your community"
+            placeholder={t("inspiration.header.search_placeholder")}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -315,17 +315,9 @@ function Inspiration() {
             }`}
             onClick={() => setSelectedCategory(category)}
           >
-            {category}
+            {t(`inspiration.categories.${category}`)}
           </button>
         ))}
-        <button
-          className={`filter-button ${
-            selectedCategory === "All" ? "active" : ""
-          }`}
-          onClick={() => setSelectedCategory("All")}
-        >
-          All
-        </button>
       </div>
       <div className="inspiration-grid">
         {filteredItems.map((item, index) => (
@@ -356,11 +348,11 @@ function Inspiration() {
                 className="feedback-button"
                 onClick={() => handleFeedback(index)}
               >
-                Feedback
+                {t("inspiration.feedback.leave_comment")}
               </button>
               {item.comments && item.comments.length > 0 && (
                 <div className="comments-section">
-                  <h4>Comments:</h4>
+                  <h4>{t("inspiration.feedback.comments_section")}</h4>
                   <ul>
                     {item.comments.map((comment, commentIndex) => (
                       <li key={commentIndex}>
@@ -377,27 +369,31 @@ function Inspiration() {
       {showPopup && (
         <div className="popup-overlay" onClick={closePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <h2>Leave a Comment</h2>
+            <h2>{t("inspiration.feedback.leave_comment")}</h2>
             <input
               type="text"
               value={alias}
               onChange={(e) => setAlias(e.target.value)}
-              placeholder="Your alias"
+              placeholder={t("inspiration.feedback.alias_placeholder")}
             />
             <textarea
               value={comment}
               onChange={(e) => setComment(e.target.value)}
-              placeholder="Write your comment here..."
+              placeholder={t("inspiration.feedback.comment_placeholder")}
               rows="4"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
-            <button onClick={submitComment}>Submit</button>
-            <button onClick={closePopup}>Close</button>
+            <button onClick={submitComment}>
+              {t("inspiration.feedback.submit_button")}
+            </button>
+            <button onClick={closePopup}>
+              {t("inspiration.feedback.close_button")}
+            </button>
           </div>
         </div>
       )}
     </div>
   );
-}
+};
 
 export default Inspiration;

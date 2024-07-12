@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,6 +15,8 @@ import JuiceImage from "./Images/juice.png";
 import WImage from "./Images/W.png";
 
 const Inspo = () => {
+  const { t } = useTranslation();
+
   const settings = {
     dots: false,
     infinite: true,
@@ -28,65 +31,65 @@ const Inspo = () => {
   const images = [
     {
       src: WImage,
-      alt: "Design W",
-      caption: "Colour Palettes",
-      artist: "Artist Name W",
+      alt: t("inspo.images.w.alt"),
+      caption: t("inspo.images.w.caption"),
+      artist: t("inspo.images.w.artist"),
       link: "/inspiration",
     },
     {
       src: ActionImage,
-      alt: "Action Design",
-      caption: "3D Modelling & Animation",
-      artist: "Artist Name Action",
+      alt: t("inspo.images.action.alt"),
+      caption: t("inspo.images.action.caption"),
+      artist: t("inspo.images.action.artist"),
       link: "/inspiration",
     },
     {
       src: BearImage,
-      alt: "Bear Design",
-      caption: "3D Modelling",
-      artist: "Artist Name Bear",
+      alt: t("inspo.images.bear.alt"),
+      caption: t("inspo.images.bear.caption"),
+      artist: t("inspo.images.bear.artist"),
       link: "/inspiration",
     },
     {
       src: BreadImage,
-      alt: "Bread Design",
-      caption: "Packaging Illustration",
-      artist: "Artist Name Bread",
+      alt: t("inspo.images.bread.alt"),
+      caption: t("inspo.images.bread.caption"),
+      artist: t("inspo.images.bread.artist"),
       link: "/inspiration",
     },
     {
       src: BrewImage,
-      alt: "Typography",
-      caption: "Typography",
-      artist: "Artist Name Brew",
+      alt: t("inspo.images.brew.alt"),
+      caption: t("inspo.images.brew.caption"),
+      artist: t("inspo.images.brew.artist"),
       link: "/inspiration",
     },
     {
       src: CuteImage,
-      alt: "3D Modeling",
-      caption: "3D Modeling",
-      artist: "Artist Name Cute",
+      alt: t("inspo.images.cute.alt"),
+      caption: t("inspo.images.cute.caption"),
+      artist: t("inspo.images.cute.artist"),
       link: "/inspiration",
     },
     {
       src: EitaImage,
-      alt: "Eita Design",
-      caption: "Colour Palettes",
-      artist: "Artist Name Eita",
+      alt: t("inspo.images.eita.alt"),
+      caption: t("inspo.images.eita.caption"),
+      artist: t("inspo.images.eita.artist"),
       link: "/inspiration",
     },
     {
       src: JuiceImage,
-      alt: "Ilustration",
-      caption: "Ilustration",
-      artist: "Artist Name Juice",
+      alt: t("inspo.images.juice.alt"),
+      caption: t("inspo.images.juice.caption"),
+      artist: t("inspo.images.juice.artist"),
       link: "/inspiration",
     },
   ];
 
   return (
     <div className="inspiring-designs-container">
-      <h2 className="inspiring-designs-title">Explore Community Designs</h2>
+      <h2 className="inspiring-designs-title">{t("inspo.title")}</h2>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="carousel-image-container">

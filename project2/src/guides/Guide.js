@@ -1,89 +1,81 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, Link, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./Guide.css";
 import GuideDetail from "./GuideDetail";
 
 const guides = [
   {
     route: "adobe-illustrator",
-    title: "Adobe Illustrator Guide",
-    style: "Illustration",
-    description:
-      "Begin your journey with typography. Learn the essentials, from understanding typefaces and fonts to advanced techniques like kerning and typography hierarchy. Apply your skills with practical projects.",
+    title: "guideDetail.adobe_illustrator.title",
+    style: "guides.styles.illustration",
+    description: "guideDetail.adobe_illustrator.description",
   },
   {
     route: "adobe-photoshop",
-    title: "Adobe Photoshop Guide",
-    style: "Editing",
-    description:
-      "Unlock your creativity with our Illustration Roadmap. Learn basic sketching to digital illustration, explore various styles, and work on projects to develop your unique artistic voice.",
+    title: "guideDetail.adobe_photoshop.title",
+    style: "guides.styles.editing",
+    description: "guideDetail.adobe_photoshop.description",
   },
   {
     route: "adobe-animate",
-    title: "Adobe Animate Guide",
-    style: "Animation",
-    description:
-      "Step into 3D design. Learn principles of 3D modeling, texturing, and rendering using industry-standard software. Tackle projects that simulate real-world design challenges.",
+    title: "guideDetail.adobe_animate.title",
+    style: "guides.styles.animation",
+    description: "guideDetail.adobe_animate.description",
   },
   {
     route: "after-effects",
-    title: "Adobe After Effects Guide",
-    style: "Editing",
-    description:
-      "Bring your ideas to life with animation. Whether 2D, 3D, or stop-motion, learn animation principles and techniques through tutorials and hands-on projects.",
+    title: "guideDetail.adobe_after_effects.title",
+    style: "guides.styles.animation",
+    description: "guideDetail.adobe_after_effects.description",
   },
   {
     route: "adobe-xd",
-    title: "Adobe XD Guide",
-    style: "UX/UI",
-    description:
-      "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
+    title: "guideDetail.adobe_xd.title",
+    style: "guides.styles.ux_ui",
+    description: "guideDetail.adobe_xd.description",
   },
   {
     route: "canva",
-    title: "Canva Guide",
-    style: "Editing",
-    description:
-      "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
+    title: "guideDetail.canva.title",
+    style: "guides.styles.editing",
+    description: "guideDetail.canva.description",
   },
   {
     route: "spline",
-    title: "Spline Guide",
-    style: "3D Design",
-    description:
-      "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
+    title: "guideDetail.spline.title",
+    style: "guides.styles.3d_design",
+    description: "guideDetail.spline.description",
   },
   {
     route: "procreate",
-    title: "Procreate Guide",
-    style: "Illustration",
-    description:
-      "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
+    title: "guideDetail.procreate.title",
+    style: "guides.styles.illustration",
+    description: "guideDetail.procreate.description",
   },
   {
     route: "procreate-dreams",
-    title: "Procreate Dreams Guide",
-    style: "Animation",
-    description:
-      "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
+    title: "guideDetail.procreate_dreams.title",
+    style: "guides.styles.animation",
+    description: "guideDetail.procreate_dreams.description",
   },
   {
     route: "figma",
-    title: "Figma Guide",
-    style: "UX/UI",
-    description:
-      "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
+    title: "guideDetail.figma.title",
+    style: "guides.styles.ux_ui",
+    description: "guideDetail.figma.description",
   },
 ];
 
 function Guides() {
+  const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedStyle, setSelectedStyle] = useState("All Styles");
 
   const filteredGuides = guides.filter((guide) => {
     const matchesStyle =
       selectedStyle === "All Styles" || guide.style === selectedStyle;
-    const matchesSearchTerm = guide.title
+    const matchesSearchTerm = t(guide.title)
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
     return matchesStyle && matchesSearchTerm;
@@ -92,16 +84,16 @@ function Guides() {
   return (
     <div className="guide-top">
       <div className="guide-header">
-        <p>Guides</p>
+        <p>{t("guides.title")}</p>
       </div>
       <div className="guide-app">
         <div className="guide-sidebar">
-          <h2>Tool Guide</h2>
-          <nav>
+          <h2>{t("guides.header")}</h2>
+          <nav aria-label={t("guides.navigation")}>
             <ul>
               {guides.map((guide, index) => (
                 <li key={index}>
-                  <Link to={guide.route}>{guide.title}</Link>
+                  <Link to={guide.route}>{t(guide.title)}</Link>
                 </li>
               ))}
             </ul>
@@ -122,7 +114,10 @@ function Guides() {
               }
             />
             <Route path=":guideId" element={<GuideDetailWrapper />} />
-            <Route path="*" element={<h1>Page is still in development</h1>} />
+            <Route
+              path="*"
+              element={<h1>{t("guides.page_in_development")}</h1>}
+            />
           </Routes>
         </div>
       </div>
@@ -137,53 +132,59 @@ const GuideHome = ({
   selectedStyle,
   setSelectedStyle,
   filteredGuides,
-}) => (
-  <div className="guide-home">
-    <h1>InnovArt Guides Page of Mastering Design Tools</h1>
-    <p>
-      Welcome to InnovArt's Guides, your comprehensive guides to mastering
-      various design tools. Our guides offer step-by-step guidance and practical
-      projects to enhance your learning experience. Whether you're a beginner or
-      looking to refine your expertise, our guides provide the knowledge and
-      resources you need.
-    </p>
-    <div className="guide-search-bar">
-      <input
-        type="text"
-        placeholder="Search guides..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <select
-        value={selectedStyle}
-        onChange={(e) => setSelectedStyle(e.target.value)}
-      >
-        <option value="All Styles">All Styles</option>
-        <option value="Illustration">Illustration</option>
-        <option value="Editing">Editing</option>
-        <option value="Animation">Animation</option>
-        <option value="UX/UI">UX/UI</option>
-        <option value="3D Design">3D Design</option>
-      </select>
-    </div>
-    <div className="guide-content">
-      {filteredGuides.map((guide, index) => (
-        <div key={index} className="guide-card">
-          <div className="guide-card-header">
-            <h3>{guide.title}</h3>
-            <h4>Style: {guide.style}</h4>
+}) => {
+  const { t } = useTranslation();
+
+  return (
+    <div className="guide-home">
+      <h1>{t("guides.welcome")}</h1>
+      <p>{t("guides.description")}</p>
+      <div className="guide-search-bar">
+        <input
+          type="text"
+          placeholder={t("guides.search_placeholder")}
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          aria-label={t("guides.search")}
+        />
+        <select
+          value={selectedStyle}
+          onChange={(e) => setSelectedStyle(e.target.value)}
+          aria-label={t("guides.select_style")}
+        >
+          <option value="All Styles">{t("guides.styles.all")}</option>
+          <option value="Illustration">
+            {t("guides.styles.illustration")}
+          </option>
+          <option value="Editing">{t("guides.styles.editing")}</option>
+          <option value="Animation">{t("guides.styles.animation")}</option>
+          <option value="UX/UI">{t("guides.styles.ux_ui")}</option>
+          <option value="3D Design">{t("guides.styles.3d_design")}</option>
+        </select>
+      </div>
+      <div className="guide-content">
+        {filteredGuides.map((guide, index) => (
+          <div key={index} className="guide-card">
+            <div className="guide-card-header">
+              <h3>{t(guide.title)}</h3>
+              <h4>
+                {t("guides.style-type.all")}: {t(guide.style)}
+              </h4>
+            </div>
+            <div className="guide-card-content">
+              <p>{t(guide.description)}</p>
+            </div>
+            <Link to={guide.route}>
+              <button aria-label={t("guides.get_started")}>
+                {t("guides.get_started")} →
+              </button>
+            </Link>
           </div>
-          <div className="guide-card-content">
-            <p>{guide.description}</p>
-          </div>
-          <Link to={guide.route}>
-            <button>Get Started with {guide.title.split(" ")[1]} →</button>
-          </Link>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -212,11 +213,15 @@ const ScrollToTopButton = () => {
     <div
       className={`guide-scroll-to-top ${isVisible ? "show" : ""}`}
       onClick={scrollToTop}
+      role="button"
+      aria-label="Scroll to top"
+      tabIndex="0"
     >
       ↑
     </div>
   );
 };
+
 const GuideDetailWrapper = () => {
   const { guideId } = useParams();
   return <GuideDetail guideId={guideId} />;

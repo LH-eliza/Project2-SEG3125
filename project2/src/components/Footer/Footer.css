@@ -19,8 +19,8 @@ body {
   font-size: 1.74rem;
   margin-bottom: 1rem;
   display: flex;
-  justify-content: center;
-  align-items: left;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center;
   font-family: "Sansation", Arial, sans-serif;
 }
 
@@ -56,9 +56,33 @@ body {
   color: #444;
 }
 
+.footer-language {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.footer-language-button {
+  background: none;
+  border: none;
+  color: #aeaeae;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-language-button.active {
+  font-weight: bold;
+  color: #9d4dff;
+}
+
+.footer-language-button:hover {
+  color: #e319fd;
+}
+
 .footer-social {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin: 1rem 0;
 }
 
@@ -76,13 +100,17 @@ body {
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: center;
   flex-wrap: wrap;
+}
+
+.footer-bottom span {
+  padding: 12px;
 }
 
 .footer-tags {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   margin-top: 0.5rem;
 }
 

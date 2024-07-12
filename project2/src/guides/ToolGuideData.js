@@ -42,7 +42,7 @@ import figmaGuideImage from "./Images/figma/image3.png";
 export const toolGuidesData = {
   "adobe-illustrator": {
     title: "Your Guide to Adobe Illustrator",
-    style: "Illustration",
+    style: "guides.styles.illustration",
     mention: "Let's Get Started!",
     description:
       "Welcome to the Adobe Illustrator Guide! This guide will help you get started with Adobe Illustrator, a powerful tool for creating vector graphics and illustrations. Whether you're a beginner or looking to refine your skills, this guide covers the basics to set you on the right path.",
@@ -63,6 +63,7 @@ export const toolGuidesData = {
           },
         ],
         image: illustratorBasicsImg,
+        alt: "Adobe Illustrator Basics Image",
       },
       {
         title: "2. Basic Drawing and Animation Tools",
@@ -84,6 +85,7 @@ export const toolGuidesData = {
           },
         ],
         image: illustratorToolsImg,
+        alt: "Adobe Illustrator Tools Image",
       },
     ],
   },
@@ -110,6 +112,7 @@ export const toolGuidesData = {
           },
         ],
         image: photoshopBasicsImg,
+        alt: "Adobe Photoshop Basics Image",
       },
       {
         title: "2. Basic Editing Tools",
@@ -131,12 +134,13 @@ export const toolGuidesData = {
           },
         ],
         image: photoshopToolsImg,
+        alt: "Adobe Photoshop Tools Image",
       },
     ],
   },
   "adobe-animate": {
     title: "Your Guide to Adobe Animate",
-    style: "Animation",
+    style: "guides.styles.animation",
     mention: "Let's Get Started!",
     description:
       "Welcome to the Adobe Animate Guide! This guide will help you get started with Adobe Animate, a powerful tool for creating interactive animations and multimedia content. Whether you're a beginner or looking to refine your skills, this guide covers the basics to set you on the right path.",
@@ -157,6 +161,7 @@ export const toolGuidesData = {
           },
         ],
         image: animateBasicsImg,
+        alt: "Adobe Animate Basics Image",
       },
       {
         title: "2. Basic Drawing and Animation Tools",
@@ -178,12 +183,13 @@ export const toolGuidesData = {
           },
         ],
         image: animateToolsImg,
+        alt: "Adobe Animate Tools Image",
       },
     ],
   },
   "after-effects": {
     title: "Your Guide to Adobe After Effects",
-    style: "Editing",
+    style: "guides.styles.editing",
     mention: "Let's Get Started!",
     description:
       "Welcome to the Adobe After Effects Guide! This guide will help you get started with Adobe After Effects, a powerful tool for creating motion graphics and visual effects. Whether you're a beginner or looking to refine your skills, this guide covers the basics to set you on the right path.",
@@ -204,6 +210,7 @@ export const toolGuidesData = {
           },
         ],
         image: afterEffectsBasicsImg,
+        alt: "Adobe After Effects Basics Image",
       },
       {
         title: "2. Basic Animation and Effects Tools",
@@ -225,12 +232,13 @@ export const toolGuidesData = {
           },
         ],
         image: afterEffectsToolsImg,
+        alt: "Adobe After Effects Tools Image",
       },
     ],
   },
   "adobe-xd": {
     title: "Your Guide to Adobe XD",
-    style: "UX/UI",
+    style: "guides.styles.ux_ui",
     mention: "Let's Get Started!",
     description:
       "Welcome to the Adobe XD Guide! This guide will help you get started with Adobe XD, a powerful tool for designing and prototyping user experiences. Whether you're a beginner or looking to refine your skills, this guide covers the basics to set you on the right path.",
@@ -251,6 +259,7 @@ export const toolGuidesData = {
           },
         ],
         image: xdBasicsImg,
+        alt: "Adobe XD Basics Image",
       },
       {
         title: "2. Basic Design and Prototyping Tools",
@@ -272,12 +281,13 @@ export const toolGuidesData = {
           },
         ],
         image: xdToolsImg,
+        alt: "Adobe XD Tools Image",
       },
     ],
   },
   canva: {
     title: "Your Guide to Canva",
-    style: "Editing",
+    style: "guides.styles.editing",
     mention: "Let's Get Started!",
     description:
       "Welcome to the Canva Guide! This guide will help you get started with Canva, a powerful online tool for creating graphics and marketing materials. Whether you're a beginner or looking to refine your skills, this guide covers the basics to set you on the right path.",
@@ -298,6 +308,7 @@ export const toolGuidesData = {
           },
         ],
         image: canvaBasicsImg,
+        alt: "Canva Basics Image",
       },
       {
         title: "2. Basic Design Tools",
@@ -319,12 +330,13 @@ export const toolGuidesData = {
           },
         ],
         image: canvaToolsImg,
+        alt: "Canva Tools Image",
       },
     ],
   },
   spline: {
     title: "Your Guide to Spline",
-    style: "3D Design",
+    style: "guides.styles.3d_design",
     mention: "Let's Get Started!",
     description:
       "Welcome to the Spline Guide! This guide will help you get started with Spline, a powerful tool for creating 3D designs and animations. Whether you're a beginner or looking to refine your skills, this guide covers the basics to set you on the right path.",
@@ -345,6 +357,7 @@ export const toolGuidesData = {
           },
         ],
         image: splineBasicsImg,
+        alt: "Spline Basics Image",
       },
       {
         title: "2. Basic 3D Design Tools",
@@ -366,12 +379,13 @@ export const toolGuidesData = {
           },
         ],
         image: splineToolsImg,
+        alt: "Spline Tools Image",
       },
     ],
   },
   procreate: {
     title: "Your Guide to Procreate",
-    style: "Illustration",
+    style: "guides.styles.illustration",
     mention: "Let's Get Started!",
     description:
       "Welcome to the Procreate Guide! This guide will help you get started with Procreate, a powerful tool for creating digital illustrations. Whether you're a beginner or looking to refine your skills, this guide covers the basics to set you on the right path.",
@@ -392,6 +406,7 @@ export const toolGuidesData = {
           },
         ],
         image: procreateBasicsImg,
+        alt: "Procreate Basics Image",
       },
       {
         title: "2. Basic Drawing Tools",
@@ -413,12 +428,13 @@ export const toolGuidesData = {
           },
         ],
         image: procreateToolsImg,
+        alt: "Procreate Tools Image",
       },
     ],
   },
   "procreate-dreams": {
     title: "Your Guide to Procreate Dreams",
-    style: "Animation",
+    style: "guides.styles.animation",
     mention: "Let's Get Started!",
     description:
       "Welcome to the Procreate Dreams Guide! This guide will help you get started with Procreate Dreams, a powerful tool for creating animations and interactive content. Whether you're a beginner or looking to refine your skills, this guide covers the basics to set you on the right path.",
@@ -439,6 +455,7 @@ export const toolGuidesData = {
           },
         ],
         image: procreateDreamsBasicsImg,
+        alt: "Procreate Dreams Basics Image",
       },
       {
         title: "2. Basic Animation Tools",
@@ -460,12 +477,13 @@ export const toolGuidesData = {
           },
         ],
         image: procreateDreamsToolsImg,
+        alt: "Procreate Dreams Tools Image",
       },
     ],
   },
   figma: {
     title: "Your Guide to Figma",
-    style: "UX/UI",
+    style: "guides.styles.ux_ui",
     mention: "Let's Get Started!",
     description:
       "Welcome to the Figma Guide! This guide will help you get started with Figma, a powerful tool for designing and prototyping user experiences. Whether you're a beginner or looking to refine your skills, this guide covers the basics to set you on the right path.",
@@ -486,6 +504,7 @@ export const toolGuidesData = {
           },
         ],
         image: figmaBasicsImg,
+        alt: "Figma Basics Image",
       },
       {
         title: "2. Basic Design and Prototyping Tools",
@@ -507,6 +526,7 @@ export const toolGuidesData = {
           },
         ],
         image: figmaToolsImg,
+        alt: "Figma Tools Image",
       },
     ],
   },

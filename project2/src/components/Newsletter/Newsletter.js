@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const SvgComponent = () => {
+  const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const [warning, setWarning] = useState("");
 
@@ -15,7 +17,7 @@ const SvgComponent = () => {
   const validateEmail = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      setWarning("**Invalid email address (eg. hello@innovart.ca)");
+      setWarning(t("svg_component.warning"));
     } else {
       setWarning("");
       handleButtonClick();
@@ -24,9 +26,9 @@ const SvgComponent = () => {
 
   const handleSubscription = () => {
     if (warning === "" && email !== "") {
-      alert("Subscribed");
+      alert(t("svg_component.success_message"));
     } else {
-      alert("Please enter a valid email address");
+      alert(t("svg_component.error_message"));
     }
   };
 
@@ -65,10 +67,10 @@ const SvgComponent = () => {
         <foreignObject x="690" y="370" width="500" height="200">
           <div style={{ textAlign: "center", color: "white" }}>
             <h1 style={{ fontSize: "56px", margin: "0" }}>
-              Want to get the latest updates?
+              {t("svg_component.heading")}
             </h1>
             <p style={{ fontSize: "24px", margin: "10px 0" }}>
-              Sign up to our newsletter today.
+              {t("svg_component.subheading")}
             </p>
           </div>
         </foreignObject>
@@ -91,7 +93,7 @@ const SvgComponent = () => {
               value={email}
               onChange={handleEmailChange}
               onBlur={validateEmail}
-              placeholder="Enter your email"
+              placeholder={t("svg_component.placeholder")}
               style={{
                 width: "100%",
                 height: "80%",
@@ -135,7 +137,7 @@ const SvgComponent = () => {
             alignmentBaseline="middle"
             style={{ pointerEvents: "none" }}
           >
-            subscribe
+            {t("svg_component.subscribe_button")}
           </text>
         </g>
         <path

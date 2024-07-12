@@ -1,54 +1,98 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaFacebookF,
   FaLinkedinIn,
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import "./Footer.css";
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("language", lang);
+    setLanguage(lang);
+  };
+
   return (
-    <footer className="footer">
+    <footer className="footer" aria-label="Footer">
       <div className="footer-content">
         <div className="footer-logo">
           <span className="footer-logo-part1">Innov</span>
           <span className="footer-logo-part2">Art</span>
         </div>
-        <ul className="footer-menu">
-          <li className="footer-item">
-            <a href="/reference">References</a>
+        <ul className="footer-menu" role="menu" aria-label="Footer Menu">
+          <li className="footer-item" role="none">
+            <a href="/reference" role="menuitem">
+              {t("footer.references")}
+            </a>
           </li>
-          <li className="footer-item">
-            <a href="/guides">Guides</a>
+          <li className="footer-item" role="none">
+            <a href="/guides" role="menuitem">
+              {t("footer.guides")}
+            </a>
           </li>
-          <li className="footer-item">
-            <a href="/inspiration">Inspiration</a>
+          <li className="footer-item" role="none">
+            <a href="/inspiration" role="menuitem">
+              {t("footer.inspiration")}
+            </a>
           </li>
-          <li className="footer-item">
-            <a href="/resources">Resources</a>
+          <li className="footer-item" role="none">
+            <a href="/resources" role="menuitem">
+              {t("footer.resources")}
+            </a>
           </li>
-          <li className="footer-item">
-            <a href="/community">Upload Art</a>
+          <li className="footer-item" role="none">
+            <a href="/community" role="menuitem">
+              {t("footer.uploadArt")}
+            </a>
           </li>
         </ul>
-        <div className="footer-social">
-          <a href="#" className="footer-social-link">
+        <div className="footer-language" aria-label="Language Selection">
+          <span>{t("footer.language")} - </span>
+          <button
+            className={`footer-language-button ${
+              language === "en" ? "active" : ""
+            }`}
+            onClick={() => changeLanguage("en")}
+            aria-pressed={language === "en"}
+          >
+            {t("footer.english")}
+          </button>
+          <button
+            className={`footer-language-button ${
+              language === "ko" ? "active" : ""
+            }`}
+            onClick={() => changeLanguage("ko")}
+            aria-pressed={language === "ko"}
+          >
+            {t("footer.korean")}
+          </button>
+        </div>
+        <div className="footer-social" aria-label="Social Media Links">
+          <a href="#" className="footer-social-link" aria-label="Facebook">
+            <FaFacebookF />
+          </a>
+          <a href="#" className="footer-social-link" aria-label="LinkedIn">
             <FaLinkedinIn />
           </a>
-          <a href="#" className="footer-social-link">
+          <a href="#" className="footer-social-link" aria-label="YouTube">
             <FaYoutube />
           </a>
-          <a href="#" className="footer-social-link">
+          <a href="#" className="footer-social-link" aria-label="Instagram">
             <FaInstagram />
           </a>
         </div>
         <div className="footer-bottom">
-          <span>© 2024 InnovArt</span>
-          <div className="footer-tags">
-            <a href="/inspiration">Tags</a>
-            <a href="/reference">Design-Types</a>
-            <a href="/contact-us">Get Help</a>
+          <span className="copyright">{t("footer.copyright")}</span>
+          <div className="footer-tags" aria-label="Footer Tags">
+            <a href="/inspiration">{t("footer.tags")}</a>
+            <a href="/reference">{t("footer.designTypes")}</a>
+            <a href="/contact-us">{t("footer.getHelp")}</a>
           </div>
         </div>
       </div>
