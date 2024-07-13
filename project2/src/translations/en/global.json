@@ -458,7 +458,7 @@
   },
   "navbar": {
     "upload_art": "Upload Art",
-    "references": "References",
+    "references": "Roadmaps",
     "guides": "Guides",
     "inspiration": "Inspiration",
     "resources": "Resources",
@@ -625,6 +625,9 @@
   "contactUs": {
     "header": "Get Help",
     "title": "Contact Us",
+    "nameTips": "Max length: 50 characters",
+    "emailTips": "Email Format: email@domain.ca",
+    "messageTips": "Max length: 1000 characters",
     "description": "Have any questions, feel free to contact us!",
     "emailPlaceholder": "Email",
     "namePlaceholder": "Name",
@@ -1017,13 +1020,15 @@
     "button": "Get Started"
   },
   "community": {
-    "header": "Community",
+    "header": "Portfolio Builder",
     "upload_section": {
       "title": "Upload Art",
       "subtitle": "Drag or Upload your Art Here",
       "rights": "Please upload a JPEG, PNG, or SVG",
       "preview_label": "Preview of image:",
       "title_placeholder": "Title",
+      "character_count": " Max Characters",
+      "max_characters_error": "Max characters exceeded",
       "description_placeholder": "Description",
       "category_placeholder": "Category",
       "categories": {

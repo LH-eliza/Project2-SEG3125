@@ -51,6 +51,7 @@
 
 .upload-section p {
   font-size: 1rem;
+  font-family: "Gotham", sans-serif;
 }
 
 .upload-box {
@@ -100,18 +101,42 @@
   margin-bottom: 10px;
 }
 
-.input-field {
+.input-wrapper {
+  position: relative;
   width: 600px;
-  padding: 10px;
   margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #333;
   color: white;
+  box-sizing: border-box;
+}
+
+.char-count {
+  display: block;
+  text-align: right;
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.char-count.error {
+  color: red;
+}
+
+.input-error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
 }
 
 .select-field {
-  width: 620px;
+  width: 600px; /* Changed to match the input fields */
   padding: 10px;
   margin-bottom: 10px;
   border: none;
@@ -132,6 +157,7 @@
   background-color: #ffffff;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
   color: rgb(34, 34, 34);
   cursor: pointer;
   font-family: "Gotham", sans-serif;
@@ -154,7 +180,6 @@
 .community-board {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
   flex-wrap: wrap;
 }
 
@@ -210,6 +235,7 @@
   padding: 20px 20px;
   background-color: #636363;
   border: none;
+  font-size: 1rem;
   margin: 20px 20px;
   border-radius: 5px;
   color: white;
@@ -228,6 +254,7 @@
   margin: 20px 20px;
   border-radius: 5px;
   color: white;
+  font-size: 1rem;
   font-family: "Gotham", sans-serif;
   cursor: pointer;
 }
@@ -273,4 +300,8 @@
 
 .see-more {
   text-align: center;
+}
+
+.h2 {
+  font-family: "Gotham", sans-serif;
 }

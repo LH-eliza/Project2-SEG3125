@@ -625,6 +625,9 @@
   "contactUs": {
     "header": "도움 받기",
     "title": "문의하기",
+    "nameTips": "최대 길이: 50자",
+    "emailTips": "이메일 예시: example@domain.ca",
+    "messageTips": "최대 길이: 1000자",
     "description": "질문이 있으시면 언제든지 문의하세요!",
     "emailPlaceholder": "이메일",
     "namePlaceholder": "이름",
@@ -1021,7 +1024,8 @@
     "upload_section": {
       "title": "작품 업로드",
       "subtitle": "작품을 여기로 드래그하거나 업로드하세요",
-      "rights":"JPEG, PNG 또는 SVG를 업로드하십시오",
+      "rights": "JPEG, PNG 또는 SVG를 업로드하십시오",
+      "max_characters_error": "최대 한도에 도달했습니다",
       "preview_label": "이미지 미리보기:",
       "title_placeholder": "제목",
       "description_placeholder": "설명",
