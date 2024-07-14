@@ -102,19 +102,33 @@ const ContactUs = () => {
             <span className="tooltip-text"> {t("contactUs.nameTips")}</span>
           </div>
         </label>
-        <input
-          type="text"
-          id="contact-name"
-          placeholder={t("contactUs.namePlaceholder")}
-          className={`contact-input ${
-            !name || (name && name.length > nameMaxLength) ? "error" : ""
-          }`}
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          onBlur={() => handleBlur("name")}
-          aria-required="true"
-          maxLength={nameMaxLength}
-        />
+        <div className="input-wrapper">
+          <input
+            type="text"
+            id="contact-name"
+            placeholder={t("contactUs.namePlaceholder")}
+            className={`contact-input ${
+              !name || (name && name.length > nameMaxLength) ? "error" : ""
+            }`}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            onBlur={() => handleBlur("name")}
+            aria-required="true"
+            maxLength={nameMaxLength}
+          />
+          <span
+            className={`char-count ${
+              name.length > nameMaxLength ? "error" : ""
+            }`}
+          >
+            {name.length}/{nameMaxLength}
+          </span>
+          {name.length > nameMaxLength && (
+            <p className="input-error">
+              {t("contactUs.nameTooLong", { length: nameMaxLength })}
+            </p>
+          )}
+        </div>
         <label htmlFor="contact-message">
           {t("contactUs.messagePlaceholder")}
           <div className="tooltip">
@@ -122,20 +136,34 @@ const ContactUs = () => {
             <span className="tooltip-text">{t("contactUs.messageTips")}</span>
           </div>
         </label>
-        <textarea
-          id="contact-message"
-          placeholder={t("contactUs.messagePlaceholder")}
-          className={`contact-textarea ${
-            !message || (message && message.length > messageMaxLength)
-              ? "error"
-              : ""
-          }`}
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          onBlur={() => handleBlur("message")}
-          aria-required="true"
-          maxLength={messageMaxLength}
-        ></textarea>
+        <div className="input-wrapper">
+          <textarea
+            id="contact-message"
+            placeholder={t("contactUs.messagePlaceholder")}
+            className={`contact-textarea ${
+              !message || (message && message.length > messageMaxLength)
+                ? "error"
+                : ""
+            }`}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            onBlur={() => handleBlur("message")}
+            aria-required="true"
+            maxLength={messageMaxLength}
+          ></textarea>
+          <span
+            className={`char-count ${
+              message.length > messageMaxLength ? "error" : ""
+            }`}
+          >
+            {message.length}/{messageMaxLength}
+          </span>
+          {message.length > messageMaxLength && (
+            <p className="input-error">
+              {t("contactUs.messageTooLong", { length: messageMaxLength })}
+            </p>
+          )}
+        </div>
         <div aria-live="assertive" className="error-container">
           {error && <p className="error-message">{error}</p>}
         </div>

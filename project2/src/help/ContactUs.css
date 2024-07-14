@@ -46,6 +46,30 @@
   margin-bottom: 10px;
 }
 
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.char-count {
+  display: block;
+  text-align: right;
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.char-count.error {
+  color: red;
+}
+
+.input-error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
 .contact-button {
   padding: 10px 100px;
   margin-top: 10px;

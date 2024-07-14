@@ -1,12 +1,41 @@
-/* Roadmap.css */
+/* General Styles */
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.road {
+  padding: 20px 40px;
+}
 
 .roadmap-content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.roadmap-header {
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.roadmap-header p {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+/* Animation Section */
 .Animation {
   text-align: left;
-  width: 1100px;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -15,48 +44,109 @@
   max-width: 900px;
   height: auto;
   display: block;
+  border-radius: 10px;
 }
 
 .roadmap-description {
   text-align: left;
   margin: 20px 0;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
+/* Sections */
 .section {
   margin-bottom: 20px;
 }
 
 .section-content {
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
   margin-top: 10px;
-  justify-content: space-between;
 }
 
-.side-image {
-  width: 300px;
-  margin-left: 20px;
+.section-text {
+  flex: 1;
+  font-size: 1rem;
 }
 
-.section-content ul {
+.section-text ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.section-content ul li {
+.section-text ul li {
   margin-bottom: 10px;
+  margin-left: 30px;
 }
 
-.section-content strong {
+.section-text strong {
   display: block;
   margin-bottom: 5px;
 }
 
+.side-image {
+  width: 300px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
 .horizontal-line {
   width: 100%;
-  height: 5px; /* Adjust the height as needed */
+  height: 5px;
   background: white;
-  margin: 20px 0; /* Adjust the margin as needed */
+  margin: 20px 0;
+}
+
+.road h1 {
+  font-family: "Gotham";
+  font-size: 2.5rem;
+}
+
+/* Scroll-to-Top Button */
+.roadmap-scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f723da;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.roadmap-scroll-to-top.show {
+  opacity: 1;
+}
+
+.roadmap-scroll-to-top:hover {
+  background-color: #ff5500;
+}
+
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .side-image {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
+  .section-text {
+    align-items: center;
+  }
 }

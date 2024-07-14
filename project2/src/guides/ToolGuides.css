@@ -1,11 +1,12 @@
 .your-guide-detail {
-  padding: 40px;
+  padding: 60px 80px;
 }
 
 .guide-detail h1 {
   font-size: 36px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  font-family: "Gotham";
 }
 
 .guide-header-image {
@@ -33,6 +34,7 @@
 .guide-section h2 {
   font-size: 28px;
   margin-bottom: 10px;
+  font-family: "Inter";
 }
 
 .section-content {
@@ -45,10 +47,11 @@
 .section-text {
   flex: 1;
   font-size: 16px;
+  font-family: "Inter";
 }
 
 .section-text ul {
-  list-style-type: none;
+  list-style-type: disc;
   padding: 0;
   margin: 0;
 }
