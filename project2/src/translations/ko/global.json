@@ -1,6 +1,7 @@
 {
   "guides": {
     "title": "가이드",
+    "go_back": "뒤로 가기",
     "header": "도구 가이드",
     "search_placeholder": "가이드를 검색하세요...",
     "styles": {
@@ -487,17 +488,20 @@
       "search_placeholder": "커뮤니티에서 검색"
     },
     "categories": {
-      "Illustration": "일러스트레이션",
-      "Web": "웹",
-      "Animation": "애니메이션",
-      "3D Design": "3D 디자인",
-      "Typography": "타이포그래피",
-      "UI/UX": "UI/UX",
-      "Branding": "브랜딩",
+      "illustration": "일러스트레이션",
+      "web": "웹",
+      "animation": "애니메이션",
+      "3d design": "3D 디자인",
+      "typography": "타이포그래피",
+      "ui/ux": "UI/UX",
+      "branding": "브랜딩",
       "all": "전체"
     },
     "feedback": {
       "leave_comment": "댓글 남기기",
+      "edit_comment": "편집 ✏️",
+      "submit_edit_button": "편집 제출",
+      "delete_comment": "삭제 ❌",
       "alias_placeholder": "별명",
       "comment_placeholder": "댓글을 작성하세요...",
       "submit_button": "제출",
@@ -1028,6 +1032,10 @@
       "max_characters_error": "최대 한도에 도달했습니다",
       "preview_label": "이미지 미리보기:",
       "title_placeholder": "제목",
+      "delete_tooltip": "작품 삭제",
+      "edit_tooltip": "작품 편집",
+      "export_tooltip": "작품 내보내기",
+      "edit_button": "작품 편집",
       "description_placeholder": "설명",
       "category_placeholder": "카테고리",
       "categories": {

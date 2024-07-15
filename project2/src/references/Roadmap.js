@@ -16,7 +16,7 @@ const Roadmap = () => {
   return (
     <div className="road">
       <div className={roadmapId.charAt(0).toUpperCase() + roadmapId.slice(1)}>
-        <h1>{t(`roadmap.${roadmapId}.title`)}</h1>
+        <h1 className="roadmaptite">{t(`roadmap.${roadmapId}.title`)}</h1>
         <img
           className="roadmap-image"
           src={roadmap.image}

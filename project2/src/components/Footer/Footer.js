@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -8,15 +8,14 @@ import {
 import { useTranslation } from "react-i18next";
 import "./Footer.css";
 
-const Footer = () => {
-  const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language);
+const Footer = ({ language, changeLanguage }) => {
+  const { t } = useTranslation();
 
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-    localStorage.setItem("language", lang);
-    setLanguage(lang);
-  };
+  useEffect(() => {
+    if (language) {
+      changeLanguage(language);
+    }
+  }, [language, changeLanguage]);
 
   return (
     <footer className="footer" aria-label="Footer">

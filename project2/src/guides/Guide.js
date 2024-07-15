@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, Link, useParams } from "react-router-dom";
+import { Routes, Route, Link, useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./Guide.css";
 import GuideDetail from "./GuideDetail";
@@ -71,6 +71,7 @@ function Guides() {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedStyle, setSelectedStyle] = useState("All Styles");
+  const navigate = useNavigate();
 
   const filteredGuides = guides.filter((guide) => {
     const matchesStyle =
@@ -83,7 +84,11 @@ function Guides() {
 
   return (
     <div className="guide-top">
-      <div className="guide-header">
+      <div
+        className="guide-header"
+        onClick={() => navigate("/guides")}
+        style={{ cursor: "pointer" }}
+      >
         <p>{t("guides.title")}</p>
       </div>
       <div className="guide-app">
@@ -98,6 +103,9 @@ function Guides() {
               ))}
             </ul>
           </nav>
+          <button className="go-back-button" onClick={() => navigate(-1)}>
+            {t("guides.go_back")}
+          </button>
         </div>
         <div className="guide-content">
           <Routes>

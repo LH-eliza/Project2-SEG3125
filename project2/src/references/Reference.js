@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, Link, useParams } from "react-router-dom";
+import { Routes, Route, Link, useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./Reference.css";
 import TypographyImg from "./Images/Typography.png";
@@ -11,11 +11,14 @@ import Roadmap from "./Roadmap";
 
 function Reference() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <div className="top">
       <div className="Roadmap-header">
-        <p>{t("references.header")}</p>
+        <p onClick={() => navigate("/reference")} style={{ cursor: "pointer" }}>
+          {t("references.header")}
+        </p>
       </div>
       <div className="app">
         <div className="sidebar">
@@ -43,6 +46,9 @@ function Reference() {
               </li>
             </ul>
           </nav>
+          <button className="go-back-button" onClick={() => navigate(-1)}>
+            {t("guides.go_back")}
+          </button>
         </div>
         <div className="content">
           <Routes>

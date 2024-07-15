@@ -82,7 +82,7 @@ body {
 
 .footer-social {
   display: flex;
-  justify-content: left;
+  justify-content: center; /* Center social links */
   margin: 1rem 0;
 }
 

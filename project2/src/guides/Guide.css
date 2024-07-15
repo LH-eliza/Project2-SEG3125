@@ -44,7 +44,7 @@
 }
 
 .guide-sidebar nav ul li {
-  margin: 20px 0;
+  margin: 35px 0;
 }
 
 .guide-sidebar nav ul li a {
@@ -184,6 +184,23 @@
 .guide-card-content {
   display: flex;
   justify-content: space-between;
+}
+
+.go-back-button {
+  background-color: #b703db;
+  color: white;
+  padding: 20px 70px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s;
+  text-align: center;
+  font-family: "Gotham";
+}
+
+.go-back-button:hover {
+  background-color: #6217ee;
 }
 
 /* Scroll-to-Top Button */

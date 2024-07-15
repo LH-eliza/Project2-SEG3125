@@ -1,3 +1,5 @@
+/* Inspiration.css */
+
 .inspiration {
   color: #ffffff;
 }
@@ -70,20 +72,21 @@
 
 .filter-button:hover,
 .filter-button.active {
-  background: #ddd;
+  background: #4423ff;
+  color: white;
 }
 
 .filter-button-right {
-  margin-left: 10px; /* Adjust margin to better align with other buttons */
+  margin-left: 10px;
   background: #fff;
   border: 2px solid #ccc;
 }
 
 .inspiration-grid {
-  padding: 50px;
+  padding: 120px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -143,7 +146,7 @@
 }
 
 .like-button {
-  background: #ffa5ac;
+  background: #e47b84;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -212,6 +215,7 @@
   background: #120fd3;
   color: #ffffff;
 }
+
 .popup-content h2 {
   margin-top: 0;
 }
@@ -273,4 +277,46 @@
   color: red;
   margin-top: 10px;
   font-size: 0.9rem;
+}
+
+.edit-comment-button {
+  background: #5d51ff;
+  border: none;
+  color: #ffffff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: background 0.3s;
+}
+
+.edit-comment-button:hover {
+  background: #120fd3;
+  color: #ffffff;
+}
+
+.delete-comment-button {
+  background: #ff5d5d;
+  border: none;
+  color: #ffffff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: background 0.3s;
+}
+
+.delete-comment-button:hover {
+  background: #ff2d2d;
+  color: #ffffff;
+}
+
+.edit-comment-input {
+  width: 80%;
+  padding: 5px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }

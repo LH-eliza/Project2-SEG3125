@@ -2,37 +2,20 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./SliderButton.css";
 
-const SliderButton = () => {
-  const { i18n } = useTranslation();
+const SliderButton = ({ language, changeLanguage }) => {
   const [isEnglish, setIsEnglish] = useState(() => {
-    return (
-      localStorage.getItem("language") === "en" ||
-      !localStorage.getItem("language")
-    );
+    return language === "en" || !language;
   });
 
   const toggleLanguage = () => {
     const newLang = isEnglish ? "ko" : "en";
-    i18n
-      .changeLanguage(newLang)
-      .then(() => {
-        localStorage.setItem("language", newLang);
-        setIsEnglish(newLang === "en");
-      })
-      .catch((err) => console.error("Language change error:", err));
+    changeLanguage(newLang);
+    setIsEnglish(newLang === "en");
   };
 
   useEffect(() => {
-    const storedLang = localStorage.getItem("language");
-    if (storedLang) {
-      i18n
-        .changeLanguage(storedLang)
-        .then(() => {
-          setIsEnglish(storedLang === "en");
-        })
-        .catch((err) => console.error("Language change error:", err));
-    }
-  }, [i18n]);
+    setIsEnglish(language === "en");
+  }, [language]);
 
   return (
     <div className="slider-container" onClick={toggleLanguage}>

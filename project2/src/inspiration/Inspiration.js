@@ -1,3 +1,5 @@
+// Inspiration.js
+
 import React, { useState } from "react";
 import "./Inspiration.css";
 import { useTranslation } from "react-i18next";
@@ -33,8 +35,9 @@ const Inspiration = () => {
       author: t("inspiration_items.the_archers.author"),
       likes: 512,
       views: 99300,
-      category: t("inspiration_items.the_archers.category"),
+      category: "Illustration",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.debit_card_design.title"),
@@ -42,8 +45,9 @@ const Inspiration = () => {
       author: t("inspiration_items.debit_card_design.author"),
       likes: 168,
       views: 32400,
-      category: t("inspiration_items.debit_card_design.category"),
+      category: "Illustration",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.santorini.title"),
@@ -51,8 +55,9 @@ const Inspiration = () => {
       author: t("inspiration_items.santorini.author"),
       likes: 418,
       views: 84100,
-      category: t("inspiration_items.santorini.category"),
+      category: "Illustration",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.build_together.title"),
@@ -60,8 +65,9 @@ const Inspiration = () => {
       author: t("inspiration_items.build_together.author"),
       likes: 233,
       views: 28600,
-      category: t("inspiration_items.build_together.category"),
+      category: "Web",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.odi.title"),
@@ -69,8 +75,9 @@ const Inspiration = () => {
       author: t("inspiration_items.odi.author"),
       likes: 119,
       views: 25300,
-      category: t("inspiration_items.odi.category"),
+      category: "Web",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.vande.title"),
@@ -78,8 +85,9 @@ const Inspiration = () => {
       author: t("inspiration_items.vande.author"),
       likes: 78,
       views: 11700,
-      category: t("inspiration_items.vande.category"),
+      category: "Web",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.star_wars_badges.title"),
@@ -87,8 +95,9 @@ const Inspiration = () => {
       author: t("inspiration_items.star_wars_badges.author"),
       likes: 87,
       views: 12200,
-      category: t("inspiration_items.star_wars_badges.category"),
+      category: "Animation",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.vintage_train.title"),
@@ -96,8 +105,9 @@ const Inspiration = () => {
       author: t("inspiration_items.vintage_train.author"),
       likes: 33,
       views: 5000,
-      category: t("inspiration_items.vintage_train.category"),
+      category: "Animation",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.the_painter.title"),
@@ -105,8 +115,9 @@ const Inspiration = () => {
       author: t("inspiration_items.the_painter.author"),
       likes: 202,
       views: 65100,
-      category: t("inspiration_items.the_painter.category"),
+      category: "Animation",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.cityscape.title"),
@@ -114,8 +125,9 @@ const Inspiration = () => {
       author: t("inspiration_items.cityscape.author"),
       likes: 150,
       views: 45000,
-      category: t("inspiration_items.cityscape.category"),
+      category: "3D Design",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.robot.title"),
@@ -123,8 +135,9 @@ const Inspiration = () => {
       author: t("inspiration_items.robot.author"),
       likes: 340,
       views: 78000,
-      category: t("inspiration_items.robot.category"),
+      category: "3D Design",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.blender_base_keyboard.title"),
@@ -132,8 +145,9 @@ const Inspiration = () => {
       author: t("inspiration_items.blender_base_keyboard.author"),
       likes: 290,
       views: 62000,
-      category: t("inspiration_items.blender_base_keyboard.category"),
+      category: "3D Design",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.creative_typography.title"),
@@ -141,8 +155,9 @@ const Inspiration = () => {
       author: t("inspiration_items.creative_typography.author"),
       likes: 95,
       views: 21400,
-      category: t("inspiration_items.creative_typography.category"),
+      category: "Typography",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.minimalist_fonts.title"),
@@ -150,8 +165,9 @@ const Inspiration = () => {
       author: t("inspiration_items.minimalist_fonts.author"),
       likes: 111,
       views: 31000,
-      category: t("inspiration_items.minimalist_fonts.category"),
+      category: "Typography",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.bold_letters.title"),
@@ -159,8 +175,9 @@ const Inspiration = () => {
       author: t("inspiration_items.bold_letters.author"),
       likes: 130,
       views: 27000,
-      category: t("inspiration_items.bold_letters.category"),
+      category: "Typography",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.ui_design_concept.title"),
@@ -168,8 +185,9 @@ const Inspiration = () => {
       author: t("inspiration_items.ui_design_concept.author"),
       likes: 220,
       views: 50000,
-      category: t("inspiration_items.ui_design_concept.category"),
+      category: "UI/UX",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.ux_journey.title"),
@@ -177,8 +195,9 @@ const Inspiration = () => {
       author: t("inspiration_items.ux_journey.author"),
       likes: 310,
       views: 68000,
-      category: t("inspiration_items.ux_journey.category"),
+      category: "UI/UX",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.interface_design.title"),
@@ -186,8 +205,9 @@ const Inspiration = () => {
       author: t("inspiration_items.interface_design.author"),
       likes: 270,
       views: 60000,
-      category: t("inspiration_items.interface_design.category"),
+      category: "UI/UX",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.brand_identity.title"),
@@ -195,8 +215,9 @@ const Inspiration = () => {
       author: t("inspiration_items.brand_identity.author"),
       likes: 320,
       views: 74000,
-      category: t("inspiration_items.brand_identity.category"),
+      category: "Branding",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.logo_design.title"),
@@ -204,8 +225,9 @@ const Inspiration = () => {
       author: t("inspiration_items.logo_design.author"),
       likes: 410,
       views: 86000,
-      category: t("inspiration_items.logo_design.category"),
+      category: "Branding",
       liked: false,
+      comments: [],
     },
     {
       title: t("inspiration_items.marketing_materials.title"),
@@ -213,19 +235,21 @@ const Inspiration = () => {
       author: t("inspiration_items.marketing_materials.author"),
       likes: 390,
       views: 83000,
-      category: t("inspiration_items.marketing_materials.category"),
+      category: "Branding",
       liked: false,
+      comments: [],
     },
   ];
 
   const categories = [
-    "Illustration",
-    "Web",
-    "Animation",
-    "3D Design",
-    "Typography",
-    "UI/UX",
-    "Branding",
+    "all",
+    "illustration",
+    "web",
+    "animation",
+    "3d design",
+    "typography",
+    "ui/ux",
+    "branding",
   ];
 
   const [inspirationItems, setInspirationItems] =
@@ -237,6 +261,8 @@ const Inspiration = () => {
   const [comment, setComment] = useState("");
   const [alias, setAlias] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [editingComment, setEditingComment] = useState(null);
+  const [editingCommentText, setEditingCommentText] = useState("");
 
   const filteredItems = inspirationItems.filter((item) => {
     const matchesCategory =
@@ -270,6 +296,8 @@ const Inspiration = () => {
     setAlias("");
     setComment("");
     setErrorMessage("");
+    setEditingComment(null);
+    setEditingCommentText("");
   };
 
   const submitComment = () => {
@@ -287,6 +315,35 @@ const Inspiration = () => {
     setAlias("");
     setComment("");
     setShowPopup(false);
+  };
+
+  const startEditingComment = (itemIndex, commentIndex) => {
+    setCurrentItem(itemIndex);
+    setEditingComment(commentIndex);
+    setEditingCommentText(
+      inspirationItems[itemIndex].comments[commentIndex].comment
+    );
+    setShowPopup(true);
+  };
+
+  const submitEditedComment = () => {
+    if (!editingCommentText.trim()) {
+      setErrorMessage(t("inspiration.feedback.error_message"));
+      return;
+    }
+
+    const newItems = [...inspirationItems];
+    newItems[currentItem].comments[editingComment].comment = editingCommentText;
+    setInspirationItems(newItems);
+    setEditingComment(null);
+    setEditingCommentText("");
+    setShowPopup(false);
+  };
+
+  const deleteComment = (itemIndex, commentIndex) => {
+    const newItems = [...inspirationItems];
+    newItems[itemIndex].comments.splice(commentIndex, 1);
+    setInspirationItems(newItems);
   };
 
   return (
@@ -330,7 +387,7 @@ const Inspiration = () => {
               />
               <div className="hover-info">
                 <h3>{item.title}</h3>
-                <p>{item.category}</p>
+                <p>{t(item.category)}</p>
                 <div
                   className={`like-button ${item.liked ? "liked" : ""}`}
                   onClick={() => handleLike(index)}
@@ -357,6 +414,20 @@ const Inspiration = () => {
                     {item.comments.map((comment, commentIndex) => (
                       <li key={commentIndex}>
                         <strong>{comment.alias}:</strong> {comment.comment}
+                        <button
+                          className="edit-comment-button"
+                          onClick={() =>
+                            startEditingComment(index, commentIndex)
+                          }
+                        >
+                          {t("inspiration.feedback.edit_comment")}
+                        </button>
+                        <button
+                          className="delete-comment-button"
+                          onClick={() => deleteComment(index, commentIndex)}
+                        >
+                          {t("inspiration.feedback.delete_comment")}
+                        </button>
                       </li>
                     ))}
                   </ul>
@@ -370,22 +441,43 @@ const Inspiration = () => {
         <div className="popup-overlay" onClick={closePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
             <h2>{t("inspiration.feedback.leave_comment")}</h2>
-            <input
-              type="text"
-              value={alias}
-              onChange={(e) => setAlias(e.target.value)}
-              placeholder={t("inspiration.feedback.alias_placeholder")}
-            />
-            <textarea
-              value={comment}
-              onChange={(e) => setComment(e.target.value)}
-              placeholder={t("inspiration.feedback.comment_placeholder")}
-              rows="4"
-            />
-            {errorMessage && <p className="error-message">{errorMessage}</p>}
-            <button onClick={submitComment}>
-              {t("inspiration.feedback.submit_button")}
-            </button>
+            {editingComment === null ? (
+              <>
+                <input
+                  type="text"
+                  value={alias}
+                  onChange={(e) => setAlias(e.target.value)}
+                  placeholder={t("inspiration.feedback.alias_placeholder")}
+                />
+                <textarea
+                  value={comment}
+                  onChange={(e) => setComment(e.target.value)}
+                  placeholder={t("inspiration.feedback.comment_placeholder")}
+                  rows="4"
+                />
+                {errorMessage && (
+                  <p className="error-message">{errorMessage}</p>
+                )}
+                <button onClick={submitComment}>
+                  {t("inspiration.feedback.submit_button")}
+                </button>
+              </>
+            ) : (
+              <>
+                <textarea
+                  className="edit-comment-input"
+                  value={editingCommentText}
+                  onChange={(e) => setEditingCommentText(e.target.value)}
+                  rows="4"
+                />
+                {errorMessage && (
+                  <p className="error-message">{errorMessage}</p>
+                )}
+                <button onClick={submitEditedComment}>
+                  {t("inspiration.feedback.submit_edit_button")}
+                </button>
+              </>
+            )}
             <button onClick={closePopup}>
               {t("inspiration.feedback.close_button")}
             </button>

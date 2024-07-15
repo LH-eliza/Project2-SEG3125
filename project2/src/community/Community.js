@@ -12,6 +12,8 @@ const Community = () => {
   const [submissions, setSubmissions] = useState([]);
   const [error, setError] = useState("");
   const [selectedSubmission, setSelectedSubmission] = useState(null);
+  const [isEditing, setIsEditing] = useState(false);
+  const [editIndex, setEditIndex] = useState(null);
 
   const TITLE_MAX_LENGTH = 25;
   const DESCRIPTION_MAX_LENGTH = 150;
@@ -52,7 +54,16 @@ const Community = () => {
       comments: fakeComments,
     };
 
-    setSubmissions([...submissions, newSubmission]);
+    if (isEditing) {
+      const updatedSubmissions = [...submissions];
+      updatedSubmissions[editIndex] = newSubmission;
+      setSubmissions(updatedSubmissions);
+      setIsEditing(false);
+      setEditIndex(null);
+    } else {
+      setSubmissions([...submissions, newSubmission]);
+    }
+
     setUploadedImage(null);
     setTitle("");
     setDescription("");
@@ -60,16 +71,27 @@ const Community = () => {
     setError("");
   };
 
+  const handleEdit = (index) => {
+    const submission = submissions[index];
+    setUploadedImage(submission.image);
+    setTitle(submission.title);
+    setDescription(submission.description);
+    setCategory(submission.category);
+    setIsEditing(true);
+    setEditIndex(index);
+  };
+
   const handleDelete = (index) => {
     setSubmissions(submissions.filter((_, i) => i !== index));
   };
 
-  const handleExport = () => {
-    const dataStr = JSON.stringify(submissions, null, 2);
+  const handleExport = (index) => {
+    const selectedSubmission = submissions[index];
+    const dataStr = JSON.stringify(selectedSubmission, null, 2);
     const dataUri =
       "data:application/json;charset=utf-8," + encodeURIComponent(dataStr);
 
-    const exportFileDefaultName = "submissions.json";
+    const exportFileDefaultName = "submission.json";
 
     const linkElement = document.createElement("a");
     linkElement.setAttribute("href", dataUri);
@@ -209,7 +231,9 @@ const Community = () => {
           aria-label={t("community.upload_section.submit_button")}
           title={t("community.upload_section.submit_tooltip")}
         >
-          {t("community.upload_section.submit_button")}
+          {isEditing
+            ? t("community.upload_section.edit_button")
+            : t("community.upload_section.submit_button")}
         </button>
 
         {error && (
@@ -220,13 +244,12 @@ const Community = () => {
       </section>
 
       <section>
-        <h2>{t("community.view_art_board")}</h2>
+        <h2 className="view">{t("community.view_art_board")}</h2>
         <div className="community-board">
           {submissions.map((submission, index) => (
             <article
               className="community-card"
               key={index}
-              onClick={() => setSelectedSubmission(submission)}
               tabIndex="0"
               aria-label={t("community.upload_section.submission_aria", {
                 title: submission.title,
@@ -245,6 +268,36 @@ const Community = () => {
                 <p>{submission.category}</p>
                 <p>{submission.description}</p>
                 <button
+                  className="export-button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleExport(index);
+                  }}
+                  aria-label={t("community.upload_section.export_aria", {
+                    title: submission.title,
+                  })}
+                  title={t("community.upload_section.export_tooltip", {
+                    title: submission.title,
+                  })}
+                >
+                  📤
+                </button>
+                <button
+                  className="edit-button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleEdit(index);
+                  }}
+                  aria-label={t("community.upload_section.edit_aria", {
+                    title: submission.title,
+                  })}
+                  title={t("community.upload_section.edit_tooltip", {
+                    title: submission.title,
+                  })}
+                >
+                  ✎
+                </button>
+                <button
                   className="delete-button"
                   onClick={(e) => {
                     e.stopPropagation();
@@ -259,38 +312,24 @@ const Community = () => {
                 >
                   &times;
                 </button>
+                <div className="comments-sections">
+                  <h4>{t("community.comments_section.title")}</h4>
+                  <ul>
+                    {submission.comments.map((comment, commentIndex) => (
+                      <li key={commentIndex}>{comment}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </article>
           ))}
         </div>
-
-        {selectedSubmission && (
-          <div className="comments-section">
-            <h3>
-              {t("community.comments_section.title")} {selectedSubmission.title}
-            </h3>
-            <ul>
-              {selectedSubmission.comments.map((comment, index) => (
-                <li key={index}>{comment}</li>
-              ))}
-            </ul>
-          </div>
-        )}
       </section>
-
-      <button
-        className="export-button"
-        onClick={handleExport}
-        aria-label={t("community.export_button")}
-        title={t("community.export_tooltip")}
-      >
-        {t("community.export_button")}
-      </button>
 
       <hr className="horizontal-line" />
 
       <section>
-        <h2 className="see-more">{t("community.see_more_art")}</h2>
+        <h2 className="view">{t("community.see_more_art")}</h2>
         <button
           className="see-more-button"
           onClick={() => (window.location.href = "/inspiration")}

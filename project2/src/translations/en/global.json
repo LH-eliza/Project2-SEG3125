@@ -1,6 +1,7 @@
 {
   "guides": {
     "title": "Guides",
+    "go_back": "Go Back",
     "header": "Tool Guide",
     "search_placeholder": "Search guides...",
     "styles": {
@@ -487,18 +488,21 @@
       "search_placeholder": "Search through your community"
     },
     "categories": {
-      "Illustration": "Illustration",
-      "Web": "Web",
-      "Animation": "Animation",
-      "3D Design": "3D Design",
-      "Typography": "Typography",
-      "UI/UX": "UI/UX",
-      "Branding": "Branding",
+      "illustration": "Illustration",
+      "web": "Web",
+      "animation": "Animation",
+      "3d design": "3D Design",
+      "typography": "Typography",
+      "ui/ux": "UI/UX",
+      "branding": "Branding",
       "all": "All"
     },
     "feedback": {
       "leave_comment": "Leave a Comment",
       "alias_placeholder": "Your alias",
+      "edit_comment": "Edit ✏️",
+      "delete_comment": "Delete 🗑️",
+      "submit_edit_button": "Submit Edit",
       "comment_placeholder": "Write your comment here...",
       "submit_button": "Submit",
       "close_button": "Close",
@@ -1022,6 +1026,10 @@
   "community": {
     "header": "Portfolio Builder",
     "upload_section": {
+      "delete_tooltip": "Delete Art",
+      "edit_tooltip": "Edit Art",
+      "export_tooltip": "Export Art",
+      "edit_button": "Edit Art",
       "title": "Upload Art",
       "subtitle": "Drag or Upload your Art Here",
       "rights": "Please upload a JPEG, PNG, or SVG",

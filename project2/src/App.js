@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Main from "./pages/Main";
@@ -11,9 +12,27 @@ import Inspiration from "./inspiration/Inspiration";
 import ContactUs from "./help/ContactUs";
 
 function App() {
+  const { i18n } = useTranslation();
+  const [language, setLanguage] = useState(
+    () => localStorage.getItem("language") || i18n.language
+  );
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("language", lang);
+    setLanguage(lang);
+  };
+
+  useEffect(() => {
+    const storedLang = localStorage.getItem("language");
+    if (storedLang && storedLang !== language) {
+      changeLanguage(storedLang);
+    }
+  }, [language, i18n]);
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar language={language} changeLanguage={changeLanguage} />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/community" element={<Community />} />
@@ -24,7 +43,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="*" element={<h1>Page is still in development</h1>} />
       </Routes>
-      <Footer />
+      <Footer language={language} changeLanguage={changeLanguage} />
     </div>
   );
 }

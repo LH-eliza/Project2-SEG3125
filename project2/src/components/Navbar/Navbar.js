@@ -3,7 +3,7 @@ import "./Navbar.css";
 import SliderButton from "../Slider/SliderButton";
 import { useTranslation } from "react-i18next";
 
-const Navbar = () => {
+const Navbar = ({ language, changeLanguage }) => {
   const { t } = useTranslation();
 
   return (
@@ -48,7 +48,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="navbar-slider">
-          <SliderButton />
+          <SliderButton language={language} changeLanguage={changeLanguage} />
         </div>
       </div>
     </nav>
