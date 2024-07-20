@@ -1,5 +1,3 @@
-// Inspiration.js
-
 import React, { useState } from "react";
 import "./Inspiration.css";
 import { useTranslation } from "react-i18next";
@@ -243,13 +241,13 @@ const Inspiration = () => {
 
   const categories = [
     "all",
-    "illustration",
-    "web",
-    "animation",
-    "3d design",
-    "typography",
-    "ui/ux",
-    "branding",
+    "Illustration",
+    "Web",
+    "Animation",
+    "3D Design",
+    "Typography",
+    "UI/UX",
+    "Branding",
   ];
 
   const [inspirationItems, setInspirationItems] =
@@ -267,10 +265,11 @@ const Inspiration = () => {
   const filteredItems = inspirationItems.filter((item) => {
     const matchesCategory =
       selectedCategory === "all" ||
-      item.category.toLowerCase() === selectedCategory;
+      item.category.toLowerCase() === selectedCategory.toLowerCase();
     const matchesSearchTerm =
       item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.author.toLowerCase().includes(searchTerm.toLowerCase());
+      item.author.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.category.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesCategory && matchesSearchTerm;
   });
 
@@ -372,70 +371,74 @@ const Inspiration = () => {
             }`}
             onClick={() => setSelectedCategory(category)}
           >
-            {t(`inspiration.categories.${category}`)}
+            {t(`inspiration.categories.${category.toLowerCase()}`)}
           </button>
         ))}
       </div>
       <div className="inspiration-grid">
-        {filteredItems.map((item, index) => (
-          <div key={index} className="inspiration-card">
-            <div className="image-container">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="inspiration-image"
-              />
-              <div className="hover-info">
-                <h3>{item.title}</h3>
-                <p>{t(item.category)}</p>
-                <div
-                  className={`like-button ${item.liked ? "liked" : ""}`}
-                  onClick={() => handleLike(index)}
+        {filteredItems.length === 0 ? (
+          <div className="no-results">{t("inspiration.no_results.title")}</div>
+        ) : (
+          filteredItems.map((item, index) => (
+            <div key={index} className="inspiration-card">
+              <div className="image-container">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="inspiration-image"
+                />
+                <div className="hover-info">
+                  <h3>{item.title}</h3>
+                  <p>{t(item.category)}</p>
+                  <div
+                    className={`like-button ${item.liked ? "liked" : ""}`}
+                    onClick={() => handleLike(index)}
+                  >
+                    ❤️ {item.likes}
+                  </div>
+                </div>
+              </div>
+              <div className="inspiration-info">
+                <p>by {item.author}</p>
+                <div className="inspiration-stats">
+                  <span>👀 {item.views}</span>
+                </div>
+                <button
+                  className="feedback-button"
+                  onClick={() => handleFeedback(index)}
                 >
-                  ❤️ {item.likes}
-                </div>
+                  {t("inspiration.feedback.leave_comment")}
+                </button>
+                {item.comments && item.comments.length > 0 && (
+                  <div className="comments-section">
+                    <h4>{t("inspiration.feedback.comments_section")}</h4>
+                    <ul>
+                      {item.comments.map((comment, commentIndex) => (
+                        <li key={commentIndex}>
+                          <strong>{comment.alias}:</strong> {comment.comment}
+                          <button
+                            className="edit-comment-button"
+                            onClick={() =>
+                              startEditingComment(index, commentIndex)
+                            }
+                          >
+                            {t("inspiration.feedback.edit_comment")}
+                          </button>
+                          <button
+                            className="delete-comment-button"
+                            onClick={() => deleteComment(index, commentIndex)}
+                          >
+                            {t("inspiration.feedback.delete_comment")}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
-            <div className="inspiration-info">
-              <p>by {item.author}</p>
-              <div className="inspiration-stats">
-                <span>👀 {item.views}</span>
-              </div>
-              <button
-                className="feedback-button"
-                onClick={() => handleFeedback(index)}
-              >
-                {t("inspiration.feedback.leave_comment")}
-              </button>
-              {item.comments && item.comments.length > 0 && (
-                <div className="comments-section">
-                  <h4>{t("inspiration.feedback.comments_section")}</h4>
-                  <ul>
-                    {item.comments.map((comment, commentIndex) => (
-                      <li key={commentIndex}>
-                        <strong>{comment.alias}:</strong> {comment.comment}
-                        <button
-                          className="edit-comment-button"
-                          onClick={() =>
-                            startEditingComment(index, commentIndex)
-                          }
-                        >
-                          {t("inspiration.feedback.edit_comment")}
-                        </button>
-                        <button
-                          className="delete-comment-button"
-                          onClick={() => deleteComment(index, commentIndex)}
-                        >
-                          {t("inspiration.feedback.delete_comment")}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
       {showPopup && (
         <div className="popup-overlay" onClick={closePopup}>

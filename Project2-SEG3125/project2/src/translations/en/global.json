@@ -495,6 +495,9 @@
       "description": "InnovArt is the place destination to find & showcase creative work and home to the best design guides.",
       "search_placeholder": "Search through your community"
     },
+    "no_results":{
+      "title": "No results found"
+    },
     "categories": {
       "illustration": "Illustration",
       "web": "Web",
