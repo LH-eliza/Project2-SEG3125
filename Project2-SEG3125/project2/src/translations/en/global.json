@@ -1,0 +1,1282 @@
+{
+  "guides": {
+    "title": "Guides",
+    "go_back": "Go Back",
+    "header": "Tool Guide",
+    "search_placeholder": "Search guides...",
+    "styles": {
+      "all": "All Styles",
+      "illustration": "Illustration",
+      "editing": "Editing",
+      "animation": "Animation",
+      "ux_ui": "UX/UI",
+      "3d_design": "3D Design"
+    },
+    "style-type": {
+      "all": "Style"
+    },
+    "welcome": "InnovArt Guides Page of Mastering Design Tools",
+    "description": "Welcome to InnovArt's Guides, your comprehensive guides to mastering various design tools. Our guides offer step-by-step guidance and practical projects to enhance your learning experience. Whether you're a beginner or looking to refine your expertise, our guides provide the knowledge and resources you need.",
+    "get_started": "Get Started"
+  },
+  "guideDetail": {
+    "adobe_illustrator": {
+      "title": "Adobe Illustrator Guide",
+      "description": "Begin your journey with typography. Learn the essentials, from understanding typefaces and fonts to advanced techniques like kerning and typography hierarchy. Apply your skills with practical projects."
+    },
+    "adobe_photoshop": {
+      "title": "Adobe Photoshop Guide",
+      "description": "Unlock your creativity with our Illustration Roadmap. Learn basic sketching to digital illustration, explore various styles, and work on projects to develop your unique artistic voice."
+    },
+    "adobe_animate": {
+      "title": "Adobe Animate Guide",
+      "description": "Step into 3D design. Learn principles of 3D modeling, texturing, and rendering using industry-standard software. Tackle projects that simulate real-world design challenges."
+    },
+    "adobe_after_effects": {
+      "title": "Adobe After Effects Guide",
+      "description": "Bring your ideas to life with animation. Whether 2D, 3D, or stop-motion, learn animation principles and techniques through tutorials and hands-on projects."
+    },
+    "adobe_xd": {
+      "title": "Adobe XD Guide",
+      "description": "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities."
+    },
+    "canva": {
+      "title": "Canva Guide",
+      "description": "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities."
+    },
+    "spline": {
+      "title": "Spline Guide",
+      "description": "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities."
+    },
+    "procreate": {
+      "title": "Procreate Guide",
+      "description": "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities."
+    },
+    "procreate_dreams": {
+      "title": "Procreate Dreams Guide",
+      "description": "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities."
+    },
+    "figma": {
+      "title": "Figma Guide",
+      "description": "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities."
+    }
+  },
+  "guideContent": {
+    "adobe-animate": {
+      "title": "Your Guide to Adobe Animate",
+      "description": "Step into 3D design. Learn principles of 3D modeling, texturing, and rendering using industry-standard software. Tackle projects that simulate real-world design challenges.",
+      "sections": [
+        {
+          "title": "1. Getting Started with Adobe Animate",
+          "content": [
+            {
+              "title": "Introduction to Adobe Animate",
+              "description": "Adobe Animate is a versatile tool that allows you to create interactive animations for web, games, and TV shows. It’s ideal for creating 2D animations and interactive content."
+            },
+            {
+              "title": "Creating a New Project",
+              "description": "Open Adobe Animate and select 'File > New'. Choose a canvas size and frame rate suitable for your project. Click 'Create' to open a new project."
+            }
+          ]
+        },
+        {
+          "title": "2. Basic Drawing and Animation Tools",
+          "content": [
+            {
+              "title": "Drawing Tools",
+              "description": "Select and manipulate objects with the Selection Tool. Draw with the Brush Tool, and create shapes with the Rectangle Tool."
+            },
+            {
+              "title": "Creating Simple Animations",
+              "description": "Learn the basics of creating frame-by-frame animations and using the timeline to animate objects."
+            },
+            {
+              "title": "Try it Out",
+              "description": "Follow these steps to create a simple ball animation: Draw a circle using the Brush Tool, add keyframes on the timeline, move the circle, and create a motion tween."
+            }
+          ]
+        }
+      ]
+    },
+    "figma": {
+      "title": "Your Guide to Figma",
+      "description": "Refine your editing skills. Learn tools and techniques for video and photo editing using software like Adobe Premiere Pro and Photoshop. Work on projects to enhance your capabilities.",
+      "sections": [
+        {
+          "title": "1. Getting Started with Figma",
+          "content": [
+            {
+              "title": "Introduction to Figma",
+              "description": "Figma is a versatile tool that allows you to design and prototype user experiences for web and mobile applications. It’s ideal for creating wireframes, mockups, and interactive prototypes."
+            },
+            {
+              "title": "Creating a New Project",
+              "description": "Open Figma and select 'File > New'. Choose a device size and orientation suitable for your project. Click 'Create' to open a new project."
+            }
+          ]
+        },
+        {
+          "title": "2. Basic Design and Prototyping Tools",
+          "content": [
+            {
+              "title": "Design Tools",
+              "description": "Use the Rectangle, Ellipse, and Polygon tools to create shapes. Use the Text tool to add and style text."
+            },
+            {
+              "title": "Creating Prototypes",
+              "description": "Learn how to create interactive prototypes by linking frames and adding transitions. Use the Preview panel to test your prototypes."
+            },
+            {
+              "title": "Try it Out",
+              "description": "Follow these steps to create a simple interactive prototype: Create multiple frames, add elements to each frame, and link the frames to create navigation."
+            }
+          ]
+        }
+      ]
+    },
+    "adobe-photoshop": {
+      "title": "Adobe Photoshop Guide",
+      "description": "Welcome to the Adobe Photoshop Guide! This guide will help you get started with Adobe Photoshop, a powerful tool for editing photos and creating digital artwork. Whether you're a beginner or looking to refine your skills, this guide covers the basics to set you on the right path.",
+      "sections": [
+        {
+          "title": "1. Getting Started with Adobe Photoshop",
+          "content": [
+            {
+              "title": "Introduction to Adobe Photoshop",
+              "description": "Adobe Photoshop is a versatile software that allows you to edit and manipulate images. It offers a wide range of tools and features for enhancing photos and creating stunning visual effects."
+            },
+            {
+              "title": "Opening an Image",
+              "description": "To start editing an image in Adobe Photoshop, go to 'File > Open' and select the image file you want to work with. The image will open in the Photoshop workspace."
+            }
+          ]
+        },
+        {
+          "title": "2. Basic Editing Tools",
+          "content": [
+            {
+              "title": "Selection Tools",
+              "description": "Use the Selection Tools to select specific areas of an image for editing. The Marquee Tool, Lasso Tool, and Magic Wand Tool are commonly used selection tools."
+            },
+            {
+              "title": "Adjustment Tools",
+              "description": "Adjustment Tools allow you to modify the colors, tones, and other attributes of an image. The Levels, Curves, and Hue/Saturation tools are commonly used adjustment tools."
+            },
+            {
+              "title": "Try it Out",
+              "description": "Follow these steps to enhance an image: Use the Lasso Tool to select an object, apply the Levels adjustment to adjust the brightness and contrast, and use the Brush Tool to remove imperfections."
+            }
+          ]
+        }
+      ]
+    },
+    "adobe-illustrator": {
+      "title": "Adobe Illustrator Guide",
+      "description": "Begin your journey with typography. Learn the essentials, from understanding typefaces and fonts to advanced techniques like kerning and typography hierarchy. Apply your skills with practical projects.",
+      "sections": [
+        {
+          "title": "1. Getting Started with Adobe Illustrator",
+          "content": [
+            {
+              "title": "Introduction to Adobe Illustrator",
+              "description": "Adobe Illustrator is a powerful vector graphics editor that allows you to create and manipulate digital illustrations. It offers a wide range of tools and features for creating artwork, logos, icons, and more."
+            },
+            {
+              "title": "Creating a New Document",
+              "description": "To start a new project in Adobe Illustrator, go to 'File > New'. Choose the document size and settings suitable for your project. Click 'Create' to open a new document."
+            }
+          ]
+        },
+        {
+          "title": "2. Working with Shapes and Paths",
+          "content": [
+            {
+              "title": "Drawing Tools",
+              "description": "Use the Pen Tool, Shape Tools, and Line Tools to create and modify shapes and paths in Adobe Illustrator."
+            },
+            {
+              "title": "Working with Anchor Points",
+              "description": "Learn how to manipulate anchor points and handles to control the shape and curvature of paths."
+            },
+            {
+              "title": "Try it Out",
+              "description": "Follow these steps to create a simple logo: Use the Pen Tool to draw a shape, adjust the anchor points to refine the shape, and apply colors and effects to enhance the design."
+            }
+          ]
+        }
+      ]
+    },
+    "after-effects": {
+      "title": "Adobe After Effects Guide",
+      "description": "Bring your ideas to life with animation. Whether 2D, 3D, or stop-motion, learn animation principles and techniques through tutorials and hands-on projects.",
+      "sections": [
+        {
+          "title": "1. Getting Started with Adobe After Effects",
+          "content": [
+            {
+              "title": "Introduction to Adobe After Effects",
+              "description": "Adobe After Effects is a powerful software for creating motion graphics and visual effects. It allows you to combine videos, images, and animations to create stunning visual compositions."
+            },
+            {
+              "title": "Creating a New Composition",
+              "description": "To start a new project in Adobe After Effects, go to 'File > New > Composition'. Choose the composition settings suitable for your project. Click 'OK' to create a new composition."
+            }
+          ]
+        },
+        {
+          "title": "2. Working with Layers and Keyframes",
+          "content": [
+            {
+              "title": "Layers in After Effects",
+              "description": "Learn how to work with layers in Adobe After Effects. Layers are the building blocks of your composition and can contain videos, images, text, and effects."
+            },
+            {
+              "title": "Animating with Keyframes",
+              "description": "Keyframes are used to create animation in After Effects. Learn how to set keyframes and manipulate properties over time to create dynamic animations."
+            },
+            {
+              "title": "Try it Out",
+              "description": "Follow these steps to create a simple animation: Import an image or video, create keyframes to animate its position or scale, and preview the animation."
+            }
+          ]
+        }
+      ]
+    },
+    "adobe-xd": {
+      "title": "Adobe XD Guide",
+      "description": "Explore the world of user experience design. Learn how to create interactive prototypes, wireframes, and design systems using Adobe XD. Develop your skills through hands-on projects and real-world design challenges.",
+      "sections": [
+        {
+          "title": "1. Getting Started with Adobe XD",
+          "content": [
+            {
+              "title": "Introduction to Adobe XD",
+              "description": "Adobe XD is a powerful design and prototyping tool that allows you to create user interfaces for web and mobile applications. It offers a range of features for designing layouts, creating interactive elements, and collaborating with team members."
+            },
+            {
+              "title": "Creating a New Project",
+              "description": "To start a new project in Adobe XD, open the application and select 'File > New'. Choose the artboard size and settings suitable for your project. Click 'Create' to open a new project."
+            }
+          ]
+        },
+        {
+          "title": "2. Designing Interfaces and Interactions",
+          "content": [
+            {
+              "title": "Design Tools",
+              "description": "Use the Rectangle, Ellipse, and Text tools to create and style elements in Adobe XD. Apply colors, gradients, and effects to enhance the visual appearance of your designs."
+            },
+            {
+              "title": "Creating Interactive Prototypes",
+              "description": "Learn how to create interactive prototypes in Adobe XD by adding links, transitions, and animations to your designs. Use the Preview mode to test and refine your prototypes."
+            },
+            {
+              "title": "Try it Out",
+              "description": "Follow these steps to create a simple interactive prototype: Design a login screen with input fields and buttons, add transitions between screens, and simulate user interactions."
+            }
+          ]
+        }
+      ]
+    },
+    "canva": {
+      "title": "Canva Guide",
+      "description": "Welcome to the Canva Guide! This guide will help you get started with Canva, a powerful online design tool that allows you to create stunning graphics, presentations, and more. Whether you're a beginner or an experienced designer, this guide covers the basics to help you unleash your creativity.",
+      "sections": [
+        {
+          "title": "1. Getting Started with Canva",
+          "content": [
+            {
+              "title": "Introduction to Canva",
+              "description": "Canva is a user-friendly design platform that offers a wide range of templates, images, and tools to create professional-looking designs. It's perfect for creating social media graphics, presentations, posters, and more."
+            },
+            {
+              "title": "Creating a New Design",
+              "description": "To start a new design in Canva, sign in to your account and click on 'Create a design'. Choose a template or select custom dimensions for your design. Click 'Create' to open a new design."
+            }
+          ]
+        },
+        {
+          "title": "2. Designing with Canva",
+          "content": [
+            {
+              "title": "Using Templates",
+              "description": "Canva offers a wide range of templates for various design categories. Browse through the template library and customize them with your own content, colors, and fonts."
+            },
+            {
+              "title": "Adding Elements",
+              "description": "Enhance your design by adding elements such as text, shapes, icons, and images. Canva provides a vast collection of elements that you can easily drag and drop onto your design."
+            },
+            {
+              "title": "Collaborating with Others",
+              "description": "Invite team members or clients to collaborate on your Canva designs. Share your designs with others, allow them to make edits, and leave comments for seamless collaboration."
+            }
+          ]
+        }
+      ]
+    },
+    "procreate-dreams": {
+      "title": "Procreate Dreams Guide",
+      "description": "Unleash your creativity with Procreate Dreams. Learn how to create mesmerizing animations, motion graphics, and visual effects using the powerful features and tools of Procreate Dreams. From frame-by-frame animation to advanced effects, this guide will help you master the art of digital animation.",
+      "sections": [
+        {
+          "title": "1. Getting Started with Procreate Dreams",
+          "content": [
+            {
+              "title": "Introduction to Procreate Dreams",
+              "description": "Procreate Dreams is a cutting-edge animation software that allows you to bring your imagination to life. With its intuitive interface and extensive animation tools, you can create stunning animations and visual effects with ease."
+            },
+            {
+              "title": "Creating a New Animation",
+              "description": "To start a new animation project in Procreate Dreams, open the app and tap on the '+' button. Choose the canvas size, frame rate, and other settings suitable for your project. Tap 'Create' to open a new animation canvas."
+            }
+          ]
+        },
+        {
+          "title": "2. Exploring Animation Techniques",
+          "content": [
+            {
+              "title": "Frame-by-Frame Animation",
+              "description": "Learn how to create frame-by-frame animations in Procreate Dreams. Use the drawing tools and onion skinning feature to animate each frame and bring your characters and objects to life."
+            },
+            {
+              "title": "Animating with Keyframes",
+              "description": "Keyframes are essential for creating smooth and dynamic animations in Procreate Dreams. Discover how to set keyframes, adjust timing and easing, and create complex motion paths for your animated elements."
+            },
+            {
+              "title": "Adding Visual Effects",
+              "description": "Enhance your animations with stunning visual effects in Procreate Dreams. Explore the wide range of effects and filters available, and learn how to apply them to your animation to create captivating and eye-catching visuals."
+            }
+          ]
+        }
+      ]
+    },
+    "spline": {
+      "title": "Spline Guide",
+      "description": "Learn how to create smooth and curved lines with splines. Master the techniques of spline interpolation and manipulation to create visually appealing and realistic curves in your designs.",
+      "sections": [
+        {
+          "title": "1. Introduction to Splines",
+          "content": [
+            {
+              "title": "What are Splines?",
+              "description": "Splines are mathematical curves that are used to represent smooth and continuous shapes. They are widely used in computer graphics, animation, and design to create curves with precise control over their shape and smoothness."
+            },
+            {
+              "title": "Types of Splines",
+              "description": "There are various types of splines, including B-splines, NURBS (Non-Uniform Rational B-Splines), and Bezier curves. Each type has its own characteristics and is suitable for different applications."
+            }
+          ]
+        },
+        {
+          "title": "2. Creating and Editing Splines",
+          "content": [
+            {
+              "title": "Creating Splines",
+              "description": "Learn how to create splines using different tools and techniques. Whether you're using a vector graphics software or a programming library, discover the methods to create splines with precision and control."
+            },
+            {
+              "title": "Editing Splines",
+              "description": "Master the art of manipulating splines to achieve the desired shape and curvature. Explore techniques such as adding and removing control points, adjusting handles, and applying smoothness modifiers."
+            },
+            {
+              "title": "Interpolating Splines",
+              "description": "Discover the process of interpolating splines to create smooth and continuous curves between given points. Learn about interpolation methods such as Catmull-Rom splines and Hermite splines."
+            }
+          ]
+        },
+        {
+          "title": "3. Advanced Spline Techniques",
+          "content": [
+            {
+              "title": "Spline Animation",
+              "description": "Take your splines to the next level by animating them. Learn how to animate splines to create dynamic and fluid motion in your designs and animations."
+            },
+            {
+              "title": "Spline Extrusion",
+              "description": "Explore the technique of extruding splines to give them depth and volume. Discover how to create 3D shapes and objects by extruding splines along a path."
+            },
+            {
+              "title": "Spline Rendering",
+              "description": "Learn about different rendering techniques for splines. Whether you're rendering splines in real-time or for offline rendering, discover the methods to achieve high-quality and realistic results."
+            }
+          ]
+        }
+      ]
+    },
+    "procreate": {
+      "title": "Procreate Guide",
+      "description": "Welcome to the Procreate Guide! This guide will help you unleash your creativity with Procreate, a powerful digital painting and illustration app for iPad. Whether you're a beginner or an experienced artist, this guide covers everything you need to know to create stunning artworks using Procreate's extensive features and tools.",
+      "sections": [
+        {
+          "title": "1. Getting Started with Procreate",
+          "content": [
+            {
+              "title": "Introduction to Procreate",
+              "description": "Procreate is a versatile and intuitive app that allows you to create digital artworks with ease. Learn about the main features and tools of Procreate, and get familiar with the interface to start your artistic journey."
+            },
+            {
+              "title": "Creating a New Canvas",
+              "description": "To start a new artwork in Procreate, open the app and tap on the '+' button. Choose the canvas size, resolution, and orientation suitable for your project. Tap 'Create' to open a new canvas."
+            }
+          ]
+        },
+        {
+          "title": "2. Exploring Procreate's Tools and Features",
+          "content": [
+            {
+              "title": "Brushes and Painting",
+              "description": "Discover Procreate's extensive collection of brushes and learn how to use them to create beautiful digital paintings. Explore different brush settings, textures, and blending modes to achieve the desired effects in your artworks."
+            },
+            {
+              "title": "Layers and Blending Modes",
+              "description": "Learn how to work with layers in Procreate to organize your artwork and apply various effects. Experiment with different blending modes to create interesting compositions and add depth to your paintings."
+            },
+            {
+              "title": "Selections and Transformations",
+              "description": "Master the art of making selections and applying transformations in Procreate. Use selection tools to isolate parts of your artwork and apply transformations like scaling, rotating, and distorting to create dynamic compositions."
+            }
+          ]
+        },
+        {
+          "title": "3. Advanced Techniques in Procreate",
+          "content": [
+            {
+              "title": "Digital Illustration",
+              "description": "Explore advanced techniques for digital illustration in Procreate. Learn how to create detailed line art, add shading and highlights, and use advanced features like symmetry and perspective to enhance your illustrations."
+            },
+            {
+              "title": "Text and Typography",
+              "description": "Discover how to incorporate text and typography into your artworks in Procreate. Learn about different text tools, formatting options, and creative ways to integrate text with your illustrations."
+            },
+            {
+              "title": "Animation and Time-lapse",
+              "description": "Take your artworks to the next level by adding animation and creating time-lapse videos in Procreate. Learn how to animate your illustrations, create smooth transitions, and export your animations for sharing."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "navbar": {
+    "upload_art": "Upload Art",
+    "references": "Roadmaps",
+    "guides": "Guides",
+    "inspiration": "Inspiration",
+    "resources": "Resources",
+    "get_help": "Get Help"
+  },
+
+  "resources": {
+    "title": "Resources",
+    "color_palettes": {
+      "title": "Color Palettes",
+      "description": "Grab some inspiration from these color schemes",
+      "instruction": "Click on a color to copy it to the clipboard."
+    },
+    "icons": {
+      "title": "Icons",
+      "description": "Have access to SVGs of the most used icons",
+      "instruction": "Click on an icon to copy its SVG code to the clipboard."
+    },
+    "copy_alert": "Copied {{text}} to clipboard!"
+  },
+  "inspiration": {
+    "title": "Inspiration",
+    "header": {
+      "title": "Discover our Community's Work",
+      "description": "InnovArt is the place destination to find & showcase creative work and home to the best design guides.",
+      "search_placeholder": "Search through your community"
+    },
+    "categories": {
+      "illustration": "Illustration",
+      "web": "Web",
+      "animation": "Animation",
+      "3d design": "3D Design",
+      "typography": "Typography",
+      "ui/ux": "UI/UX",
+      "branding": "Branding",
+      "all": "All"
+    },
+    "feedback": {
+      "leave_comment": "Leave a Comment",
+      "alias_placeholder": "Your alias",
+      "edit_comment": "Edit ✏️",
+      "delete_comment": "Delete 🗑️",
+      "submit_edit_button": "Submit Edit",
+      "comment_placeholder": "Write your comment here...",
+      "submit_button": "Submit",
+      "close_button": "Close",
+      "comments_section": "Comments:",
+      "error_message": "Alias and comment are required."
+    }
+  },
+  "inspiration_items": {
+    "the_archers": {
+      "title": "The Archers",
+      "author": "John Doe",
+      "category": "Illustration"
+    },
+    "debit_card_design": {
+      "title": "Debit Card Design",
+      "author": "Jane Smith",
+      "category": "UI/UX"
+    },
+    "santorini": {
+      "title": "Santorini",
+      "author": "Maria Johnson",
+      "category": "3D Design"
+    },
+    "build_together": {
+      "title": "Build Together",
+      "author": "Chris Lee",
+      "category": "Web"
+    },
+    "odi": {
+      "title": "ODI",
+      "author": "Alex Brown",
+      "category": "Interface Design"
+    },
+    "vande": {
+      "title": "Vande",
+      "author": "Patricia Green",
+      "category": "UX"
+    },
+    "star_wars_badges": {
+      "title": "Star Wars Badges",
+      "author": "Michael White",
+      "category": "Illustration"
+    },
+    "vintage_train": {
+      "title": "Vintage Train",
+      "author": "Nancy Harris",
+      "category": "3D Design"
+    },
+    "the_painter": {
+      "title": "The Painter",
+      "author": "Linda Clark",
+      "category": "Illustration"
+    },
+    "cityscape": {
+      "title": "Cityscape",
+      "author": "Barbara Rodriguez",
+      "category": "3D Design"
+    },
+    "robot": {
+      "title": "Robot",
+      "author": "Paul Martinez",
+      "category": "Animation"
+    },
+    "blender_base_keyboard": {
+      "title": "Blender Base Keyboard",
+      "author": "Kevin Lewis",
+      "category": "3D Design"
+    },
+    "creative_typography": {
+      "title": "Creative Typography",
+      "author": "Sandra Walker",
+      "category": "Typography"
+    },
+    "minimalist_fonts": {
+      "title": "Minimalist Fonts",
+      "author": "Laura Hall",
+      "category": "Typography"
+    },
+    "bold_letters": {
+      "title": "Bold Letters",
+      "author": "David Allen",
+      "category": "Typography"
+    },
+    "ui_design_concept": {
+      "title": "UI Design Concept",
+      "author": "Jennifer Young",
+      "category": "UI/UX"
+    },
+    "ux_journey": {
+      "title": "UX Journey",
+      "author": "George King",
+      "category": "UI/UX"
+    },
+    "interface_design": {
+      "title": "Interface Design",
+      "author": "Carol Wright",
+      "category": "Interface Design"
+    },
+    "brand_identity": {
+      "title": "Brand Identity",
+      "author": "Kenneth Scott",
+      "category": "Branding"
+    },
+    "logo_design": {
+      "title": "Logo Design",
+      "author": "Helen Adams",
+      "category": "Branding"
+    },
+    "marketing_materials": {
+      "title": "Marketing Materials",
+      "author": "Edward Baker",
+      "category": "Branding"
+    }
+  },
+  "categories": {
+    "Illustration": "Illustration",
+    "Web": "Web",
+    "Animation": "Animation",
+    "3D Design": "3D Design",
+    "Typography": "Typography",
+    "UI/UX": "UI/UX",
+    "Branding": "Branding"
+  },
+  "contactUs": {
+    "header": "Get Help",
+    "title": "Contact Us",
+    "nameTips": "Max length: 50 characters",
+    "emailTips": "Email Format: email@domain.ca",
+    "messageTips": "Max length: 1000 characters",
+    "description": "Have any questions, feel free to contact us!",
+    "emailPlaceholder": "Email",
+    "namePlaceholder": "Name",
+    "messagePlaceholder": "Write your message here...",
+    "sendButton": "Send",
+    "thankYou": "Thank you for your message.",
+    "getBack": "We will get back to you shortly!",
+    "closeButton": "Close",
+    "error": "All fields are required!"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Can’t find the answer you’re looking for? Reach out to our design team!",
+    "uploadQuestion": "How do I upload my own art?",
+    "uploadAnswer": "To upload your own art, navigate to the 'Upload' section, click on the 'Choose File' button, select your artwork, and hit 'Submit'. Ensure your file is in an acceptable format like .jpg, .png, or .svg.",
+    "checkReviewsQuestion": "How do I check my reviews on the art?",
+    "checkReviewsAnswer": "You can check your reviews by going to your profile page and clicking on the 'Reviews' tab. Here, you'll find all the feedback left by other users on your uploaded artworks.",
+    "giveReviewQuestion": "How do I give a review?",
+    "giveReviewAnswer": "To give a review, visit the artwork you want to review, scroll down to the 'Reviews' section, and click on 'Add Review'. Write your thoughts and hit 'Submit'.",
+    "roadmapsLevelQuestion": "Are all the roadmaps for the same level?",
+    "roadmapsLevelAnswer": "No, our roadmaps are tailored for different levels, from beginners to advanced users. Each roadmap clearly indicates the required skill level.",
+    "roadmapDurationQuestion": "How long does a roadmap take?",
+    "roadmapDurationAnswer": "The duration of a roadmap varies depending on its complexity and your pace. On average, a roadmap can take anywhere from a few weeks to a few months to complete.",
+    "designPortfolioQuestion": "Is there a way to design my portfolio?",
+    "designPortfolioAnswer": "Yes, our platform offers a 'Portfolio Builder' feature that helps you organize and showcase your artwork professionally. You can add, remove, and rearrange pieces easily.",
+    "moreTipsQuestion": "Are there more tips on the art?",
+    "moreTipsAnswer": "Absolutely! Each guide and tutorial comes with additional tips and tricks to help you improve your skills. Check out the 'Tips' section in each guide.",
+    "newGuidesQuestion": "When will there be new guides?",
+    "newGuidesAnswer": "We release new guides on a monthly basis. Stay tuned to our 'Updates' section or subscribe to our newsletter to get notified about new releases."
+  },
+  "references": {
+    "header": "References",
+    "sidebar": {
+      "title": "Roadmaps",
+      "typography": "Typography Roadmap",
+      "illustration": "Illustration Roadmap",
+      "design": "3D Design Roadmap",
+      "animation": "Animation Roadmap",
+      "web": "Web Roadmap"
+    },
+    "underDevelopment": "Page is still in development"
+  },
+  "home": {
+    "title": "Welcome to InnovArt Roadmaps",
+    "description": "Welcome to InnovArt's Roadmaps, your comprehensive guides to mastering various design disciplines. Our roadmaps offer step-by-step guidance and practical projects to enhance your learning experience. Whether you're a beginner or looking to refine your expertise, our roadmaps provide the knowledge and resources you need.",
+    "typography": {
+      "alt": "Typography Roadmap",
+      "title": "Typography Roadmap",
+      "description": "Begin your journey with typography. Learn the essentials, from understanding typefaces and fonts to advanced techniques like kerning and typography hierarchy. Apply your skills with practical projects.",
+      "button": "Get Started with Typography →"
+    },
+    "illustration": {
+      "alt": "Illustration Roadmap",
+      "title": "Illustration Roadmap",
+      "description": "Unlock your creativity with our Illustration Roadmap. Learn basic sketching to digital illustration, explore various styles, and work on projects to develop your unique artistic voice.",
+      "button": "Get Started with Illustration →"
+    },
+    "design": {
+      "alt": "3D Design Roadmap",
+      "title": "3D Design Roadmap",
+      "description": "Step into 3D design. Learn principles of 3D modeling, texturing, and rendering using industry-standard software. Tackle projects that simulate real-world design challenges.",
+      "button": "Get Started with 3D Design →"
+    },
+    "animation": {
+      "alt": "Animation Roadmap",
+      "title": "Animation Roadmap",
+      "description": "Bring your ideas to life with animation. Whether 2D, 3D, or stop-motion, learn animation principles and techniques through tutorials and hands-on projects.",
+      "button": "Get Started with Animation →"
+    },
+    "web": {
+      "alt": "Web Roadmap",
+      "title": "Web Roadmap",
+      "description": "Refine your web development skills. Learn tools and techniques for front-end and back-end development, UX/UI design, and more. Work on projects to enhance your capabilities.",
+      "button": "Get Started with Web →"
+    }
+  },
+  "roadmap": {
+    "animation": {
+      "title": "2D Animation Roadmap",
+      "description": "Welcome to the Animation Roadmap! This guide will take you through the essentials of animation, from basic principles to advanced techniques. You’ll learn to create captivating animations, whether you’re interested in 2D, 3D, or stop-motion. Each section includes recommended tools and sources of inspiration to help you along your journey.",
+      "sections": [
+        {
+          "title": "1. Basics of Animation",
+          "content": [
+            {
+              "title": "Principles of Animation",
+              "description": "Learn the 12 principles of animation, such as Squash and Stretch, Anticipation, Staging, and more. These principles will help you create more dynamic and believable animations."
+            },
+            {
+              "title": "Frame Rate and Timing",
+              "description": "Understand how the frame rate affects the smoothness of your animation and how timing can influence the perception of movement."
+            },
+            {
+              "title": "Storyboarding",
+              "description": "Discover the importance of storyboarding in planning out your animations, ensuring a coherent and engaging story."
+            }
+          ],
+          "image": "PrinciplesImg"
+        },
+        {
+          "title": "2. Tools",
+          "content": [
+            {
+              "title": "Adobe Creative Cloud",
+              "description": "Adobe Animate or After Effects - Cost: $19 per month"
+            },
+            {
+              "title": "Procreate Dream",
+              "description": "(iOS only) - Cost: $22 (One-time Purchase)"
+            },
+            {
+              "title": "Pencil2D",
+              "description": "Cost: Free"
+            }
+          ],
+          "image": "ToolsImg"
+        },
+        {
+          "title": "3. Animation Techniques",
+          "content": [
+            {
+              "title": "Character Design and Rigging",
+              "description": "Learn how to create compelling character designs and rig them for smooth animation."
+            },
+            {
+              "title": "Keyframes and In-betweens",
+              "description": "Understand the importance of keyframes in defining motion and how to create in-between frames for fluid transitions."
+            },
+            {
+              "title": "Lip Sync and Facial Expressions",
+              "description": "Master the techniques for syncing lip movements to dialogue and animating expressive facial features."
+            }
+          ],
+          "image": "TechniquesImg"
+        }
+      ]
+    },
+    "typography": {
+      "title": "Typography Roadmap",
+      "description": "Welcome to the Typography Roadmap! This guide will take you through the essentials of typography, from basic principles to advanced techniques. You’ll learn to create captivating typography, whether you’re interested in print or digital media. Each section includes recommended tools and sources of inspiration to help you along your journey.",
+      "sections": [
+        {
+          "title": "1. Basics of Typography",
+          "content": [
+            {
+              "title": "Principles of Typography",
+              "description": "Learn the key principles of typography, such as alignment, hierarchy, and spacing. These principles will help you create more readable and aesthetically pleasing text."
+            },
+            {
+              "title": "Typefaces and Fonts",
+              "description": "Understand the differences between typefaces and fonts, and how to choose the right ones for your project."
+            },
+            {
+              "title": "Text Composition",
+              "description": "Discover the importance of text composition in creating a visually appealing and coherent design."
+            }
+          ],
+          "image": "TypographyPrinciplesImg"
+        },
+        {
+          "title": "2. Tools",
+          "content": [
+            {
+              "title": "Adobe Creative Cloud",
+              "description": "Adobe Illustrator or InDesign - Cost: $19 per month"
+            },
+            {
+              "title": "Google Fonts",
+              "description": "Free library of fonts"
+            },
+            {
+              "title": "FontSquirrel",
+              "description": "Free fonts for commercial use"
+            }
+          ],
+          "image": "TypographyToolsImg"
+        },
+        {
+          "title": "3. Typography Techniques",
+          "content": [
+            {
+              "title": "Kerning and Leading",
+              "description": "Learn how to adjust the space between characters and lines to improve readability and visual appeal."
+            },
+            {
+              "title": "Responsive Typography",
+              "description": "Understand how to create typography that looks great on all devices, from mobile to desktop."
+            },
+            {
+              "title": "Advanced Text Effects",
+              "description": "Master techniques for creating eye-catching text effects, such as shadows, gradients, and textures."
+            }
+          ],
+          "image": "TypographyTechniquesImg"
+        }
+      ]
+    },
+    "illustration": {
+      "title": "Illustration Roadmap",
+      "description": "Welcome to the Illustration Roadmap! This guide will take you through the essentials of illustration, from basic principles to advanced techniques. You’ll learn to create captivating illustrations, whether you’re interested in traditional or digital media. Each section includes recommended tools and sources of inspiration to help you along your journey.",
+      "sections": [
+        {
+          "title": "1. Basics of Illustration",
+          "content": [
+            {
+              "title": "Principles of Illustration",
+              "description": "Learn the key principles of illustration, such as composition, perspective, and color theory. These principles will help you create more engaging and visually appealing illustrations."
+            },
+            {
+              "title": "Sketching Techniques",
+              "description": "Understand different sketching techniques and how to apply them in your work."
+            },
+            {
+              "title": "Character Design",
+              "description": "Discover the importance of character design and how to create memorable and dynamic characters."
+            }
+          ],
+          "image": "IllustrationPrinciplesImg"
+        },
+        {
+          "title": "2. Tools",
+          "content": [
+            {
+              "title": "Adobe Creative Cloud",
+              "description": "Adobe Photoshop or Illustrator - Cost: $19 per month"
+            },
+            {
+              "title": "Procreate",
+              "description": "(iOS only) - Cost: $9.99 (One-time Purchase)"
+            },
+            {
+              "title": "Krita",
+              "description": "Cost: Free"
+            }
+          ],
+          "image": "IllustrationToolsImg"
+        },
+        {
+          "title": "3. Illustration Techniques",
+          "content": [
+            {
+              "title": "Digital Painting",
+              "description": "Learn how to use digital painting techniques to create stunning illustrations."
+            },
+            {
+              "title": "Inking and Coloring",
+              "description": "Understand the process of inking and coloring your illustrations to bring them to life."
+            },
+            {
+              "title": "Storytelling",
+              "description": "Master the art of visual storytelling to create illustrations that tell a story and engage the audience."
+            }
+          ],
+          "image": "IllustrationTechniquesImg"
+        }
+      ]
+    },
+    "web": {
+      "title": "Web Development Roadmap",
+      "description": "Welcome to the Web Development Roadmap! This guide will take you through the essentials of web development, from basic principles to advanced techniques. You’ll learn to create responsive and dynamic websites, whether you're interested in front-end or back-end development. Each section includes recommended tools and sources of inspiration to help you along your journey.",
+      "sections": [
+        {
+          "title": "1. Basics of Web Development",
+          "content": [
+            {
+              "title": "HTML & CSS",
+              "description": "Learn the fundamentals of HTML and CSS to create static web pages."
+            },
+            {
+              "title": "JavaScript",
+              "description": "Understand the basics of JavaScript to add interactivity to your web pages."
+            },
+            {
+              "title": "Responsive Design",
+              "description": "Discover the principles of responsive design to create web pages that look great on all devices."
+            }
+          ],
+          "image": "WebPrinciplesImg"
+        },
+        {
+          "title": "2. Tools",
+          "content": [
+            {
+              "title": "Code Editors",
+              "description": "Popular code editors like VS Code, Sublime Text, and Atom."
+            },
+            {
+              "title": "Version Control",
+              "description": "Learn Git for version control and collaboration."
+            },
+            {
+              "title": "CSS Frameworks",
+              "description": "Explore CSS frameworks like Bootstrap and Tailwind CSS."
+            }
+          ],
+          "image": "WebToolsImg"
+        },
+        {
+          "title": "3. Advanced Techniques",
+          "content": [
+            {
+              "title": "JavaScript Frameworks",
+              "description": "Learn popular JavaScript frameworks like React, Angular, and Vue."
+            },
+            {
+              "title": "Backend Development",
+              "description": "Understand backend development with Node.js, Express, and databases."
+            },
+            {
+              "title": "Deployment",
+              "description": "Master the process of deploying web applications using platforms like Netlify, Vercel, and Heroku."
+            }
+          ],
+          "image": "WebTechniquesImg"
+        }
+      ]
+    },
+    "design": {
+      "title": "3D Design Roadmap",
+      "description": "Welcome to the 3D Design Roadmap! This guide will take you through the essentials of 3D design, from basic principles to advanced techniques. You’ll learn to create stunning 3D models, whether you're interested in animation, game design, or product visualization. Each section includes recommended tools and sources of inspiration to help you along your journey.",
+      "sections": [
+        {
+          "title": "1. Basics of 3D Design",
+          "content": [
+            {
+              "title": "3D Modeling",
+              "description": "Learn the basics of 3D modeling to create simple 3D objects."
+            },
+            {
+              "title": "Texturing",
+              "description": "Understand the process of adding textures to your 3D models."
+            },
+            {
+              "title": "Rendering",
+              "description": "Discover the principles of rendering to create photorealistic images of your 3D models."
+            }
+          ],
+          "image": "Design3DPrinciplesImg"
+        },
+        {
+          "title": "2. Tools",
+          "content": [
+            {
+              "title": "Blender",
+              "description": "A powerful and free 3D modeling software."
+            },
+            {
+              "title": "ZBrush",
+              "description": "An advanced tool for sculpting high-resolution 3D models."
+            },
+            {
+              "title": "Substance Painter",
+              "description": "A tool for painting textures directly onto your 3D models."
+            }
+          ],
+          "image": "Design3DToolsImg"
+        },
+        {
+          "title": "3. Advanced Techniques",
+          "content": [
+            {
+              "title": "Character Modeling",
+              "description": "Learn how to model detailed and realistic 3D characters."
+            },
+            {
+              "title": "Animation",
+              "description": "Understand the basics of 3D animation to bring your models to life."
+            },
+            {
+              "title": "Game Design",
+              "description": "Master the techniques for creating 3D assets for games."
+            }
+          ],
+          "image": "Design3DTechniquesImg"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "badge": "Over 300+ Guides and Resources",
+    "title": {
+      "resources": "Resources",
+      "for": "for",
+      "designers": "Designers",
+      "by": "by",
+      "highlight_designers": "Designers",
+      "highlight_gradient": "Designers"
+    },
+    "subtitle": "Uncover the most effective resources and tools designed to enhance your skills and knowledge, tailored to meet your learning need.",
+    "button": "Get Started"
+  },
+  "community": {
+    "header": "Portfolio Builder",
+    "upload_section": {
+      "delete_tooltip": "Delete Art",
+      "edit_tooltip": "Edit Art",
+      "export_tooltip": "Export Art",
+      "edit_button": "Edit Art",
+      "title": "Upload Art",
+      "subtitle": "Drag or Upload your Art Here",
+      "rights": "Please upload a JPEG, PNG, or SVG",
+      "preview_label": "Preview of image:",
+      "title_placeholder": "Title",
+      "character_count": " Max Characters",
+      "max_characters_error": "Max characters exceeded",
+      "description_placeholder": "Description",
+      "category_placeholder": "Category",
+      "categories": {
+        "illustration": "Illustration",
+        "typography": "Typography",
+        "photography": "Photography",
+        "uiux": "UI/UX",
+        "web_design": "Web Design",
+        "graphic_design": "Graphic Design"
+      },
+      "submit_button": "Submit",
+      "error_message": "All fields are required and an image must be uploaded."
+    },
+    "view_art_board": "View your Art Board",
+    "comments_section": {
+      "title": "Comments for",
+      "fake_comments": ["Great work!", "Love this piece!", "Very creative!"]
+    },
+    "export_button": "Export All Art",
+    "see_more_art": "See More Art",
+    "see_more_button": "See Our Community Art Boards"
+  },
+  "icon_libraries": {
+    "title": "Discover Resources",
+    "highlight": "UI UX Icons",
+    "description": "Have access to various icons to use within your projects!",
+    "link": "View All Icons →"
+  },
+  "colour_palettes": {
+    "title": "Have access to",
+    "highlight": "Colour Palettes",
+    "description": "Can’t decide on a colour palette? Generate one or select one to suit your needs!",
+    "link": "View All Colour Palettes →"
+  },
+  "tool_section": {
+    "title": "Explore Various Industry Standard Tools And Get Started",
+    "tools": {
+      "figma": {
+        "title": "Figma Basics",
+        "guides": [
+          {
+            "title": "Getting Started with Figma",
+            "description": "Learning about the basics of your workspace."
+          },
+          {
+            "title": "Wireframing in Figma",
+            "description": "What goes into them, how can they help you communicate."
+          },
+          {
+            "title": "Figma Shortcuts",
+            "description": "A quick cheat sheet to speed up your process and to learn about each tool."
+          },
+          {
+            "title": "Gradient Cheat Sheet",
+            "description": "Want a nice pop of color in your designs? Here's a little tool for you."
+          }
+        ]
+      },
+      "procreate": {
+        "title": "Procreate Basics",
+        "guides": [
+          {
+            "title": "Getting Started with Procreate",
+            "description": "Learning about the basics of your workspace."
+          },
+          {
+            "title": "Brushes in Procreate",
+            "description": "How to use them, how to make them."
+          },
+          {
+            "title": "Layers in Procreate",
+            "description": "How to use them, how to make them."
+          },
+          {
+            "title": "Color Theory in Procreate",
+            "description": "How to use them, how to make them."
+          }
+        ]
+      },
+      "illustrator": {
+        "title": "Illustrator Basics",
+        "guides": [
+          {
+            "title": "Getting Started with Illustrator",
+            "description": "Learning about the basics of your workspace."
+          },
+          {
+            "title": "Pen Tool in Illustrator",
+            "description": "How to use them, how to make them."
+          },
+          {
+            "title": "Shapes in Illustrator",
+            "description": "How to use them, how to make them."
+          },
+          {
+            "title": "Pathfinder in Illustrator",
+            "description": "How to use them, how to make them."
+          }
+        ]
+      },
+      "canva": {
+        "title": "Canva Basics",
+        "guides": [
+          {
+            "title": "Getting Started with Canva",
+            "description": "Learning about the basics of your workspace."
+          },
+          {
+            "title": "Templates in Canva",
+            "description": "How to use them, how to make them."
+          },
+          {
+            "title": "Text in Canva",
+            "description": "How to use them, how to make them."
+          },
+          {
+            "title": "Images in Canva",
+            "description": "How to use them, how to make them."
+          }
+        ]
+      },
+      "photoshop": {
+        "title": "Photoshop Basics",
+        "guides": [
+          {
+            "title": "Getting Started with Photoshop",
+            "description": "Learning about the basics of your workspace."
+          },
+          {
+            "title": "Layers in Photoshop",
+            "description": "How to use them, how to make them."
+          },
+          {
+            "title": "Masks in Photoshop",
+            "description": "How to use them, how to make them."
+          },
+          {
+            "title": "Filters in Photoshop",
+            "description": "How to use them, how to make them."
+          }
+        ]
+      },
+      "spline": {
+        "title": "Spline Basics",
+        "guides": [
+          {
+            "title": "Getting Started with Spline",
+            "description": "Learning about the basics of your workspace."
+          },
+          {
+            "title": "3D Objects in Spline",
+            "description": "How to use them, how to make them."
+          },
+          {
+            "title": "Materials in Spline",
+            "description": "How to use them, how to make them."
+          },
+          {
+            "title": "Lighting in Spline",
+            "description": "How to use them, how to make them."
+          }
+        ]
+      }
+    }
+  },
+  "svg_component": {
+    "heading": "Want to get the latest updates?",
+    "subheading": "Sign up to our newsletter today.",
+    "placeholder": "Enter your email",
+    "warning": "**Invalid email address (eg. hello@innovart.ca)",
+    "subscribe_button": "subscribe",
+    "success_message": "Subscribed",
+    "error_message": "Please enter a valid email address"
+  },
+  "design_types": {
+    "title": "Stumped? Get started with learning these design types.",
+    "types": {
+      "typography": "Typography",
+      "animation": "Animation",
+      "illustration": "Illustration",
+      "web": "Web"
+    }
+  },
+  "inspo": {
+    "title": "Explore Community Designs",
+    "images": {
+      "w": {
+        "alt": "Design W",
+        "caption": "Colour Palettes",
+        "artist": "Artist Name W"
+      },
+      "action": {
+        "alt": "Action Design",
+        "caption": "3D Modelling & Animation",
+        "artist": "Artist Name Action"
+      },
+      "bear": {
+        "alt": "Bear Design",
+        "caption": "3D Modelling",
+        "artist": "Artist Name Bear"
+      },
+      "bread": {
+        "alt": "Bread Design",
+        "caption": "Packaging Illustration",
+        "artist": "Artist Name Bread"
+      },
+      "brew": {
+        "alt": "Typography",
+        "caption": "Typography",
+        "artist": "Artist Name Brew"
+      },
+      "cute": {
+        "alt": "3D Modeling",
+        "caption": "3D Modeling",
+        "artist": "Artist Name Cute"
+      },
+      "eita": {
+        "alt": "Eita Design",
+        "caption": "Colour Palettes",
+        "artist": "Artist Name Eita"
+      },
+      "juice": {
+        "alt": "Illustration",
+        "caption": "Illustration",
+        "artist": "Artist Name Juice"
+      }
+    }
+  },
+  "footer": {
+    "references": "References",
+    "guides": "Guides",
+    "inspiration": "Inspiration",
+    "resources": "Resources",
+    "uploadArt": "Upload Art",
+    "language": "Language",
+    "english": "English",
+    "korean": "Korean (한국어)",
+    "tags": "Tags",
+    "designTypes": "Design-Types",
+    "getHelp": "Get Help",
+    "copyright": "© 2024 InnovArt"
+  }
+}

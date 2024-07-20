@@ -1,0 +1,186 @@
+.resources-header {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  position: relative;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+.resources-header p {
+  margin: 0;
+  font-family: "Inter";
+  color: #fff;
+}
+
+.resources-content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.resources-content h1 {
+  font-size: 2.5em;
+  font-family: "Gotham";
+}
+.resources-content h2 {
+  text-align: left;
+  font-family: "Inter";
+}
+
+.resources-content p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  text-align: left;
+  font-family: "Inter";
+}
+
+.palette-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+}
+
+.palette {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 205px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.color-box {
+  flex: 1;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "Inter";
+}
+
+.color-box::after {
+  content: attr(data-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: transparent;
+  font-size: 0.8rem;
+  font-family: "Inter";
+  transition: color 0.3s ease;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 15px 50px;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 3rem;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-box:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.icon-box svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.icon-box:hover svg {
+  fill: #ff69b4;
+}
+
+.resources {
+  color: #fff;
+}
+
+.resource-header {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  position: relative;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+.resource-header p {
+  margin: 0;
+  font-family: "Inter";
+  color: #fff;
+}
+
+.resources-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.resources-content h1 {
+  font-size: 2.5em;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: "Gotham";
+}
+
+.resources-content p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  font-family: "Inter";
+}
+
+.color-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Inter";
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+}
+
+.color-box span {
+  display: none;
+}
+
+.color-box:hover span {
+  display: block;
+}

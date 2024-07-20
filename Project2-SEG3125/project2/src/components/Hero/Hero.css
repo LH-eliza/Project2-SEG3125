@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nothing+You+Could+Do&display=swap");
+
+body {
+  background-color: #000;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 6rem 1rem 4rem 1rem;
+}
+
+.hero-badge {
+  background-color: #333;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-family: "Inter", sans-serif;
+  margin: 1.5rem;
+}
+
+.hero-title .for {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+.hero-title .highlight {
+  font-family: "Nothing You Could Do", cursive;
+  color: #fff;
+}
+
+.hero-title .highlight-gradient {
+  background: linear-gradient(90deg, #5a87b0, #ab4e30, #eec982, #67cf36);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  max-width: 900px;
+}
+
+.hero-subtitle .subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+
+.hero-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  margin: 30px;
+  padding: 1rem 7rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
