@@ -1,7 +1,7 @@
 {
   "guides": {
     "title": "가이드",
-    "go_back": "뒤로 가기",
+    "go_back": "뒤로 가기 ➤",
     "header": "도구 가이드",
     "search_placeholder": "가이드를 검색하세요...",
     "styles": {

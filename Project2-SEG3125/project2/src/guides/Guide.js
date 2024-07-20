@@ -70,17 +70,41 @@ const guides = [
 function Guides() {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedStyle, setSelectedStyle] = useState("All Styles");
+  const [selectedStyle, setSelectedStyle] = useState("all_styles");
   const navigate = useNavigate();
 
   const filteredGuides = guides.filter((guide) => {
+    const translatedStyle = t(guide.style).toLowerCase();
+    const selectedTranslatedStyle =
+      selectedStyle === "all_styles"
+        ? "all_styles"
+        : t(selectedStyle).toLowerCase();
     const matchesStyle =
-      selectedStyle === "All Styles" || guide.style === selectedStyle;
+      selectedStyle === "all_styles" ||
+      translatedStyle === selectedTranslatedStyle;
     const matchesSearchTerm = t(guide.title)
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
+
+    // Debugging logs
+    console.log(
+      "Guide:",
+      t(guide.title),
+      "Style:",
+      guide.style,
+      "Translated Style:",
+      translatedStyle,
+      "Matches Style:",
+      matchesStyle,
+      "Matches Search Term:",
+      matchesSearchTerm
+    );
+
     return matchesStyle && matchesSearchTerm;
   });
+
+  // Log the filtered guides
+  console.log("Filtered Guides:", filteredGuides);
 
   return (
     <div className="guide-top">
@@ -160,14 +184,22 @@ const GuideHome = ({
           onChange={(e) => setSelectedStyle(e.target.value)}
           aria-label={t("guides.select_style")}
         >
-          <option value="All Styles">{t("guides.styles.all")}</option>
-          <option value="Illustration">
+          <option value="all_styles">{t("guides.styles.all")}</option>
+          <option value="guides.styles.illustration">
             {t("guides.styles.illustration")}
           </option>
-          <option value="Editing">{t("guides.styles.editing")}</option>
-          <option value="Animation">{t("guides.styles.animation")}</option>
-          <option value="UX/UI">{t("guides.styles.ux_ui")}</option>
-          <option value="3D Design">{t("guides.styles.3d_design")}</option>
+          <option value="guides.styles.editing">
+            {t("guides.styles.editing")}
+          </option>
+          <option value="guides.styles.animation">
+            {t("guides.styles.animation")}
+          </option>
+          <option value="guides.styles.ux_ui">
+            {t("guides.styles.ux_ui")}
+          </option>
+          <option value="guides.styles.3d_design">
+            {t("guides.styles.3d_design")}
+          </option>
         </select>
       </div>
       <div className="guide-content">

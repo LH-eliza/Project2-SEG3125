@@ -195,7 +195,7 @@
   cursor: pointer;
   margin-top: auto;
   transition: background-color 0.3s;
-  text-align: center;
+  text-align: left;
   font-family: "Gotham";
 }
 
