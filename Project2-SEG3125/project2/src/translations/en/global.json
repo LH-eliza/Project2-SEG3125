@@ -12,6 +12,14 @@
       "ux_ui": "UX/UI",
       "3d_design": "3D Design"
     },
+    "software": {
+      "all": "All Software",
+      "adobe": "Adobe",
+      "canva": "Canva",
+      "spline": "Spline",
+      "procreate": "Procreate",
+      "figma": "Figma"
+    },
     "style-type": {
       "all": "Style"
     },

@@ -10,60 +10,70 @@ const guides = [
     title: "guideDetail.adobe_illustrator.title",
     style: "guides.styles.illustration",
     description: "guideDetail.adobe_illustrator.description",
+    software: "guides.software.adobe",
   },
   {
     route: "adobe-photoshop",
     title: "guideDetail.adobe_photoshop.title",
     style: "guides.styles.editing",
     description: "guideDetail.adobe_photoshop.description",
+    software: "guides.software.adobe",
   },
   {
     route: "adobe-animate",
     title: "guideDetail.adobe_animate.title",
     style: "guides.styles.animation",
     description: "guideDetail.adobe_animate.description",
+    software: "guides.software.adobe",
   },
   {
     route: "after-effects",
     title: "guideDetail.adobe_after_effects.title",
     style: "guides.styles.animation",
     description: "guideDetail.adobe_after_effects.description",
+    software: "guides.software.adobe",
   },
   {
     route: "adobe-xd",
     title: "guideDetail.adobe_xd.title",
     style: "guides.styles.ux_ui",
     description: "guideDetail.adobe_xd.description",
+    software: "guides.software.adobe",
   },
   {
     route: "canva",
     title: "guideDetail.canva.title",
     style: "guides.styles.editing",
     description: "guideDetail.canva.description",
+    software: "guides.software.canva",
   },
   {
     route: "spline",
     title: "guideDetail.spline.title",
     style: "guides.styles.3d_design",
     description: "guideDetail.spline.description",
+    software: "guides.software.spline",
   },
   {
     route: "procreate",
     title: "guideDetail.procreate.title",
     style: "guides.styles.illustration",
     description: "guideDetail.procreate.description",
+    software: "guides.software.procreate",
   },
   {
     route: "procreate-dreams",
     title: "guideDetail.procreate_dreams.title",
     style: "guides.styles.animation",
     description: "guideDetail.procreate_dreams.description",
+    software: "guides.software.procreate",
   },
   {
     route: "figma",
     title: "guideDetail.figma.title",
     style: "guides.styles.ux_ui",
     description: "guideDetail.figma.description",
+    software: "guides.software.figma",
   },
 ];
 
@@ -71,6 +81,7 @@ function Guides() {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedStyle, setSelectedStyle] = useState("all_styles");
+  const [selectedSoftware, setSelectedSoftware] = useState("all_software");
   const navigate = useNavigate();
 
   const filteredGuides = guides.filter((guide) => {
@@ -85,26 +96,17 @@ function Guides() {
     const matchesSearchTerm = t(guide.title)
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
+    const translatedSoftware = t(guide.software).toLowerCase();
+    const selectedTranslatedSoftware =
+      selectedSoftware === "all_software"
+        ? "all_software"
+        : t(selectedSoftware).toLowerCase();
+    const matchesSoftware =
+      selectedSoftware === "all_software" ||
+      translatedSoftware === selectedTranslatedSoftware;
 
-    // Debugging logs
-    console.log(
-      "Guide:",
-      t(guide.title),
-      "Style:",
-      guide.style,
-      "Translated Style:",
-      translatedStyle,
-      "Matches Style:",
-      matchesStyle,
-      "Matches Search Term:",
-      matchesSearchTerm
-    );
-
-    return matchesStyle && matchesSearchTerm;
+    return matchesStyle && matchesSearchTerm && matchesSoftware;
   });
-
-  // Log the filtered guides
-  console.log("Filtered Guides:", filteredGuides);
 
   return (
     <div className="guide-top">
@@ -141,6 +143,8 @@ function Guides() {
                   setSearchTerm={setSearchTerm}
                   selectedStyle={selectedStyle}
                   setSelectedStyle={setSelectedStyle}
+                  selectedSoftware={selectedSoftware}
+                  setSelectedSoftware={setSelectedSoftware}
                   filteredGuides={filteredGuides}
                 />
               }
@@ -163,6 +167,8 @@ const GuideHome = ({
   setSearchTerm,
   selectedStyle,
   setSelectedStyle,
+  selectedSoftware,
+  setSelectedSoftware,
   filteredGuides,
 }) => {
   const { t } = useTranslation();
@@ -199,6 +205,25 @@ const GuideHome = ({
           </option>
           <option value="guides.styles.3d_design">
             {t("guides.styles.3d_design")}
+          </option>
+        </select>
+        <select
+          value={selectedSoftware}
+          onChange={(e) => setSelectedSoftware(e.target.value)}
+          aria-label={t("guides.select_software")}
+        >
+          <option value="all_software">{t("guides.software.all")}</option>
+          <option value="guides.software.adobe">
+            {t("guides.software.adobe")}
+          </option>
+          <option value="guides.software.procreate">
+            {t("guides.software.procreate")}
+          </option>
+          <option value="guides.software.canva">
+            {t("guides.software.canva")}
+          </option>
+          <option value="guides.software.spline">
+            {t("guides.software.spline")}
           </option>
         </select>
       </div>

@@ -12,6 +12,14 @@
       "ux_ui": "UX/UI",
       "3d_design": "3D 디자인"
     },
+    "software": {
+      "all": "모든 소프트웨어",
+      "adobe": "어도비",
+      "canva": "캔바",
+      "spline": "스플라인",
+      "procreate": "프로크리에이트",
+      "figma": "피그마"
+    },
     "style-type": {
       "all": "유형"
     },
