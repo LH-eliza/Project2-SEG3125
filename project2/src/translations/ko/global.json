@@ -1063,13 +1063,13 @@
     "see_more_button": "커뮤니티 작품 보기"
   },
   "icon_libraries": {
-    "title": "UI UX 아이콘의 라이브러리 검색",
+    "title": "라이브러리 검색",
     "highlight": "UI UX 아이콘",
     "description": "프로젝트 내에서 사용할 다양한 아이콘에 액세스할 수 있습니다!",
     "link": "모든 아이콘 보기 →"
   },
   "colour_palettes": {
-    "title": "컬러 팔레트에 액세스하기",
+    "title": "액세스하기",
     "highlight": "컬러 팔레트",
     "description": "컬러 팔레트를 결정할 수 없나요? 필요에 맞게 하나를 생성하거나 선택하세요!",
     "link": "모든 컬러 팔레트 보기 →"
