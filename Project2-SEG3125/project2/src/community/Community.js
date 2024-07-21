@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { useTranslation } from "react-i18next";
+import { confirmAlert } from "react-confirm-alert";
+import "react-confirm-alert/src/react-confirm-alert.css";
 import "./Community.css";
 
 const Community = () => {
@@ -82,7 +84,22 @@ const Community = () => {
   };
 
   const handleDelete = (index) => {
-    setSubmissions(submissions.filter((_, i) => i !== index));
+    confirmAlert({
+      title: t("community.confirm_delete.title"),
+      message: t("community.confirm_delete.message"),
+      buttons: [
+        {
+          label: t("community.confirm_delete.confirm"),
+          onClick: () => {
+            setSubmissions(submissions.filter((_, i) => i !== index));
+          },
+        },
+        {
+          label: t("community.confirm_delete.cancel"),
+          onClick: () => {},
+        },
+      ],
+    });
   };
 
   const handleExport = (index) => {

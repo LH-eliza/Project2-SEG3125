@@ -1036,6 +1036,12 @@
   },
   "community": {
     "header": "커뮤니티",
+    "confirm_delete": {
+      "title": "작품 삭제",
+      "message": "이 작품을 삭제하시겠습니까?",
+      "confirm": "예",
+      "cancel": "아니요"
+    },
     "upload_section": {
       "title": "작품 업로드",
       "subtitle": "작품을 여기로 드래그하거나 업로드하세요",
